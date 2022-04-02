@@ -1,6 +1,6 @@
-const express = require('express');
-const path = require('path');
-const indexRoute = require('./routes');
+import express from 'express';
+import path from 'path';
+import indexRoute from './routes';
 
 const app = express();
 const port = 3000;
@@ -13,6 +13,7 @@ app.use('img', express.static(path.join(__dirname, 'public/img')));
 
 // Set Templating engine
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'));
 
 // App routes
 app.use('/', indexRoute);

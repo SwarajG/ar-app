@@ -1,0 +1,43 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+select {
+  display: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-button {
+  padding-top: 100px;
+}
+
+.submit {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 32px;
+  background-color: #194a50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
