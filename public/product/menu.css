@@ -1,8 +1,6 @@
 .radio-toolbar {
-  left: 50%;
   position: relative;
-  width: fit-content;
-  transform: translate(-50%);
+  display: flex;
 }
 
 .radio-toolbar input[type='radio'] {
@@ -40,13 +38,12 @@
 }
 
 .label {
-  width: 80px !important;
+  width: 80px;
   height: auto;
   position: relative;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
-  font-family: DINPro;
   font-size: 10px;
   color: #fafafa;
   margin-top: 3px;
@@ -61,7 +58,6 @@
   position: absolute;
   width: 340px;
   left: 50%;
-  -webkit-transform: translate(-50%);
   transform: translate(-50%);
   z-index: -1;
   margin-top: -40px;
