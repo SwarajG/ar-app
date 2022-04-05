@@ -11,15 +11,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/root.css">
   <link rel="stylesheet" href="/product/index.css">
   <link rel="stylesheet" href="/product/menu.css">
   <link rel="stylesheet" href="/product/modal.css">
+  <link rel="stylesheet" href="/product/review-modal.css">
 </head>
 
 <body>
   <div class="container">
     <!-- <%- include('../partials/menu', { menuList: data.menuList }) %> -->
-    <%- include('../partials/modal', { languageText: data.languageText }) %>
+    <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>

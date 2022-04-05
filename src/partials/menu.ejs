@@ -1,14 +1,16 @@
 <div class="radio-toolbar">
   <% menuList.forEach(function(menu) { %>
     <div class="radio-button">
-      <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" />
-      <label for="radioReview">
-        <img class="icon" src="<%= menu.image %>">
-        <p class="label">
-          <%= menu.name %>
-        </p>
-      </label>
+      <div>
+        <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" />
+        <label for="<%= menu.id %>">
+          <img class="icon" src="<%= menu.image %>">
+        </label>
+      </div>
+      <p class="radio-label">
+        <%= menu.name %>
+      </p>
     </div>
-
     <% }); %>
+      <div class="radio-toolbar-wrapper"></div>
 </div>

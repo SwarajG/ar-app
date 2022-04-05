@@ -14,12 +14,12 @@ export const data = {
   reviews: [
     {
       id: '1',
-      head: 'This is the main heading',
-      name: 'Swaraj Gandhi',
-      age: '',
-      location: 'Mumbai',
-      rating: 5,
-      review: 'This is the main review',
+      head: 'The Best Moisturizer I have ever used',
+      name: 'BRAVEN986',
+      age: 'Female - 25 to 34',
+      location: 'PROVIDENCE, RI',
+      rating: 3.9,
+      review: 'I have acne prone skin. Very sensitive. This moisturizer is good even for acne-types or oily. Use in the evening.',
     },
   ],
   scienceInfo: [
