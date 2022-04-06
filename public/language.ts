@@ -6,9 +6,9 @@ interface languageText {
 
 export const languageText: languageText = {
   en: {
-    closeButtonText: 'close',
+    closeButtonText: 'Close',
   },
   es: {
-    closeButtonText: 'cerrar',
+    closeButtonText: 'Cerrar',
   },
 };
