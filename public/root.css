@@ -86,3 +86,7 @@ audio,
 video {
   font-family: DINPro;
 }
+
+.hide {
+  display: none !important;
+}

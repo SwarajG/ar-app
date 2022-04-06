@@ -35,6 +35,8 @@ AFRAME.registerComponent('tap-place', {
           easing: 'easeOutElastic',
           dur: 800,
         });
+        console.log(document.getElementsByClassName('radio-toolbar')[0].classList);
+        document.getElementsByClassName('radio-toolbar')[0].classList.remove('hide');
       });
     });
   },
