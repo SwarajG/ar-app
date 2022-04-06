@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="/product/modal.css">
   <link rel="stylesheet" href="/product/review-modal.css">
   <link rel="stylesheet" href="/product/ingredients-modal.css">
+  <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
+  <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+  <script async src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM"></script>
+  <script src="/product/tap-place.js"></script>
 </head>
 
 <body>
@@ -27,6 +31,43 @@
     <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
     <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients', ingredients: data.productData.ingredients }) %>
   </div>
+
+  <a-scene tap-place xrextras-almost-there xrextras-loading xrextras-runtime-error renderer="colorManagement:true"
+    xrweb>
+
+    <!-- We can define assets here to be loaded when A-Frame initializes -->
+    <a-assets>
+      <!-- Credit to Poly by Google for the model: https://poly.google.com/view/6pwiq7hSrHr -->
+      <a-asset-item id="treeModel" src="/product/tree.glb"></a-asset-item>
+    </a-assets>
+
+    <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
+    <a-camera id="camera" position="0 8 0" raycaster="objects: .cantap" cursor="
+          fuse: false;
+          rayOrigin: mouse;">
+    </a-camera>
+
+    <a-entity light="
+          type: directional;
+          intensity: 0.8;
+          castShadow: true;
+          shadowMapHeight:2048;
+          shadowMapWidth:2048;
+          shadowCameraTop: 20;
+          shadowCameraBottom: -20;
+          shadowCameraRight: 20;
+          shadowCameraLeft: -20;
+          target: #camera" xrextras-attach="target: camera; offset: 8 15 4" position="1 4.3 2.5" shadow>
+    </a-entity>
+
+    <a-light type="ambient" intensity="0.5"></a-light>
+
+    <!-- Adding the cantap class allows the ground to be clicked -->
+    <a-box id="ground" class="cantap" scale="1000 2 1000" position="0 -1 0"
+      material="shader: shadow; transparent: true; opacity: 0.4" shadow>
+    </a-box>
+  </a-scene>
+
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="/product/index.js"></script>
