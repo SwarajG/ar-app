@@ -22,21 +22,27 @@ export const data = {
       review: 'I have acne prone skin. Very sensitive. This moisturizer is good even for acne-types or oily. Use in the evening.',
     },
   ],
-  scienceInfo: [
+  ceramides: [
     {
       id: '1',
       title: 'What are Ceramides?',
-      description: 'description 1',
+      description: 'Ceramides are lipids that make up to 50% of the skin composition to form the natural skin barrier.',
     },
     {
       id: '2',
       title: 'What Do Ceramides Do?',
-      description: 'description 2',
+      description: 'Ceramides are essentially the glue that holds our skin cells together to keep our skin barrier intact and healthy. A healthy skin barrier helps seal in moisture and seal out impurities',
     },
     {
       id: '3',
-      title: 'Restore ...?',
-      description: 'description 3',
+      title: 'CeraVe Contains 3 Essential Ceramides',
+      description: 'CeraVe has a unique blend of ceramides that are identical to those found naturally in your skin. They were carefully selected by dermatologists to help restore the natural skin barrier.',
+    },
+
+    {
+      id: '4',
+      title: 'Restore Your Skin’s Natural Barrier',
+      description: 'These ceramides help restore your skins natural barrier, helping to keep moisture in and harmful elements out.',
     },
   ],
   efficacy: '',
