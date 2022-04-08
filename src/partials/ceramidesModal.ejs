@@ -1,0 +1,13 @@
+<div class="ceramides-modal">
+    <p class="ceramides-modal__title">Science of Ceramides</p>
+    <div class="content-container">
+        <% ceramides.forEach(function(point) { %>
+            <p class="ceramides-modal__body1" id="<%= point.id%>"><%= point.title%></p>
+            <p class="ceramides-modal__body2" id="<%= point.id%>"><%= point.description%></p>
+        <% }); %>  
+    </div>
+    
+    <div class="ceramides-modal__close">
+      <%= languageText.closeButtonText %>
+    </div>
+</div>

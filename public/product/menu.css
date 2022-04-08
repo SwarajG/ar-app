@@ -3,6 +3,9 @@
   width: 340px;
   display: flex;
   justify-content: center;
+  margin: auto;
+  top: 85%;
+  z-index: 100;
 }
 
 .radio-toolbar input[type='radio'] {
@@ -43,7 +46,7 @@
   color: #fafafa;
   font-size: 10px;
   width: 80px;
-  margin: 0;
+  margin: 5px 0 0 0;
   height: 24px;
   cursor: pointer;
 }

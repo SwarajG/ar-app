@@ -1,0 +1,47 @@
+.ceramides-modal {
+    padding: 15px;
+}
+
+.content-container{
+    height: 300px;
+    overflow-y: auto;
+}
+
+.ceramides-modal__title {
+    color: #0072ce;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.ceramides-modal__body1 {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0072ce;
+}
+
+.ceramides-modal__body2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0072ce;
+}
+
+.ceramides-modal__close {
+    background-color: #f2f2f2;
+    color: #0072ce;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+    height: 38px;
+    cursor: pointer;
+  }
+  
