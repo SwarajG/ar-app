@@ -1,0 +1,16 @@
+#reset-button {
+    width: 50vw;
+    height: 25px;
+    position: absolute;
+    bottom: 6vh;
+    left: 25vw;
+    background-color: #AD50FF;
+    border: 0.2em solid white;
+    text-align: center;
+    color: #FFF;
+    border-radius: 100px;
+  }
+  #reset-button:active {
+    background-color: white;
+    color: #AD50FF;
+  }
