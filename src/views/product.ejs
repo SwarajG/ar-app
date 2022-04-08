@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Title
+    CeraVe AR app
   </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
     src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM"></script>
-  <script src="/product/tap-place.js"></script>
+  <script src="/product/tap-place-cursor.js"></script>
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
   <script>eruda.init();</script>
 </head>
@@ -31,25 +31,37 @@
 <body>
   <div class="container">
     <%- include('../partials/menu', { menuList: data.menuList }) %>
-    <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
-    <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients' ,
+      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients' ,
       className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
   </div>
 
-  <a-scene tap-place xrextras-almost-there xrextras-loading xrextras-runtime-error renderer="colorManagement:true"
-    xrweb>
+  <div id="reset-button" style="display: none; z-index: 10">
+    <h2 style="font-size: 1.3em; text-align: center; font-family: monospace;">Reset</h2>
+  </div>
+
+  <a-scene
+    xrextras-gesture-detector
+    xrextras-almost-there 
+    xrextras-loading 
+    xrextras-runtime-error
+    renderer="colorManagement:true" xrweb>
 
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
-      <!-- Credit to Poly by Google for the model: https://poly.google.com/view/6pwiq7hSrHr -->
-      <a-asset-item id="treeModel" src="/product/tree.glb"></a-asset-item>
+      <!-- 3D MODELS -->
+      <a-asset-item id="cap-model" src="/product/cap.glb"></a-asset-item>
+      <a-asset-item id="bottle-model" src="/product/bottle.glb"></a-asset-item>
     </a-assets>
 
     <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
-    <a-camera id="camera" position="0 8 0" raycaster="objects: .cantap" cursor="
-          fuse: false;
-          rayOrigin: mouse;">
+    <a-camera id="camera" position="0 8 8" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
     </a-camera>
+
+    <a-ring id="reticle" rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5"
+      radius-outer="0.8" tap-place-cursor>
+      <a-text value="Place Here" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+    </a-ring>
 
     <a-entity light="
           type: directional;
@@ -67,9 +79,19 @@
     <a-light type="ambient" intensity="0.5"></a-light>
 
     <!-- Adding the cantap class allows the ground to be clicked -->
-    <a-box id="ground" class="cantap" scale="1000 2 1000" position="0 -1 0"
-      material="shader: shadow; transparent: true; opacity: 0.4" shadow>
+    <a-box id="ground" scale="1000 2 1000" position="0 -1 0" class="cantap" shadow="receive: true"
+      material="shader: shadow; transparent: true; opacity: 0.4">
     </a-box>
+
+    <a-entity id="base" visible="false" product-placed="0">
+      <!-- An entity to elevate models' height above ground-->
+      <a-entity position="0 0 0">
+        <a-entity xrextras-one-finger-rotate xrextras-pinch-scale="min:0.5; max:3;">
+          <a-entity id="bottle" gltf-model="#bottle-model" shadow="cast:true; receive:false;"></a-entity>
+          <a-entity id="cap" gltf-model="#cap-model" shadow="cast:true; receive:false;"></a-entity>
+        </a-entity>
+      </a-entity>
+    </a-entity>
   </a-scene>
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
