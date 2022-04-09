@@ -18,37 +18,46 @@ AFRAME.registerComponent('tap-place-cursor', {
     const resetButton = document.getElementById('reset-button');
     const dashboard = document.getElementById('dashboard');
 
+    // Hiding the baseElement to ensure modal loads with animation first time
+    setTimeout(() => {
+      baseElement.object3D.visible = false;
+    }, 3000)    
+
     this.el.sceneEl.addEventListener('click', (event) => {
       // if product not placed yet
-      if (document.getElementById('base').getAttribute('product-placed') === '0') {
+      if (baseElement.getAttribute('product-placed') === '0') {
         // Set pos of product according to reticle pointer
         baseElement.setAttribute('position', this.el.object3D.position);
+
+        // Set Tiny scale before making visible to prevent glitch
+        baseElement.setAttribute('scale', '0.001 0.001 0.001');
+
         // Make visible
         baseElement.object3D.visible = true;
 
         // Remove animation before adding to be safe
         baseElement.removeAttribute('animation');
 
-        // Scale Up pop animation
-        baseElement.setAttribute('animation', {
-          property: 'scale',
-          from: '0.001 0.001, 0.001',
-          to: '1 1 1',
-          easing: 'easeOutElastic',
-          dur: 1500,
-        });
-
         // Set the product-placed flag
-        document.getElementById('base').setAttribute('product-placed', '1');
+        baseElement.setAttribute('product-placed', '1');
 
         // Hide Reticle
         document.getElementById('reticle').object3D.visible = false;
 
         // Show dashboard UI
         dashboard.classList.remove('hide');
+
+        // Scale Up pop animation
+        baseElement.setAttribute('animation', {
+          property: 'scale',
+          from: '0.001 0.001 0.001',
+          to: '1 1 1',
+          easing: 'easeOutElastic',
+          dur: 1500,
+        });
       }
     });
-    
+
     resetButton.onclick = () => {
       // Hide the base
       baseElement.object3D.visible = false;
@@ -57,12 +66,13 @@ AFRAME.registerComponent('tap-place-cursor', {
       document.getElementById('reticle').object3D.visible = true;
 
       // Set the product-placed flag
-      document.getElementById('base').setAttribute('product-placed', '0');
+      baseElement.setAttribute('product-placed', '0');
 
       // Hide dashboard UI
       dashboard.classList.add('hide');
     }
   },
+
   tick() {
     // Raycast from camera to 'ground'
     this.raycaster.setFromCamera(this.rayOrigin, this.threeCamera)

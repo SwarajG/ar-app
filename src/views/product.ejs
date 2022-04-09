@@ -57,7 +57,7 @@
     </a-assets>
 
     <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
-    <a-camera id="camera" position="0 8 8" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
+    <a-camera id="camera" position="0 6 8" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
     </a-camera>
 
     <a-ring id="reticle" rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5"
@@ -85,7 +85,7 @@
       material="shader: shadow; transparent: true; opacity: 0.4">
     </a-box>
 
-    <a-entity id="base" visible="false" product-placed="0">
+    <a-entity id="base" visible="true" product-placed="0">
       <!-- An entity to elevate models' height above ground-->
       <a-entity position="0 0 0">
         <a-entity xrextras-one-finger-rotate xrextras-pinch-scale="min:0.5; max:3;">
