@@ -1,16 +1,21 @@
-<div class="radio-toolbar hide">
-  <% menuList.forEach(function(menu) { %>
-    <div class="radio-button">
-      <div>
-        <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" />
-        <label for="<%= menu.id %>">
-          <img class="icon" src="<%= menu.image %>">
-        </label>
+<div id="dashboard" class="dashboard-ui hide" >
+  <button type="button" id="reset-button" class="reset-btn">Reset</button>
+
+  <div class="radio-toolbar">
+    <% menuList.forEach(function(menu) { %>
+      <div class="radio-button">
+        <div>
+          <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" />
+          <label for="<%= menu.id %>">
+            <img class="icon" src="<%= menu.image %>">
+          </label>
+        </div>
+        <p class="radio-label">
+          <%= menu.name %>
+        </p>
       </div>
-      <p class="radio-label">
-        <%= menu.name %>
-      </p>
-    </div>
-    <% }); %>
-      <div class="radio-toolbar-wrapper"></div>
+      <% }); %>
+        <div class="radio-toolbar-wrapper"></div>
+  </div>
+
 </div>

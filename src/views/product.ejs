@@ -31,15 +31,16 @@
 
 <body>
   <div class="ui-container">
-      <!-- <%- include('../partials/menu', { menuList: data.menuList }) %> -->
+      <%- include('../partials/menu', { menuList: data.menuList }) %>
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients' ,
       className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
   </div>
-
-  <div id="reset-button" style="display: none; z-index: 10">
+  
+  <!-- Moved reset button to menu.ejs -->
+  <!-- <div id="reset-button" style="display: none; z-index: 10">
     <h2 style="font-size: 1.3em; text-align: center; font-family: monospace;">Reset</h2>
-  </div>
+  </div> -->
 
   <a-scene
     xrextras-gesture-detector

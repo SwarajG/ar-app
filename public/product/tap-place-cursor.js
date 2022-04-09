@@ -16,6 +16,7 @@ AFRAME.registerComponent('tap-place-cursor', {
 
     const baseElement = document.getElementById('base');
     const resetButton = document.getElementById('reset-button');
+    const dashboard = document.getElementById('dashboard');
 
     this.el.sceneEl.addEventListener('click', (event) => {
       // if product not placed yet
@@ -43,8 +44,8 @@ AFRAME.registerComponent('tap-place-cursor', {
         // Hide Reticle
         document.getElementById('reticle').object3D.visible = false;
 
-        // Show Reset Button
-        resetButton.style.display = 'block';
+        // Show dashboard UI
+        dashboard.classList.remove('hide');
       }
     });
     
@@ -58,8 +59,8 @@ AFRAME.registerComponent('tap-place-cursor', {
       // Set the product-placed flag
       document.getElementById('base').setAttribute('product-placed', '0');
 
-      // Hide Reset Button
-      resetButton.style.display = 'none';
+      // Hide dashboard UI
+      dashboard.classList.add('hide');
     }
   },
   tick() {
