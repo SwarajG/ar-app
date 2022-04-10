@@ -5,7 +5,7 @@ import path from 'path';
 import routes from './routes';
 
 const app = express();
-const HTTPS_PORT = 443;
+const HTTPS_PORT = process.env.PORT || 3000;
 // const HTTP_PORT = 8080;
 const privateKey = fs.readFileSync('key.pem');
 const certificate = fs.readFileSync('cert.pem');
