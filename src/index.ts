@@ -22,9 +22,9 @@ app.use(routes);
 
 const httpsServer = https.createServer(credentials, app);
 
-httpsServer.listen(HTTPS_PORT, () => {
-  console.log(`Application is running on port ${HTTPS_PORT}.`);
-});
+// httpsServer.listen(HTTPS_PORT, () => {
+//   console.log(`Application is running on port ${HTTPS_PORT}.`);
+// });
 
 // app.listen(HTTP_PORT, () => {
 //   console.log(`Application is running on port ${HTTP_PORT}.`);
