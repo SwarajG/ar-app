@@ -6,7 +6,7 @@ import routes from './routes';
 
 const app = express();
 const HTTPS_PORT = 3000;
-const HTTP_PORT = 80;
+const HTTP_PORT = 8080;
 const privateKey = fs.readFileSync('key.pem');
 const certificate = fs.readFileSync('cert.pem');
 const credentials = { key: privateKey, cert: certificate };
