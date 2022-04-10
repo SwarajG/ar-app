@@ -5,7 +5,8 @@ import path from 'path';
 import routes from './routes';
 
 const app = express();
-const port = 3000;
+const HTTPS_PORT = 443;
+const HTTP_PORT = 80;
 const privateKey = fs.readFileSync('key.pem');
 const certificate = fs.readFileSync('cert.pem');
 const credentials = { key: privateKey, cert: certificate };
@@ -20,8 +21,11 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(routes);
 
 const httpsServer = https.createServer(credentials, app);
-httpsServer.listen(port);
 
-// app.listen(port, () => {
-//   console.log(`Timezones by location application is running on port ${port}.`);
-// });
+httpsServer.listen(HTTPS_PORT, () => {
+  console.log(`Application is running on port ${HTTPS_PORT}.`);
+});
+
+app.listen(HTTP_PORT, () => {
+  console.log(`Application is running on port ${HTTP_PORT}.`);
+});
