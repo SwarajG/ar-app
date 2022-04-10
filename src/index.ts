@@ -5,8 +5,8 @@ import path from 'path';
 import routes from './routes';
 
 const app = express();
-const HTTPS_PORT = 3000;
-const HTTP_PORT = 8080;
+const HTTPS_PORT = 443;
+// const HTTP_PORT = 8080;
 const privateKey = fs.readFileSync('key.pem');
 const certificate = fs.readFileSync('cert.pem');
 const credentials = { key: privateKey, cert: certificate };
@@ -26,6 +26,6 @@ httpsServer.listen(HTTPS_PORT, () => {
   console.log(`Application is running on port ${HTTPS_PORT}.`);
 });
 
-app.listen(HTTP_PORT, () => {
-  console.log(`Application is running on port ${HTTP_PORT}.`);
-});
+// app.listen(HTTP_PORT, () => {
+//   console.log(`Application is running on port ${HTTP_PORT}.`);
+// });
