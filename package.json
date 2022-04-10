@@ -12,8 +12,8 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "build": "rm -rf ./build && tsc --build && npm copy-assets",
-    "start": "npm build && node build/index.js",
+    "build": "rm -rf ./build && tsc --build && npm run copy-assets",
+    "start": "npm run build && node build/index.js",
     "copy-assets": "ts-node tools/copyAssets"
   },
   "devDependencies": {
