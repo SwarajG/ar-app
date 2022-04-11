@@ -15,10 +15,9 @@
     "dev": "nodemon",
     "copy-assets": "ts-node tools/copyAssets",
     "start": "node build/index.js",
-    "postinstall": "tsc && mv -i -v public build/ && rm -v -rf src && npm run copy-assets",
+    "postinstall": "tsc && cp -R public build/ && npm run copy-assets",
     "watch-node": "nodemon build/index.js",
-    "watch-ts": "tsc -w",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+    "watch-ts": "tsc -w"
   },
   "devDependencies": {
     "@tsconfig/recommended": "1.0.1",

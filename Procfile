@@ -1,1 +1,1 @@
-web: node build/index.js
+cerave-web-ar: node build/index.js
