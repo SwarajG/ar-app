@@ -13,9 +13,14 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "build": "rm -rf ./build && tsc --build && npm run copy-assets",
-    "start": "npm run build && node build/index.js",
-    "copy-assets": "ts-node tools/copyAssets"
+    "build": "rm -rf ./build && npm install && tsc --build && npm run copy-assets",
+    "copy-assets": "ts-node tools/copyAssets",
+
+    "start": "node build/index.js",
+    "postinstall": "tsc && mv -i -v public build/ && rm -v -rf src",
+    "watch-node": "nodemon build/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "devDependencies": {
     "@tsconfig/recommended": "1.0.1",
