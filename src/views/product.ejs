@@ -25,6 +25,8 @@
   <script async
     src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM"></script>
   <script src="/product/tap-place-cursor.js"></script>
+  
+  <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
   <script>eruda.init();</script>
 </head>
@@ -43,7 +45,7 @@
     xrextras-loading 
     xrextras-runtime-error
     renderer="colorManagement: true" 
-    xrweb="scale: absolute">
+    xrweb>
 
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
@@ -77,13 +79,13 @@
     <a-light type="ambient" intensity="0.5"></a-light>
 
     <!-- Adding the cantap class allows the ground to be clicked -->
-    <a-box id="ground" scale="50 2 50" position="0 -1 0" class="cantap" shadow="receive: true"
+    <a-box id="ground" scale="1000 2 1000" position="0 -1 0" class="cantap" shadow="receive: true"
       material="shader: shadow; transparent: true; opacity: 0.4">
     </a-box>
 
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0">
       <!-- An entity to elevate models' height above ground-->
-      <a-entity position="0 0 0" scale="0.25 0.25 0.25">
+      <a-entity position="0 0 0" scale="1 1 1">
         <a-entity xrextras-one-finger-rotate xrextras-pinch-scale="min:0.5; max:3;">
           <a-entity id="bottle" gltf-model="#bottle-model" shadow="cast:true; receive:false;"></a-entity>
           <a-entity id="cap" gltf-model="#cap-model" shadow="cast:true; receive:false;"></a-entity>
