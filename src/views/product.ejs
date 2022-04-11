@@ -81,10 +81,16 @@
       </a-entity>
     </a-entity> -->
 
+    <!-- Reticle -->
     <a-entity id="reticle" tap-place-cursor>
-      <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
-        <a-text value="Place Here" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
-      </a-ring>
+      <!-- Reticle Aligner -->
+      <a-entity id="reticle-aligner" look-at="[camera]" rotation="0 0 0"></a-entity>
+
+      <a-entity id="reticle-group" align-to-camera>
+        <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
+          <a-text value="Place Here" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+        </a-ring>
+      </a-entity>
     </a-entity>
 
     <a-entity light="
@@ -117,8 +123,8 @@
 
         <!-- Hotspots Parent -->
         <!-- Hospot Aligner -->
-        <a-entity id="hotspot-aligner" look-at="[camera]"></a-entity>
-        <a-entity id="all-states" align-to-camera>
+        <a-entity id="hotspot-aligner" look-at="[camera]" rotation="0 0 0"></a-entity>
+        <a-entity id="all-states" align-to-camera xrextras-pinch-scale="min:0.5; max:3;">
           <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#4CC3D9"></a-box>
         </a-entity>
       </a-entity>
