@@ -1,5 +1,5 @@
 import express, { Router, Request, Response } from 'express';
-import { languageText } from '../../public/language';
+import { languageText } from './language';
 import { menuList } from '../const/product';
 import { data } from './__mock__/data';
 
@@ -13,7 +13,12 @@ router.get('/', (req: Request, res: Response) => {
 router.get('/product', (req: Request, res: Response) => {
   const { language = 'en' } = req.query;
   res.render('product', {
-    data: { menuList, language, languageText: languageText[language.toString()], productData: data },
+    data: {
+      menuList,
+      language,
+      languageText: languageText[language.toString()],
+      productData: data,
+    },
   });
 });
 
