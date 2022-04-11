@@ -1,7 +1,7 @@
 // Copyright (c) 2021 8th Wall, Inc.
 /* globals AFRAME */
 
-// Component that places trees where the ground is clicked
+// Component that places the product when the ground is clicked
 AFRAME.registerComponent('tap-place-cursor', {
   init() {
     this.raycaster = new THREE.Raycaster();

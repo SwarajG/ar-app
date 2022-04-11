@@ -25,55 +25,79 @@
   <script async
     src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM"></script>
   <script src="/product/tap-place-cursor.js"></script>
-  
-   <!-- Mobile Console -->
+  <script src="/product/align-to-camera.js"></script>
+
+  <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
   <script>eruda.init();</script>
+
+  <!-- Look At component -->
+  <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
 </head>
 
 <body>
   <div class="ui-container">
-      <%- include('../partials/menu', { menuList: data.menuList }) %>
+    <%- include('../partials/menu', { menuList: data.menuList }) %>
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients' ,
       className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
   </div>
-  
-  <a-scene
-    xrextras-gesture-detector
-    xrextras-almost-there 
-    xrextras-loading 
-    xrextras-runtime-error
-    renderer="colorManagement: true" 
-    xrweb>
+
+  <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
+    renderer="colorManagement: true" xrweb>
 
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
       <!-- 3D MODELS -->
-      <a-asset-item id="cap-model" src="/product/cap.glb"></a-asset-item>
-      <a-asset-item id="bottle-model" src="/product/bottle.glb"></a-asset-item>
+      <a-asset-item id="cap-model" src="/product/models/cap.glb"></a-asset-item>
+      <a-asset-item id="bottle-model" src="/product/models/bottle.glb"></a-asset-item>
+
+      <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
+      <a-asset-item id="close-icon-glb" src="/product/models/close-icon.glb"></a-asset-item>
+      <a-asset-item id="magnifying-glass-icon-glb" src="/product/models/magnifying-glass-icon.glb"></a-asset-item>
+
+      <!--DEFINING MIXINS-->
+      <!--Hotspot mixin for creating hotspot spheres-->
+      <a-mixin id="hotspot-target" scale="0 0 0" geometry="primitive: sphere; radius: 0.25"
+        material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot></a-mixin>
+
+      <!--Hotspot text-->
+      <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: white;"
+        position="0 -0.2 0.2" tap-hotspot></a-mixin>
     </a-assets>
 
     <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
     <a-camera id="camera" position="0 7 8" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
     </a-camera>
 
-    <a-ring id="reticle" rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5"
-      radius-outer="0.8" tap-place-cursor>
-      <a-text value="Place Here" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
-    </a-ring>
+    <!-- <a-entity id="reticle" tap-place-cursor>
+      <a-entity id="reticle-aligner" look-at="[camera]">
+        <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#ff0000"></a-box>
+      </a-entity>
+      <a-entity align-to-camera>
+        <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
+          <a-text value="Place Here" position="0 0 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+        </a-ring>
+      </a-entity>
+    </a-entity> -->
+
+    <a-entity id="reticle" tap-place-cursor>
+      <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
+        <a-text value="Place Here" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+      </a-ring>
+    </a-entity>
 
     <a-entity light="
-          type: directional;
-          intensity: 0.8;
-          castShadow: true;
-          shadowMapHeight:2048;
-          shadowMapWidth:2048;
-          shadowCameraTop: 20;
-          shadowCameraBottom: -20;
-          shadowCameraRight: 20;
-          shadowCameraLeft: -20;
-          target: #camera" xrextras-attach="target: camera; offset: 8 15 4" position="1 4.3 2.5" shadow>
+      type: directional;
+      intensity: 0.8;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraTop: 20;
+      shadowCameraBottom: -20;
+      shadowCameraRight: 20;
+      shadowCameraLeft: -20;
+      target: #camera" xrextras-attach="target: camera; offset: 8 15 4" position="1 4.3 2.5" shadow>
     </a-entity>
 
     <a-light type="ambient" intensity="0.5"></a-light>
@@ -92,7 +116,11 @@
         </a-entity>
 
         <!-- Hotspots Parent -->
-        <!-- Review hospot -->
+        <!-- Hospot Aligner -->
+        <a-entity id="hotspot-aligner" look-at="[camera]"></a-entity>
+        <a-entity id="all-states" align-to-camera>
+          <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#4CC3D9"></a-box>
+        </a-entity>
       </a-entity>
     </a-entity>
   </a-scene>
