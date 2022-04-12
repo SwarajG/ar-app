@@ -1,0 +1,34 @@
+.efficacy-modal {
+    padding: 15px;
+}
+
+.efficacy__content-container{
+    height: 310px;
+    /* overflow-y: auto; */
+}
+
+.efficacy-modal__title {
+    color: #0072ce;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    padding-bottom: 10px;
+}
+
+.efficacy-image{
+    /* margin-bottom: 10px; */
+}
+
+.efficacy-modal__close {
+    background-color: #f2f2f2;
+    color: #0072ce;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+    height: 38px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
