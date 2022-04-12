@@ -1,18 +1,51 @@
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DIN-Pro', sans-serif;
   box-sizing: border-box;
+  height: 100%;
 }
 
 select {
   display: none;
 }
 
+.logo{
+  width: 200px;
+  margin-bottom:20px;
+}
+
+.product-image{
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.product-name{
+  font-size: 24px;
+  line-height: 0;
+  color: #003057;
+}
+
+.variant{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 0;
+  text-transform: uppercase;
+  color: #003057;
+}
+
+.select-label{
+  color: #003057;
+  font-size: 16px;
+}
+
+
 .container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .data-container {
@@ -29,15 +62,17 @@ select {
 }
 
 .submit-button {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 .submit {
+  width: 200px;
   border: none;
-  border-radius: 5px;
-  padding: 12px 32px;
-  background-color: #194a50;
+  border-radius: 0px;
+  padding: 16px 0px;
+  background-color: #0072CE;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
+  text-transform: uppercase;
 }
