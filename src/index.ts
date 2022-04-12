@@ -16,14 +16,12 @@ const credentials = { key: privateKey, cert: certificate };
 app.use(express.static('public'));
 
 // Set Templating engine
-// console.log(path.join(__dirname, '../src/views/'));
-// app.set('views', path.join(__dirname, 'views'));
 app.set('views', path.join(__dirname, '../src/views/'));
 app.set('view engine', 'ejs');
 
 app.use(routes);
 
-console.log(process.env.NODE_ENV);
+console.log(process.env.NODE_ENV, process.env.PORT);
 
 if (process.env.NODE_ENV === 'production') {
   const httpServer = http.createServer(app);

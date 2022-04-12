@@ -8,18 +8,14 @@
   <title>
     CeraVe AR app
   </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/root.css">
-  <link rel="stylesheet" href="/product/index.css">
-  <link rel="stylesheet" href="/product/menu.css">
-  <link rel="stylesheet" href="/product/modal.css">
-  <link rel="stylesheet" href="/product/review-modal.css">
-  <link rel="stylesheet" href="/product/ingredients-modal.css">
-  <link rel="stylesheet" href="/product/ceramides-modal.css">
+  <link rel="stylesheet" href="/product/css/menu.css">
+  <link rel="stylesheet" href="/product/css/modal.css">
+  <link rel="stylesheet" href="/product/css/review-modal.css">
+  <link rel="stylesheet" href="/product/css/ingredients-modal.css">
+  <link rel="stylesheet" href="/product/css/ceramides-modal.css">
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
@@ -50,8 +46,8 @@
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
       <!-- 3D MODELS -->
-      <a-asset-item id="cap-model" src="/product/cap.glb"></a-asset-item>
-      <a-asset-item id="bottle-model" src="/product/bottle.glb"></a-asset-item>
+      <a-asset-item id="cap-model" src="/product/models/cap.glb"></a-asset-item>
+      <a-asset-item id="bottle-model" src="/product/models/bottle.glb"></a-asset-item>
     </a-assets>
 
     <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
@@ -96,7 +92,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="/product/index.js"></script>
+  <script src="/product/js/index.js"></script>
 </body>
 
 </html>
