@@ -1,1 +1,1 @@
-cerave-web-ar: yarn start
+cerave-web-ar: node build/index.js
