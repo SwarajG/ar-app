@@ -1,7 +1,7 @@
 // Copyright (c) 2021 8th Wall, Inc.
 /* globals AFRAME */
 
-// Component that places trees where the ground is clicked
+// Component that places the product when the ground is clicked
 AFRAME.registerComponent('tap-place-cursor', {
   init() {
     this.raycaster = new THREE.Raycaster();
@@ -21,16 +21,13 @@ AFRAME.registerComponent('tap-place-cursor', {
     // Hiding the baseElement to ensure modal loads with animation first time
     setTimeout(() => {
       baseElement.object3D.visible = false;
-    }, 3000)    
+    }, 1000);
 
     this.el.sceneEl.addEventListener('click', (event) => {
       // if product not placed yet
       if (baseElement.getAttribute('product-placed') === '0') {
         // Set pos of product according to reticle pointer
         baseElement.setAttribute('position', this.el.object3D.position);
-
-        // Set Tiny scale before making visible to prevent glitch
-        baseElement.setAttribute('scale', '0.001 0.001 0.001');
 
         // Make visible
         baseElement.object3D.visible = true;
@@ -51,7 +48,7 @@ AFRAME.registerComponent('tap-place-cursor', {
         baseElement.setAttribute('animation', {
           property: 'scale',
           from: '0.001 0.001 0.001',
-          to: '1 1 1',
+          to: '1, 1, 1',
           easing: 'easeOutElastic',
           dur: 1500,
         });

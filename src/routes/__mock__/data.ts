@@ -21,6 +21,24 @@ export const data = {
       rating: 3.9,
       review: 'I have acne prone skin. Very sensitive. This moisturizer is good even for acne-types or oily. Use in the evening.',
     },
+    {
+      id: '2',
+      head: 'Review 2- The Best Moisturizer I have ever used',
+      name: 'R2 - BRAVEN986',
+      age: 'Female - 25 to 34',
+      location: 'PROVIDENCE, RI',
+      rating: 3.9,
+      review: 'R2 - I have acne prone skin. Very sensitive. This moisturizer is good even for acne-types or oily. Use in the evening.',
+    },
+    {
+      id: '3',
+      head: 'Review 3- The Best Moisturizer I have ever used',
+      name: 'R3 - BRAVEN986',
+      age: 'Female - 25 to 34',
+      location: 'PROVIDENCE, RI',
+      rating: 3.9,
+      review: 'R3 - I have acne prone skin. Very sensitive. This moisturizer is good even for acne-types or oily. Use in the evening.',
+    },
   ],
   ceramides: [
     {
