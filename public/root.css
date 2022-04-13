@@ -1,6 +1,21 @@
 @font-face {
   font-family: DINPro;
-  src: url(./DINPro-Regular.otf);
+  src: url(./fonts/DINPro-Medium.otf);
+}
+
+@font-face {
+  font-family: DINPro-bold;
+  src: url(./fonts/DINPro-bold.otf);
+}
+
+@font-face {
+  font-family: DINPro-condBold;
+  src: url(./fonts/DINPro-CondBold.otf);
+}
+
+@font-face {
+  font-family: DINPro-light;
+  src: url(./fonts/DINPro-Light.otf);
 }
 
 html,

@@ -1,4 +1,4 @@
-.ingredients-modal {
+.ceramides-modal {
     padding: 15px;
 }
 
@@ -7,34 +7,33 @@
     overflow-y: auto;
 }
 
-.ingredients-modal__title {
+.ceramides-modal__title {
     color: #0072ce;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     padding-bottom: 10px;
     border-bottom: 1px solid #BDBDBD;
 }
 
-.ingredients-modal__list {
+.ceramides-modal__body1 {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0072ce;
+}
+
+.ceramides-modal__body2 {
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #0072ce;
+    color: #003057;
 }
 
-.ingredients-modal__disclaimer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #0072ce;
-}
-
-.ingredients-modal__close {
+.ceramides-modal__close {
     background-color: #f2f2f2;
     color: #0072ce;
     font-weight: 700;
@@ -44,5 +43,6 @@
     width: 100%;
     height: 38px;
     cursor: pointer;
+    margin-top: 15px;
   }
   

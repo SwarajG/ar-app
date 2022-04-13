@@ -63,6 +63,9 @@ export const data = {
       description: 'These ceramides help restore your skins natural barrier, helping to keep moisture in and harmful elements out.',
     },
   ],
-  efficacy: '',
+  efficacy: {
+    head: 'Efficacy',
+    url: 'https://via.placeholder.com/310',
+  },
   howToApply: '',
 };

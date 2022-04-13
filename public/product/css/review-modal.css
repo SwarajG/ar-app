@@ -42,9 +42,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #0072ce;
+  font-size: 16px;
+  line-height: 20px;
+  color: #003057;
+  height: 185px;
+  overflow-y: auto;
 }
 
 .review-modal__close {
@@ -57,4 +59,5 @@
   width: 100%;
   height: 38px;
   cursor: pointer;
+  margin-top: 15px;
 }

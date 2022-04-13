@@ -20,16 +20,20 @@
 
 .modal.modal-review {
   width: 340px;
-  height: 300px;
-  max-height: 410px;
+  height: 430px;
 }
 
 .modal.modal-ingredients {
   width: 340px;
-  max-height: 410px;
+  height: 430px;
 }
 
 .modal.modal-ceramides {
   width: 340px;
-  max-height: 410px;
+  height: 430px;
+}
+
+.modal.modal-efficacy {
+  width: 340px;
+  height: 430px;
 }

@@ -8,18 +8,15 @@
   <title>
     CeraVe AR app
   </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/root.css">
-  <link rel="stylesheet" href="/product/index.css">
-  <link rel="stylesheet" href="/product/menu.css">
-  <link rel="stylesheet" href="/product/modal.css">
-  <link rel="stylesheet" href="/product/review-modal.css">
-  <link rel="stylesheet" href="/product/ingredients-modal.css">
-  <link rel="stylesheet" href="/product/ceramides-modal.css">
+  <link rel="stylesheet" href="/product/css/menu.css">
+  <link rel="stylesheet" href="/product/css/modal.css">
+  <link rel="stylesheet" href="/product/css/review-modal.css">
+  <link rel="stylesheet" href="/product/css/ingredients-modal.css">
+  <link rel="stylesheet" href="/product/css/ceramides-modal.css">
+  <link rel="stylesheet" href="/product/css/efficacy-modal.css">
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
@@ -38,18 +35,11 @@
 
 <body>
   <div class="ui-container">
-    <%- include('../partials/menu', { menuList: data.menuList }) %>
-    
-    <% for(let review_idx = 1; review_idx <= data.productData.reviews.length; review_idx++) { %>
-    <%- include('../partials/modal', {id: review_idx, languageText: data.languageText, type: 'review', className: 'modal-review',
-    review: data.productData.reviews }) %>
-    <% } %>
-
-    <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients',
-    ingredients: data.productData.ingredients }) %>
-    
-    <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides',
-    ceramides: data.productData.ceramides }) %>
+      <%- include('../partials/menu', { menuList: data.menuList }) %>
+      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %> -->
   </div>
 
   <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
@@ -236,7 +226,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="/product/index.js"></script>
+  <script src="/product/js/index.js"></script>
 </body>
 
 </html>
