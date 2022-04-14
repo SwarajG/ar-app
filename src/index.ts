@@ -21,8 +21,6 @@ app.set('view engine', 'ejs');
 
 app.use(routes);
 
-console.log(process.env.NODE_ENV, process.env.PORT);
-
 if (process.env.NODE_ENV === 'production') {
   const httpServer = http.createServer(app);
   httpServer.listen(HTTP_PORT, () => {

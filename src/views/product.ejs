@@ -35,11 +35,11 @@
 
 <body>
   <div class="ui-container">
-      <%- include('../partials/menu', { menuList: data.menuList }) %>
-      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
-      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
-      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %> -->
-      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %> -->
+      <%- include('../partials/menu', { menuList: menuList }) %>
+      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'review', className: 'modal-review', review: productData.reviews[0] }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: roductData.ingredients }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: roductData.ceramides }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: productData.efficacy }) %> -->
   </div>
 
   <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
@@ -226,7 +226,8 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="/product/js/index.js"></script>
+  <!-- <script src="/product/js/index.js"></script> -->
+  <script src="<%= revManifest['product.js'] %>"></script>
 </body>
 
 </html>
