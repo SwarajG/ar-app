@@ -36,7 +36,7 @@
 <body>
   <div class="ui-container">
       <%- include('../partials/menu', { menuList: data.menuList }) %>
-      <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', review: data.productData.reviews[0] }) %> -->
+      <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', reviews: data.productData.reviews }) %>
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %> -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %> -->
@@ -60,7 +60,7 @@
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
       <a-mixin id="hotspot-target" scale="1 1 1" geometry="primitive: sphere; radius: 0.25"
-        material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" ></a-mixin>
+        material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot ></a-mixin>
 
       <!--Hotspot text-->
       <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: white;"

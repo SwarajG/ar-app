@@ -4,7 +4,7 @@ AFRAME.registerComponent('tap-hotspot', {
             console.log(this.el.getAttribute('id') + " clicked");
             
             let value = this.el.getAttribute('hotspot-value')            
-            let modalId = "review-id-" + value;
+            let modalId = "review-" + value;
             let className = this.el.getAttribute('class')
             
             // Hide all internal modals
