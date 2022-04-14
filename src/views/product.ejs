@@ -35,8 +35,13 @@
 
 <body>
   <div class="ui-container">
+      <!-- Dashboard UI partial -->
       <%- include('../partials/menu', { menuList: data.menuList }) %>
+      
+      <!-- Review Modal partial -->
       <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', reviews: data.productData.reviews }) %>
+      
+      <!-- Our Science partial -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %> -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %> -->
       <!-- <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %> -->
@@ -209,6 +214,48 @@
         <!-- Our Science State -->
         <a-entity id="our-science-state" rotation="0 90 0" visible="true">
           <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#00ff00"></a-box> -->
+
+          <!--Our Science Hotspot #1-->
+          <a-entity rotation="0 -24 0">
+            <a-entity position="0 0.5 1.5">
+              <a-entity id="ingredients-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
+                <!--dodecahedron inside sphere-->
+                <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
+
+                <!--Rating Text-->
+                <a-text value="Ingredients" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+              </a-entity>
+            </a-entity>
+          </a-entity>
+
+          <!--Our Science Hotspot #2-->
+          <a-entity rotation="0 0 0">
+            <a-entity position="0 0.5 1.5">
+              <a-entity id="ceramides-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
+                <!--dodecahedron inside sphere-->
+                <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
+
+                <!--Rating Text-->
+                <a-text value="Ceramides" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+              </a-entity>
+            </a-entity>
+          </a-entity>
+
+          <!--Our Science Hotspot #3-->
+          <a-entity rotation="0 24 0">
+            <a-entity position="0 0.5 1.5">
+              <a-entity id="efficacy-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
+                <!--dodecahedron inside sphere-->
+                <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
+
+                <!--Rating Text-->
+                <a-text value="Efficacy" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+              </a-entity>
+            </a-entity>
+          </a-entity>
         </a-entity>
 
         <!-- Texture State -->
