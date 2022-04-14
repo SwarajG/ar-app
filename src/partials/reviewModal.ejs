@@ -1,19 +1,21 @@
-<div id= "" class="review-modal hide">
-  <p class="review-modal__title"><%= review.head %></p>
-  <div class="review-modal__info">
-    <p class="review-modal__info-text"><%= review.name %></p>
-    <p class="review-modal__info-text"><%= review.location %></p>
-    <p class="review-modal__info-text"><%= review.age %></p>
+<% reviews.forEach(function(review) { %>
+  <div id="review-<%= review.id %>" class="review-modal hide">
+    <p class="review-modal__title"><%= review.head %></p>
+    <div class="review-modal__info">
+      <p class="review-modal__info-text"><%= review.name %></p>
+      <!-- <p class="review-modal__info-text"><%= review.location %></p> -->
+      <p class="review-modal__info-text"><%= review.age %></p>
+    </div>
+    <div class="review-modal__rating">
+      <% [...Array(Math.round(review.rating))].forEach(function(menu) { %>
+        <i class="fa fa-star" style="color: #0072CE"></i>
+        <% }); %>
+    </div>
+    <div class="review-modal__content">
+      <%= review.review %>
+    </div>
+    <!-- <div class="review-modal__close" onclick="closeModal()">
+      <%= languageText.closeButtonText %>
+    </div> -->
   </div>
-  <div class="review-modal__rating">
-    <% [...Array(Math.round(review.rating))].forEach(function(menu) { %>
-      <i class="fa fa-star" style="color: #0072CE"></i>
-      <% }); %>
-  </div>
-  <div class="review-modal__content">
-    <%= review.review %>
-  </div>
-  <div class="review-modal__close" onclick="closeModal()">
-    <%= languageText.closeButtonText %>
-  </div>
-</div>
+  <% }); %>
