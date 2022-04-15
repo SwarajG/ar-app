@@ -12,6 +12,9 @@
     <% if (type==='efficacy' ) { %>
       <%- include('../partials/efficacyModal', { languageText: languageText }) %>
           <% } %>
+    <% if (type==='howToApply' ) { %>
+        <%- include('../partials/howToApplyModal', { languageText: languageText }) %>
+            <% } %>
 
     <div class="modal__close" onclick="closeModal()">
       <%= languageText.closeButtonText %>
