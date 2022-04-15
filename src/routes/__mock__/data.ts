@@ -80,5 +80,8 @@ export const data = {
     head: 'Efficacy',
     url: 'https://via.placeholder.com/310',
   },
-  howToApply: '',
+  howToApply: {
+    head: 'How to Apply',
+    url: 'https://via.placeholder.com/310',
+  },
 };

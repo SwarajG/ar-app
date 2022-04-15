@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/product/css/ingredients-modal.css">
   <link rel="stylesheet" href="/product/css/ceramides-modal.css">
   <link rel="stylesheet" href="/product/css/efficacy-modal.css">
+  <link rel="stylesheet" href="/product/css/how-to-apply-modal.css">
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
@@ -45,6 +46,10 @@
       <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %>
       <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %>
       <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %>
+
+      <!-- Texture How to Apply modal partial -->
+      <%- include('../partials/modal', { languageText: data.languageText, type: 'howToApply', className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
+
   </div>
 
   <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
