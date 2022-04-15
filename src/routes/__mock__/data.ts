@@ -82,6 +82,6 @@ export const data = {
   },
   howToApply: {
     head: 'How to Apply',
-    url: 'https://via.placeholder.com/310',
+    url: 'https://www.youtube.com/embed/yptop_8_wqo',
   },
 };

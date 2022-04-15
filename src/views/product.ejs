@@ -116,11 +116,6 @@
 
     <!-- Base Element -->
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:3;">
-      <!-- Bi-circular mat as base -->
-      <!-- <a-circle color="#003057" radius="3" rotation="-90 0 0" xrextras-pinch-scale="min:0.5; max:3;" shadow="cast: true; receive: true">
-        <a-circle color="#0072ce" position="0 0 0.01" radius="1.75" shadow="cast: true; receive: true"></a-circle>
-      </a-circle> -->
-
       <!-- Podium -->
       <a-entity id="podium" gltf-model="#podium-model"
         align-to-camera 
@@ -137,12 +132,12 @@
       <a-entity id="hotspot-aligner" look-at="[camera]" rotation="0 0 0"></a-entity>
 
       <!-- Hotspots Parent -->
-      <a-entity id="all-states" align-to-camera>
+      <a-entity id="all-states" >
         <!-- Review State -->
         <a-entity id="review-state" visible="true">
           <!--Review Hotspot #1-->
           <a-entity rotation="0 -48 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
                 <!--Star inside sphere-->
                 <a-entity gltf-model="#star-glb"
@@ -157,7 +152,7 @@
 
           <!--Review Hotspot #2-->
           <a-entity rotation="0 -24 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
                 <!--Star inside sphere-->
                 <a-entity gltf-model="#star-glb"
@@ -172,7 +167,7 @@
 
           <!--Review Hotspot #3-->
           <a-entity rotation="0 0 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
                 <!--Star inside sphere-->
                 <a-entity gltf-model="#star-glb"
@@ -187,7 +182,7 @@
 
           <!--Review Hotspot #4-->
           <a-entity rotation="0 24 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="4">
                 <!--Star inside sphere-->
                 <a-entity gltf-model="#star-glb"
@@ -202,7 +197,7 @@
 
           <!--Review Hotspot #5-->
           <a-entity rotation="0 48 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="5">
                 <!--Star inside sphere-->
                 <a-entity gltf-model="#star-glb"
@@ -222,7 +217,7 @@
 
           <!--Our Science Hotspot #1-->
           <a-entity rotation="0 -24 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="ingredients-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
                 <!--dodecahedron inside sphere-->
                 <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
@@ -236,7 +231,7 @@
 
           <!--Our Science Hotspot #2-->
           <a-entity rotation="0 0 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="ceramides-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
                 <!--dodecahedron inside sphere-->
                 <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
@@ -250,7 +245,7 @@
 
           <!--Our Science Hotspot #3-->
           <a-entity rotation="0 24 0">
-            <a-entity position="0 0.5 1.5">
+            <a-entity position="0 1 1.5">
               <a-entity id="efficacy-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
                 <!--dodecahedron inside sphere-->
                 <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
@@ -265,7 +260,36 @@
 
         <!-- Texture State -->
         <a-entity id="texture-state" rotation="0 180 0" visible="true">
-          <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#0000ff"></a-box> -->
+          <!--Texture Hotspot #1-->
+          <a-entity rotation="0 -12 0">
+            <a-entity position="0 1 1.5">
+              <a-entity id="texture-hotspot-1" class="texture-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
+                
+                <!--Magnifying glass Icon inside sphere-->
+                <a-entity id="magnifying-glass-icon" gltf-model="#magnifying-glass-icon-glb" animation="property: rotation; to: 0 360 0; dur: 7000; dir: reverse; easing: linear; loop: true"></a-entity>
+                <!--Close Icon inside sphere-->
+                <a-entity id="close-icon" gltf-model="#close-icon-glb" visible="false" animation="property: rotation; to: 0 360 0; dur: 7000; dir: reverse; easing: linear; loop: true"></a-entity>
+                
+                <!--Hotspot Text--> 
+                <a-text id="texture-hotspot-1-text" value="Look inside" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+              </a-entity>
+            </a-entity>
+          </a-entity>
+
+          <!--Texture Hotspot #2-->
+          <a-entity rotation="0 12 0">
+            <a-entity position="0 1 1.5">
+              <a-entity id="texture-hotspot-2" class="texture-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
+                
+                <!--octahedron inside sphere-->
+                <a-entity geometry="primitive: octahedron; radius: 0.15;" material="color: #5BC2E7"
+                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
+    
+                <!--Hotspot Text-->
+                <a-text value="How to Apply" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+              </a-entity>
+            </a-entity>
+          </a-entity>
         </a-entity>
 
         <!-- Frequently BT State -->

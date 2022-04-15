@@ -20,6 +20,13 @@ AFRAME.registerComponent('tap-hotspot', {
                 // Show the Parent modal container
                 document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
             }
+            else if (className.includes('texture-hotspot')) {
+                let modalId = "texture-" + value;
+                console.log(modalId);
+                document.getElementById(modalId).classList.remove("hide");
+                // Show the Parent modal container
+                document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
+            }
         });
     }
 });
@@ -39,6 +46,11 @@ function hideAllModals() {
     let ourScience = document.getElementsByClassName("our-science-modal");
     for (let i = 0; i < ourScience.length; i++) {
         ourScience[i].classList.add("hide");
+    }
+
+    let textures = document.getElementsByClassName("texture-modal");
+    for (let i = 0; i < textures.length; i++) {
+        textures[i].classList.add("hide");
     }
 
     let modalContainer = document.getElementsByClassName("modal-container");
