@@ -3,6 +3,7 @@ AFRAME.registerComponent('tap-hotspot', {
         this.el.addEventListener('click', (event) => {
             let value = this.el.getAttribute('hotspot-value');
             let className = this.el.getAttribute('class');
+
             // Hide all internal modals
             hideAllModals();
 
@@ -10,27 +11,55 @@ AFRAME.registerComponent('tap-hotspot', {
             if (className.includes('review-hotspot')) {
                 let modalId = "review-" + value;
                 document.getElementById(modalId).classList.remove("hide");
+
                 // Show the Parent modal container
                 document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
             }
             else if (className.includes('our-science-hotspot')) {
                 let modalId = "our-science-" + value;
-                console.log(modalId);
                 document.getElementById(modalId).classList.remove("hide");
+
                 // Show the Parent modal container
                 document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
             }
             else if (className.includes('texture-hotspot')) {
-                let modalId = "texture-" + value;
-                console.log(modalId);
-                document.getElementById(modalId).classList.remove("hide");
-                // Show the Parent modal container
-                document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
+                if(value === '1'){
+                    let modalId = "texture-" + value;
+
+                    lookInside();
+                }
+                else if(value === '2'){
+                    let modalId = "texture-" + value;
+                    document.getElementById(modalId).classList.remove("hide");
+
+                    // Show the Parent modal container
+                    document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
+                }                
             }
         });
     }
 });
 
+function lookInside(){
+    console.log('look inside');
+    let product = document.getElementById('product');
+    
+    let containerMesh1 = product.getObject3D('mesh').getObjectByName('bottle')
+    let containerMesh2 = product.getObject3D('mesh').getObjectByName('cap')
+
+    containerMesh1.material.transparent = true
+    containerMesh2.material.transparent = true
+
+    // containerMesh1.material.alpha = 0.1
+    // containerMesh2.material.alpha = 0.1
+    // containerMesh3.material.alpha = 0.1
+    containerMesh1.traverse((node) => {
+        node.material.opacity = 0.1
+    })
+    containerMesh2.traverse((node) => {
+        node.material.opacity = 0.1
+    })
+}
 
 function closeModal() {
     // document.getElementById("the-modal").classList.add("hide");
