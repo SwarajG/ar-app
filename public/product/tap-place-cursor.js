@@ -21,6 +21,7 @@ AFRAME.registerComponent('tap-place-cursor', {
     // Hiding the baseElement to ensure modal loads with animation first time
     setTimeout(() => {
       baseElement.object3D.visible = false;
+        
     }, 1000);
 
     this.el.sceneEl.addEventListener('click', (event) => {
