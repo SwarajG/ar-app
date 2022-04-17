@@ -84,4 +84,11 @@ export const data = {
     head: 'How to Apply',
     url: 'https://www.youtube.com/embed/yptop_8_wqo',
   },
+  frequentlyBT: {
+    url1: '/images/frequently-bt/frequently-bt-p1.png',
+    url2: '/images/frequently-bt/frequently-bt-p2.png',
+    url3: '/images/frequently-bt/frequently-bt-p3.png',
+    product1url: 'https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion/',
+    product2url: 'https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser/',
+  }
 };

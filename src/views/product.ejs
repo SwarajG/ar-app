@@ -26,6 +26,7 @@
   <script src="/product/align-to-camera.js"></script>
   <script src="/product/tap-hotspot.js"></script>
   <script src="/product/handle-swipes.js"></script>
+  <script src="/product/new-tab.js"></script>
 
   <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -72,6 +73,15 @@
       <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
       <a-asset-item id="close-icon-glb" src="/product/models/close-icon.glb"></a-asset-item>
       <a-asset-item id="magnifying-glass-icon-glb" src="/product/models/magnifying-glass-icon.glb"></a-asset-item>
+
+      <!--Frequently BT State assets-->
+      <!-- <img id="frequently-bt-p1" src="/images/frequently-bt/frequently-bt-p1.png">
+      <img id="frequently-bt-p2" src="/images/frequently-bt/frequently-bt-p2.png">
+      <img id="frequently-bt-p3" src="/images/frequently-bt/frequently-bt-p3.png"> -->
+      <img id="frequently-bt-p1" src="<%= data.productData.frequentlyBT.url1 %>">
+      <img id="frequently-bt-p2" src="<%= data.productData.frequentlyBT.url2 %>">
+      <img id="frequently-bt-p3" src="<%= data.productData.frequentlyBT.url3 %>">  
+
 
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
@@ -313,7 +323,26 @@
 
           <!-- Frequently BT State -->
           <a-entity id="frequently-bt-state" rotation="0 270" visible="false">
-            <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#ffffff"></a-box> -->
+            <!--Frequently BT Panel #1-->
+            <a-entity><a-entity>
+              <a-curvedimage id="frequently-bt-panel-1" class="texture-hotspot cantap" rotation="0 -45 0" height="1" radius="1.5" 
+                color="white" position="0 3 0" scale="1 1 1" theta-length="90" src="#frequently-bt-p1">
+              </a-curvedimage>
+            </a-entity></a-entity>
+            
+            <!--Frequently BT Panel #2-->
+            <a-entity><a-entity>
+            <a-curvedimage id="frequently-bt-panel-2" class="texture-hotspot cantap" rotation="0 -45 0" height="1" radius="1.5" 
+              color="white" position="0 2 0" scale="1 1 1" theta-length="90" src="#frequently-bt-p2"
+              new-tab="url: <%= data.productData.frequentlyBT.product1url %>"></a-curvedimage>
+            </a-entity></a-entity>
+            
+            <!--Frequently BT Panel #3-->
+            <a-entity><a-entity>
+            <a-curvedimage id="frequently-bt-panel-3" class="texture-hotspot cantap" rotation="0 -45 0" height="1" radius="1.5" 
+              color="white" position="0 1 0" scale="1 1 1" theta-length="90" src="#frequently-bt-p3"
+              new-tab="url: <%= data.productData.frequentlyBT.product1url %> "></a-curvedimage>
+            </a-entity></a-entity>
           </a-entity>
         </a-entity>
       </a-entity>
