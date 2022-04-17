@@ -37,19 +37,24 @@
 
 <body>
   <div class="ui-container">
-      <!-- Dashboard UI partial -->
-      <%- include('../partials/menu', { menuList: data.menuList }) %>
-      
-      <!-- Review Modal partial -->
-      <%- include('../partials/modal', { languageText: data.languageText, type: 'review', className: 'modal-review', reviews: data.productData.reviews }) %>
-      
-      <!-- Our Science partial -->
-      <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %>
-      <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %>
-      <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %>
+    <!-- Dashboard UI partial -->
+    <%- include('../partials/menu', { menuList: data.menuList }) %>
 
-      <!-- Texture How to Apply modal partial -->
-      <%- include('../partials/modal', { languageText: data.languageText, type: 'howToApply', className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
+      <!-- Review Modal partial -->
+      <%- include('../partials/modal', { languageText: data.languageText, type: 'review' , className: 'modal-review' ,
+        reviews: data.productData.reviews }) %>
+
+        <!-- Our Science partial -->
+        <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients' ,
+          className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %>
+          <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides' ,
+            className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %>
+            <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy' ,
+              className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %>
+
+              <!-- Texture How to Apply modal partial -->
+              <%- include('../partials/modal', { languageText: data.languageText, type: 'howToApply' ,
+                className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
 
   </div>
 
@@ -71,7 +76,7 @@
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
       <a-mixin id="hotspot-target" scale="1 1 1" geometry="primitive: sphere; radius: 0.25"
-        material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot ></a-mixin>
+        material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot></a-mixin>
 
       <!--Hotspot text-->
       <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: white;"
@@ -118,186 +123,202 @@
     <!-- Base Element -->
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:3;">
       <!-- Podium -->
-      <a-entity id="podium" gltf-model="#podium-model"
-        align-to-camera 
-        shadow="cast:true; receive:true;">
+      <a-entity id="podium" gltf-model="#podium-model" align-to-camera shadow="cast:true; receive:true;">
       </a-entity>
 
       <!-- Product -->
-      <a-entity id="product" gltf-model="#hydrating-cleanser-model"
-        position="0 0.75 0" shadow="cast:true; receive:false;"
-        xrextras-one-finger-rotate>
+      <a-entity id="product" gltf-model="#hydrating-cleanser-model" position="0 0.75 0"
+        shadow="cast:true; receive:false;" xrextras-one-finger-rotate>
       </a-entity>
 
       <!-- Hospot Aligner -->
       <a-entity id="hotspot-aligner" look-at="[camera]" rotation="0 0 0"></a-entity>
 
-      <!-- Hotspots Parent -->
-      <a-entity id="all-states" >
-        <!-- Review State -->
-        <a-entity id="review-state" visible="true">
-          <!--Review Hotspot #1-->
-          <a-entity rotation="0 -48 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
-                <!--Star inside sphere-->
-                <a-entity gltf-model="#star-glb"
-                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+      <!-- All States Aligner -->
+      <a-entity id="all-states-aligner" align-to-camera>
+        <!-- Hotspots Parent -->
+        <a-entity id="all-states">
+          <!-- Review State -->
+          <a-entity id="review-state" visible="true">
+            <!--Review Hotspot #1-->
+            <a-entity rotation="0 -48 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
+                  <!--Star inside sphere-->
+                  <a-entity gltf-model="#star-glb"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="4.5" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
                 </a-entity>
-
-                <!--Rating Text-->
-                <a-text value="4.5" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
               </a-entity>
             </a-entity>
-          </a-entity>
 
-          <!--Review Hotspot #2-->
-          <a-entity rotation="0 -24 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
-                <!--Star inside sphere-->
-                <a-entity gltf-model="#star-glb"
-                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+            <!--Review Hotspot #2-->
+            <a-entity rotation="0 -24 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
+                  <!--Star inside sphere-->
+                  <a-entity gltf-model="#star-glb"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="4.7" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
                 </a-entity>
-
-                <!--Rating Text-->
-                <a-text value="4.7" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
               </a-entity>
             </a-entity>
-          </a-entity>
 
-          <!--Review Hotspot #3-->
-          <a-entity rotation="0 0 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
-                <!--Star inside sphere-->
-                <a-entity gltf-model="#star-glb"
-                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+            <!--Review Hotspot #3-->
+            <a-entity rotation="0 0 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
+                  <!--Star inside sphere-->
+                  <a-entity gltf-model="#star-glb"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="4.8" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
                 </a-entity>
-
-                <!--Rating Text-->
-                <a-text value="4.8" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
               </a-entity>
             </a-entity>
-          </a-entity>
 
-          <!--Review Hotspot #4-->
-          <a-entity rotation="0 24 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="4">
-                <!--Star inside sphere-->
-                <a-entity gltf-model="#star-glb"
-                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+            <!--Review Hotspot #4-->
+            <a-entity rotation="0 24 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="4">
+                  <!--Star inside sphere-->
+                  <a-entity gltf-model="#star-glb"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="5" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="4"></a-text>
                 </a-entity>
-
-                <!--Rating Text-->
-                <a-text value="5" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="4"></a-text>
               </a-entity>
             </a-entity>
-          </a-entity>
 
-          <!--Review Hotspot #5-->
-          <a-entity rotation="0 48 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="5">
-                <!--Star inside sphere-->
-                <a-entity gltf-model="#star-glb"
-                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+            <!--Review Hotspot #5-->
+            <a-entity rotation="0 48 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="5">
+                  <!--Star inside sphere-->
+                  <a-entity gltf-model="#star-glb"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="4.9" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
                 </a-entity>
-
-                <!--Rating Text-->
-                <a-text value="4.9" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
-              </a-entity>
-            </a-entity>
-          </a-entity>
-        </a-entity>
-
-        <!-- Our Science State -->
-        <a-entity id="our-science-state" rotation="0 90 0" visible="false">
-          <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#00ff00"></a-box> -->
-
-          <!--Our Science Hotspot #1-->
-          <a-entity rotation="0 -24 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="ingredients-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
-                <!--dodecahedron inside sphere-->
-                <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
-                animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
-
-                <!--Rating Text-->
-                <a-text value="Ingredients" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
               </a-entity>
             </a-entity>
           </a-entity>
 
-          <!--Our Science Hotspot #2-->
-          <a-entity rotation="0 0 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="ceramides-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
-                <!--dodecahedron inside sphere-->
-                <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
-                animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
+          <!-- Our Science State -->
+          <a-entity id="our-science-state" rotation="0 90 0" visible="false">
+            <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#00ff00"></a-box> -->
 
-                <!--Rating Text-->
-                <a-text value="Ceramides" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+            <!--Our Science Hotspot #1-->
+            <a-entity rotation="0 -24 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="ingredients-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target"
+                  hotspot-value="1">
+                  <!--dodecahedron inside sphere-->
+                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="Ingredients" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+                </a-entity>
+              </a-entity>
+            </a-entity>
+
+            <!--Our Science Hotspot #2-->
+            <a-entity rotation="0 0 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="ceramides-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target"
+                  hotspot-value="2">
+                  <!--dodecahedron inside sphere-->
+                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="Ceramides" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                </a-entity>
+              </a-entity>
+            </a-entity>
+
+            <!--Our Science Hotspot #3-->
+            <a-entity rotation="0 24 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="efficacy-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target"
+                  hotspot-value="3">
+                  <!--dodecahedron inside sphere-->
+                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Rating Text-->
+                  <a-text value="Efficacy" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+                </a-entity>
               </a-entity>
             </a-entity>
           </a-entity>
 
-          <!--Our Science Hotspot #3-->
-          <a-entity rotation="0 24 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="efficacy-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
-                <!--dodecahedron inside sphere-->
-                <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
-                animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
+          <!-- Texture State -->
+          <a-entity id="texture-state" rotation="0 180 0" visible="false">
+            <!--Texture Hotspot #1-->
+            <a-entity rotation="0 -12 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="texture-hotspot-1" class="texture-hotspot cantap" mixin="hotspot-target"
+                  hotspot-value="1">
 
-                <!--Rating Text-->
-                <a-text value="Efficacy" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+                  <!--Magnifying glass Icon inside sphere-->
+                  <a-entity id="magnifying-glass-icon" gltf-model="#magnifying-glass-icon-glb"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: reverse; easing: linear; loop: true">
+                  </a-entity>
+                  <!--Close Icon inside sphere-->
+                  <a-entity id="close-icon" gltf-model="#close-icon-glb" visible="false"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: reverse; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Hotspot Text-->
+                  <a-text id="texture-hotspot-1-text" value="Look inside" mixin="hotspot-text" position="0 -0.2 0.2"
+                    hotspot-value="1"></a-text>
+                </a-entity>
+              </a-entity>
+            </a-entity>
+
+            <!--Texture Hotspot #2-->
+            <a-entity rotation="0 12 0">
+              <a-entity position="0 1 1.5">
+                <a-entity id="texture-hotspot-2" class="texture-hotspot cantap" mixin="hotspot-target"
+                  hotspot-value="2">
+
+                  <!--octahedron inside sphere-->
+                  <a-entity geometry="primitive: octahedron; radius: 0.15;" material="color: #5BC2E7"
+                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
+                  </a-entity>
+
+                  <!--Hotspot Text-->
+                  <a-text value="How to Apply" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                </a-entity>
               </a-entity>
             </a-entity>
           </a-entity>
-        </a-entity>
 
-        <!-- Texture State -->
-        <a-entity id="texture-state" rotation="0 180 0" visible="false">
-          <!--Texture Hotspot #1-->
-          <a-entity rotation="0 -12 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="texture-hotspot-1" class="texture-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
-                
-                <!--Magnifying glass Icon inside sphere-->
-                <a-entity id="magnifying-glass-icon" gltf-model="#magnifying-glass-icon-glb" animation="property: rotation; to: 0 360 0; dur: 7000; dir: reverse; easing: linear; loop: true"></a-entity>
-                <!--Close Icon inside sphere-->
-                <a-entity id="close-icon" gltf-model="#close-icon-glb" visible="false" animation="property: rotation; to: 0 360 0; dur: 7000; dir: reverse; easing: linear; loop: true"></a-entity>
-                
-                <!--Hotspot Text--> 
-                <a-text id="texture-hotspot-1-text" value="Look inside" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
-              </a-entity>
-            </a-entity>
+          <!-- Frequently BT State -->
+          <a-entity id="frequently-bt-state" rotation="0 270" visible="false">
+            <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#ffffff"></a-box> -->
           </a-entity>
-
-          <!--Texture Hotspot #2-->
-          <a-entity rotation="0 12 0">
-            <a-entity position="0 1 1.5">
-              <a-entity id="texture-hotspot-2" class="texture-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
-                
-                <!--octahedron inside sphere-->
-                <a-entity geometry="primitive: octahedron; radius: 0.15;" material="color: #5BC2E7"
-                  animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true"></a-entity>
-    
-                <!--Hotspot Text-->
-                <a-text value="How to Apply" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
-              </a-entity>
-            </a-entity>
-          </a-entity>
-        </a-entity>
-
-        <!-- Frequently BT State -->
-        <a-entity id="frequently-bt-state" rotation="0 270" visible="false">
-          <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#ffffff"></a-box> -->
         </a-entity>
       </a-entity>
+
+
     </a-entity>
   </a-scene>
 
