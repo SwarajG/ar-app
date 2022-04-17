@@ -1,26 +1,26 @@
 export const menuList = [
   {
-    id: 'review',
+    id: 'radio-review',
     name: 'Reviews',
-    value: 'review',
+    value: '0',
     image: '../images/reviews-icon.png',
   },
   {
-    id: 'our-science',
+    id: 'radio-our-science',
     name: 'Our Science',
-    value: 'our-science',
+    value: '1',
     image: '../images/our-science-icon.png',
   },
   {
-    id: 'texture',
+    id: 'radio-texture',
     name: 'Texture',
-    value: 'texture',
+    value: '2',
     image: '../images/texture-icon.png',
   },
   {
-    id: 'frequentlyBT',
+    id: 'radio-frequently-bt',
     name: 'Frequently Bought Together',
-    value: 'frequentlyBT',
+    value: '3',
     image: '../images/frequently-bt-icon.png',
   },
 ];

@@ -25,6 +25,7 @@
   <script src="/product/tap-place-cursor.js"></script>
   <script src="/product/align-to-camera.js"></script>
   <script src="/product/tap-hotspot.js"></script>
+  <script src="/product/handle-swipes.js"></script>
 
   <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -53,7 +54,7 @@
   </div>
 
   <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
-    renderer="colorManagement: true" xrweb>
+    renderer="colorManagement: true" xrweb handle-swipes swipeEnabled="0" dasboardTapEnabled="1">
 
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
@@ -212,7 +213,7 @@
         </a-entity>
 
         <!-- Our Science State -->
-        <a-entity id="our-science-state" rotation="0 90 0" visible="true">
+        <a-entity id="our-science-state" rotation="0 90 0" visible="false">
           <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#00ff00"></a-box> -->
 
           <!--Our Science Hotspot #1-->
@@ -259,7 +260,7 @@
         </a-entity>
 
         <!-- Texture State -->
-        <a-entity id="texture-state" rotation="0 180 0" visible="true">
+        <a-entity id="texture-state" rotation="0 180 0" visible="false">
           <!--Texture Hotspot #1-->
           <a-entity rotation="0 -12 0">
             <a-entity position="0 1 1.5">
@@ -293,7 +294,7 @@
         </a-entity>
 
         <!-- Frequently BT State -->
-        <a-entity id="frequently-bt-state" rotation="0 270" visible="true">
+        <a-entity id="frequently-bt-state" rotation="0 270" visible="false">
           <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#ffffff"></a-box> -->
         </a-entity>
       </a-entity>

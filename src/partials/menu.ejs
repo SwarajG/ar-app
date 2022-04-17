@@ -5,7 +5,7 @@
     <% menuList.forEach(function(menu) { %>
       <div class="radio-button">
         <div>
-          <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" />
+          <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" onclick="switchDashboard(this)" />
           <label for="<%= menu.id %>">
             <img class="icon" src="<%= menu.image %>">
           </label>
