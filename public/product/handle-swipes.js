@@ -11,7 +11,6 @@ const dashboardRadios = ['radio-review', 'radio-our-science', 'radio-texture', '
 window.rotY = 0
 
 // Swipe Lock & Tap Lock
-//let swipeEnabled = '1'
 let dasboardTapEnabled = '1'
 
 // State vars
