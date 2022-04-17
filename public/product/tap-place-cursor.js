@@ -24,6 +24,7 @@ AFRAME.registerComponent('tap-place-cursor', {
         
     }, 1000);
 
+    // Tap Handler
     this.el.sceneEl.addEventListener('click', (event) => {
       // if product not placed yet
       if (baseElement.getAttribute('product-placed') === '0') {
@@ -56,7 +57,11 @@ AFRAME.registerComponent('tap-place-cursor', {
       }
     });
 
-    resetButton.onclick = () => {
+    resetButton.onclick = ResetProduct;
+
+    // Resets product - hides it and the dashboard; 
+    // Resets all states to present review state
+    function ResetProduct(){
       // Hide the base
       baseElement.object3D.visible = false;
 
@@ -68,19 +73,35 @@ AFRAME.registerComponent('tap-place-cursor', {
 
       // Hide dashboard UI
       dashboard.classList.add('hide');
+
+      // Reset All States
+      ResetAllStates();
+
+      function ResetAllStates(){
+        prevStateVal = currentStateVal;
+        currentStateVal = 0;
+
+        const prevState = document.getElementById(states[prevStateVal]);
+        const nextState = document.getElementById(states[currentStateVal]);
+
+        allStates.setAttribute('animation', `property: rotation; to: 0, ${window.rotY + (90 * (prevStateVal - currentStateVal))}, 0; dur: 1000`);
+        window.rotY += (90 * (prevStateVal - currentStateVal));
+
+        swipeHotspots(prevState, nextState);
+      }
     }
   },
 
   tick() {
     // Raycast from camera to 'ground'
-    this.raycaster.setFromCamera(this.rayOrigin, this.threeCamera)
-    const intersects = this.raycaster.intersectObject(this.ground.object3D, true)
+    this.raycaster.setFromCamera(this.rayOrigin, this.threeCamera);
+    const intersects = this.raycaster.intersectObject(this.ground.object3D, true);
     if (intersects.length > 0) {
-      const [intersect] = intersects
-      this.cursorLocation = intersect.point
+      const [intersect] = intersects;
+      this.cursorLocation = intersect.point;
     }
-    this.el.object3D.position.y = 0.1
-    this.el.object3D.position.lerp(this.cursorLocation, 0.4)
-    this.el.object3D.rotation.y = this.threeCamera.rotation.y
+    this.el.object3D.position.y = 0.1;
+    this.el.object3D.position.lerp(this.cursorLocation, 0.4);
+    this.el.object3D.rotation.y = this.threeCamera.rotation.y;
   },
 });

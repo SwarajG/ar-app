@@ -33,8 +33,14 @@ AFRAME.registerComponent('tap-hotspot', {
 
 
 function closeModal() {
-    // document.getElementById("the-modal").classList.add("hide");
     hideAllModals();
+
+    // Stopping video in How To Apply modal
+    // (Will stop any video in all iframes)
+    $("iframe").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src', src);  
+    });
 }
 
 function hideAllModals() {
