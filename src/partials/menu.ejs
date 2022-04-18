@@ -1,5 +1,5 @@
 <div id="dashboard" class="dashboard-ui hide" >
-  <button type="button" id="reset-button" class="reset-btn">Reset</button>
+  <button type="button" id="reset-button" class="reset-btn"><img class="icon" src="/images/reset-icon.png"></i></button>
 
   <div class="radio-toolbar">
     <% menuList.forEach(function(menu) { %>
@@ -10,12 +10,10 @@
             <img class="icon" src="<%= menu.image %>">
           </label>
         </div>
-        <p class="radio-label">
-          <%= menu.name %>
-        </p>
+        <p class="radio-label"><%= menu.name %></p>
       </div>
-      <% }); %>
-        <div class="radio-toolbar-wrapper"></div>
+    <% }); %>
+    <div class="radio-toolbar-wrapper"></div>
   </div>
 
 </div>
