@@ -1,5 +1,10 @@
 @font-face {
   font-family: DINPro;
+  src: url(./fonts/DINPro-Regular.otf);
+}
+
+@font-face {
+  font-family: DINPro-medium;
   src: url(./fonts/DINPro-Medium.otf);
 }
 

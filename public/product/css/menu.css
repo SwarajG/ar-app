@@ -1,8 +1,14 @@
+:root{
+  --pad: 13px;
+  --iconSize: 24px;
+  
+}
 .dashboard-ui{
   position: relative;
   width: 100%;
   height: 100% 
 }
+
 
 .reset-btn {
   position: absolute;
@@ -13,15 +19,12 @@
   margin-top: 10px;
   margin-right: 10px;
   padding: 0;
-  background-color: #F2F2F2;
-  text-align: center;
+  background: #4b4b4b;
+  box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
   color: #0072ce;
   border-radius: 50%;
   z-index:100;
-  border: solid 2px;
-  border-color: #0072ce;
-  font-size: 12px;
-  font-weight: bold;
+  border: transparent;
 }
 
 
@@ -48,34 +51,43 @@
   border-radius: 25px;
   margin: 0 12px 0 12px;
   border: none;
-  background: #4f4f4f;
+  /* background: #4f4f4f; */
+  background: #4b4b4b;
   box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
   cursor: pointer;
 }
 
-.radio-toolbar input[type='radio']:checked + label {
+.radio-toolbar input[type='radio']:checked + label{
   border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
   margin: 0 12px 0 12px;
   background: #006ac0;
+  color: #0072CE;
   box-shadow: inset 2px 2px 4px rgba(50, 50, 50, 0.5);
+  --pad: 15px;
+  --iconSize: 30px;
+  --back: #0072CE;
 }
 
 .icon {
   position: relative;
-  padding: 13px;
+  width: var(--iconSize);
+  height: var(--iconSize);
+  padding: var(--pad);
 }
 
 .radio-label {
   text-align: center;
-  color: #fafafa;
-  font-size: 10px;
-  width: 80px;
+  font-family: DINPro;
+  color: #fff;
+  font-size: 12px;
+  width: 90px; /*reconfigure to 80px after the label frequently bought together is changed*/
   margin: 5px 0 0 0;
   height: 24px;
   cursor: pointer;
+  background: var(--back);
 }
 
 .dashboard-back {
@@ -99,9 +111,9 @@
 .radio-toolbar-wrapper {
   position: absolute;
   bottom: 0;
-  background: #4f4f4f;
+  background: #4040409e;
   width: 100%;
-  height: 60px;
-  border-radius: 4px;
+  height: 70px;
+  border-radius: 0px;
   top: 25px;
 }
