@@ -1,15 +1,11 @@
 const path = require('path');
-const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const isDevelopment = process.env.NODE_ENV !== 'production';
-// console.log('isProduction: ', isProduction);
 
 module.exports = {
   entry: {
     dashboard: ['./public/dashboard/index.js'],
-    // dashboardCss: ['./public/dashboard/index.scss'],
     product: ['./public/product/js/index.js'],
   },
   output: {
@@ -23,21 +19,6 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-        ],
-      },
-    ],
   },
   plugins: [
     new WebpackManifestPlugin({

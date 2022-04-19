@@ -11,12 +11,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/root.css">
-  <link rel="stylesheet" href="/product/css/menu.css">
-  <link rel="stylesheet" href="/product/css/modal.css">
-  <link rel="stylesheet" href="/product/css/review-modal.css">
-  <link rel="stylesheet" href="/product/css/ingredients-modal.css">
-  <link rel="stylesheet" href="/product/css/ceramides-modal.css">
-  <link rel="stylesheet" href="/product/css/efficacy-modal.css">
+  <link rel="stylesheet" href="/assets/css/<%= revManifest['product/css/index.scss'] %>">
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
@@ -37,8 +32,8 @@
   <div class="ui-container">
       <%- include('../partials/menu', { menuList: menuList }) %>
       <!-- <%- include('../partials/modal', { languageText: languageText, type: 'review', className: 'modal-review', review: productData.reviews[0] }) %> -->
-      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: roductData.ingredients }) %> -->
-      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: roductData.ceramides }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'ingredients', className: 'modal-ingredients' , ingredients: productData.ingredients }) %> -->
+      <!-- <%- include('../partials/modal', { languageText: languageText, type: 'ceramides', className: 'modal-ceramides' , ceramides: productData.ceramides }) %> -->
       <!-- <%- include('../partials/modal', { languageText: languageText, type: 'efficacy', className: 'modal-efficacy' , efficacy: productData.efficacy }) %> -->
   </div>
 

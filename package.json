@@ -15,11 +15,13 @@
     "dev": "nodemon",
     "copy-assets": "ts-node tools/copyAssets",
     "start": "node build/index.js",
-    "postinstall": "tsc && cp -R public build/ && npm run copy-assets",
     "watch-node": "nodemon build/index.js",
     "watch-ts": "tsc -w",
-    "build": "webpack",
-    "webpack:prod": "webpack --config webpack.config.js --mode production"
+    "build": "tsc && cp -R public build/ && npm run copy-assets && yarn run asset-build && yarn run asset-build",
+    "webpack:prod": "webpack --config webpack.config.js --mode production",
+    "gulp:dev": "gulp",
+    "gulp:prod": "NODE_ENV='production' gulp",
+    "asset-build": "yarn run webpack:prod && yarn run gulp:prod"
   },
   "devDependencies": {
     "@tsconfig/recommended": "1.0.1",
