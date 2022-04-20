@@ -65,19 +65,16 @@
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
       <!-- 3D MODELS -->
-      <a-asset-item id="cap-model" src="/product/models/cap.glb"></a-asset-item>
-      <a-asset-item id="bottle-model" src="/product/models/bottle.glb"></a-asset-item>
       <a-asset-item id="podium-model" src="/product/models/podium.glb"></a-asset-item>
-      <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser-1.glb"></a-asset-item>
+      <a-asset-item id="hydrating-cleanser-left-model" src="/product/models/hydrating-cleanser-left.glb"></a-asset-item>
+      <a-asset-item id="hydrating-cleanser-right-model" src="/product/models/hydrating-cleanser-right.glb"></a-asset-item>
+      <a-asset-item id="hydrating-cleanser-cream-model" src="/product/models/hydrating-cleanser-cream.glb"></a-asset-item>
 
       <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
       <a-asset-item id="close-icon-glb" src="/product/models/close-icon.glb"></a-asset-item>
       <a-asset-item id="magnifying-glass-icon-glb" src="/product/models/magnifying-glass-icon.glb"></a-asset-item>
 
       <!--Frequently BT State assets-->
-      <!-- <img id="frequently-bt-p1" src="/images/frequently-bt/frequently-bt-p1.png">
-      <img id="frequently-bt-p2" src="/images/frequently-bt/frequently-bt-p2.png">
-      <img id="frequently-bt-p3" src="/images/frequently-bt/frequently-bt-p3.png"> -->
       <img id="frequently-bt-p1" src="<%= data.productData.frequentlyBT.url1 %>">
       <img id="frequently-bt-p2" src="<%= data.productData.frequentlyBT.url2 %>">
       <img id="frequently-bt-p3" src="<%= data.productData.frequentlyBT.url3 %>">  
@@ -94,7 +91,7 @@
     </a-assets>
 
     <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
-    <a-camera id="camera" position="0 7 8" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
+    <a-camera id="camera" position="0 7 0" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;">
     </a-camera>
 
     <!-- Reticle -->
@@ -133,12 +130,17 @@
     <!-- Base Element -->
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:3;">
       <!-- Podium -->
-      <a-entity id="podium" gltf-model="#podium-model" align-to-camera shadow="cast:true; receive:true;">
+      <a-entity id="podium" gltf-model="#podium-model" align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
       </a-entity>
 
       <!-- Product -->
-      <a-entity id="product" gltf-model="#hydrating-cleanser-model" position="0 0.75 0"
-        shadow="cast:true; receive:false;" xrextras-one-finger-rotate>
+      <a-entity id="product"position="0 0 0" opened="0" xrextras-one-finger-rotate>
+        <a-entity id="product-left" gltf-model="#hydrating-cleanser-left-model"
+        shadow="cast:true; receive:false;"></a-entity>
+        <a-entity id="product-right" gltf-model="#hydrating-cleanser-right-model"
+        shadow="cast:true; receive:false;"></a-entity>
+        <a-entity id="product-cream" gltf-model="#hydrating-cleanser-cream-model"
+        shadow="cast:true; receive:false;"></a-entity>
       </a-entity>
 
       <!-- Hospot Aligner -->
