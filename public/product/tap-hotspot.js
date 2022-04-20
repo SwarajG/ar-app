@@ -1,35 +1,65 @@
+const bottleOpenCloseDur = 1500
+
 AFRAME.registerComponent('tap-hotspot', {
     init() {
         this.el.addEventListener('click', (event) => {
             let value = this.el.getAttribute('hotspot-value');
             let className = this.el.getAttribute('class');
-            // Hide all internal modals
+            let modalId;
+
+            // Hide all modals before showing this one
             hideAllModals();
 
             // Show the particular internal modal
             if (className.includes('review-hotspot')) {
-                let modalId = "review-" + value;
+                modalId = "review-" + value;
                 document.getElementById(modalId).classList.remove("hide");
-                // Show the Parent modal container
-                document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
             }
             else if (className.includes('our-science-hotspot')) {
-                let modalId = "our-science-" + value;
-                console.log(modalId);
+                modalId = "our-science-" + value;
                 document.getElementById(modalId).classList.remove("hide");
-                // Show the Parent modal container
-                document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
             }
             else if (className.includes('texture-hotspot')) {
-                let modalId = "texture-" + value;
-                console.log(modalId);
-                document.getElementById(modalId).classList.remove("hide");
-                // Show the Parent modal container
-                document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
+                modalId = "texture-" + value;
+
+                if(value === '1'){
+                    if(document.getElementById('product').getAttribute('opened') === '0'){
+                        openProduct(bottleOpenCloseDur);
+                    }
+                    else{
+                        closeProduct(bottleOpenCloseDur);
+                    }
+                    return;
+                }
+                else if(value === '2'){
+                    document.getElementById(modalId).classList.remove("hide");
+                }
             }
+            // Show the Parent modal container
+            document.getElementById(modalId).parentElement.parentElement.classList.remove("hide");
         });
     }
 });
+
+function openProduct(dur){
+    document.getElementById('product-left').setAttribute('animation', `property: position; to: -2, 0, 0; dur: ` + dur + `; easing: easeInQuad`);
+    document.getElementById('product-right').setAttribute('animation', `property: position; to: 2, 0, 0; dur: ` + dur + `; easing: easeInQuad`);
+
+    document.getElementById('magnifying-glass-icon').object3D.visible = false;
+    document.getElementById('close-icon').object3D.visible = true;
+
+    document.getElementById('product').setAttribute('opened', '1');
+}
+
+function closeProduct(dur){
+    document.getElementById('product-left').setAttribute('animation', `property: position; to: 0, 0, 0; dur: ` + dur + `; easing: easeOutQuad`);
+    document.getElementById('product-right').setAttribute('animation', `property: position; to: 0, 0, 0; dur: ` + dur + `; easing: easeOutQuad`);
+
+    document.getElementById('magnifying-glass-icon').object3D.visible = true;
+    document.getElementById('close-icon').object3D.visible = false;
+    
+    document.getElementById('product').setAttribute('opened', '0');
+}
 
 
 function closeModal() {

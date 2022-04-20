@@ -74,6 +74,11 @@ AFRAME.registerComponent('tap-place-cursor', {
       // Hide dashboard UI
       dashboard.classList.add('hide');
 
+      // Close product if opened already
+      if(document.getElementById('product').getAttribute('opened') === '1'){
+        closeProduct(1);
+      }
+
       // Reset All States
       ResetAllStates();
 

@@ -75,6 +75,12 @@ function swipeHotspots(prevState, nextState) {
 // On Dashboard ICON Tap
 window.switchDashboard = (dashboardRadio) => {
     if (dasboardTapEnabled === '1') {
+        // Close product if opened already
+        if(document.getElementById('product').getAttribute('opened') === '1' &&
+            dashboardRadio.value != 2){
+            closeProduct(bottleOpenCloseDur);
+        }
+
         prevStateVal = currentStateVal
         currentStateVal = dashboardRadio.value
 
