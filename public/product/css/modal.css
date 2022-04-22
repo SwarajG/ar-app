@@ -29,29 +29,30 @@
   height: 38px;
   cursor: pointer;
   margin: auto;
+  margin-bottom: 15px;
 }
 
 .modal.modal-review {
   width: 340px;
-  height: 430px;
+  height: fit-content;
 }
 
 .modal.modal-ingredients {
   width: 340px;
-  height: 430px;
+  height: fit-content;
 }
 
 .modal.modal-ceramides {
   width: 340px;
-  height: 430px;
+  height: fit-content;
 }
 
 .modal.modal-efficacy {
   width: 340px;
-  height: 430px;
+  height: fit-content;
 }
 
 .modal.modal-how-to-apply {
   width: 340px;
-  height: 430px;
+  height: fit-content;
 }
