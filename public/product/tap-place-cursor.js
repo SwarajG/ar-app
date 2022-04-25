@@ -76,7 +76,7 @@ AFRAME.registerComponent('tap-place-cursor', {
 
       // Close product if opened already
       if(document.getElementById('product').getAttribute('opened') === '1'){
-        closeProduct(1);
+        closeProduct();
       }
 
       // Reset All States

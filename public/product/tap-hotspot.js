@@ -24,10 +24,10 @@ AFRAME.registerComponent('tap-hotspot', {
 
                 if(value === '1'){
                     if(document.getElementById('product').getAttribute('opened') === '0'){
-                        openProduct(bottleOpenCloseDur);
+                        openProduct();
                     }
                     else{
-                        closeProduct(bottleOpenCloseDur);
+                        closeProduct();
                     }
                     return;
                 }
@@ -41,9 +41,60 @@ AFRAME.registerComponent('tap-hotspot', {
     }
 });
 
-function openProduct(dur){
-    document.getElementById('product-left').setAttribute('animation', `property: position; to: -2, 0, 0; dur: ` + dur + `; easing: easeInQuad`);
-    document.getElementById('product-right').setAttribute('animation', `property: position; to: 2, 0, 0; dur: ` + dur + `; easing: easeInQuad`);
+function ToggleBottleTransparency(transparent) {
+    const productEl = document.getElementById('product')
+
+    let alphaDelta = 0.1;
+    let interval = 50;
+    let handle = 0;
+    let alpha;
+
+    function showCream(){
+        alpha -= alphaDelta;
+
+        productEl.object3D.traverse((child) => {
+            if (child.type === 'Mesh' && child.name !== 'cream') {
+                const {material} = child;
+                material.transparent = transparent;
+                material.opacity = alpha;
+            }
+        });
+        
+        if (alpha <= 0.2) {
+            clearInterval(handle);
+            handle = 0;
+        }
+    }
+    
+    function hideCream(){
+        alpha += alphaDelta;
+
+        productEl.object3D.traverse((child) => {
+            if (child.type === 'Mesh' && child.name !== 'cream') {
+                const {material} = child;
+                material.opacity = alpha;
+            }
+        });
+        
+        if (alpha >= 1) {
+            clearInterval(handle);
+            handle = 0;
+        }
+    }
+
+    // Get initial alpha opacity value from container
+    alpha = productEl.object3D.getObjectByName("container").material.opacity;
+    
+    if(transparent){
+        handle = setInterval(showCream, interval);
+    }
+    else{
+        handle = setInterval(hideCream, interval);
+    }
+}
+
+function openProduct(){
+    ToggleBottleTransparency(true);
 
     document.getElementById('magnifying-glass-icon').object3D.visible = false;
     document.getElementById('close-icon').object3D.visible = true;
@@ -51,9 +102,8 @@ function openProduct(dur){
     document.getElementById('product').setAttribute('opened', '1');
 }
 
-function closeProduct(dur){
-    document.getElementById('product-left').setAttribute('animation', `property: position; to: 0, 0, 0; dur: ` + dur + `; easing: easeOutQuad`);
-    document.getElementById('product-right').setAttribute('animation', `property: position; to: 0, 0, 0; dur: ` + dur + `; easing: easeOutQuad`);
+function closeProduct(){
+    ToggleBottleTransparency(false);
 
     document.getElementById('magnifying-glass-icon').object3D.visible = true;
     document.getElementById('close-icon').object3D.visible = false;
