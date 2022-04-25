@@ -66,9 +66,7 @@
     <a-assets>
       <!-- 3D MODELS -->
       <a-asset-item id="podium-model" src="/product/models/podium.glb"></a-asset-item>
-      <a-asset-item id="hydrating-cleanser-left-model" src="/product/models/hydrating-cleanser-left.glb"></a-asset-item>
-      <a-asset-item id="hydrating-cleanser-right-model" src="/product/models/hydrating-cleanser-right.glb"></a-asset-item>
-      <a-asset-item id="hydrating-cleanser-cream-model" src="/product/models/hydrating-cleanser-cream.glb"></a-asset-item>
+      <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser.glb"></a-asset-item>
 
       <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
       <a-asset-item id="close-icon-glb" src="/product/models/close-icon.glb"></a-asset-item>
@@ -134,13 +132,10 @@
       </a-entity>
 
       <!-- Product -->
-      <a-entity id="product"position="0 0 0" opened="0" xrextras-one-finger-rotate>
-        <a-entity id="product-left" gltf-model="#hydrating-cleanser-left-model"
-        shadow="cast:true; receive:false;"></a-entity>
-        <a-entity id="product-right" gltf-model="#hydrating-cleanser-right-model"
-        shadow="cast:true; receive:false;"></a-entity>
-        <a-entity id="product-cream" gltf-model="#hydrating-cleanser-cream-model"
-        shadow="cast:true; receive:false;"></a-entity>
+      <a-entity id="product" position="0 0 0" opened="0" 
+        gltf-model="#hydrating-cleanser-model"  
+        shadow="cast:true; receive:false;"
+        xrextras-one-finger-rotate>
       </a-entity>
 
       <!-- Hospot Aligner -->

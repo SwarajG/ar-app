@@ -25,12 +25,8 @@ AFRAME.registerComponent('handle-swipes', {
     },
 
     tick() {
-
         dasboardTapEnabled = window.scene.getAttribute('dasboardTapEnabled')
-
     }
-
-
 });
 
 function swipeHotspots(prevState, nextState) {
