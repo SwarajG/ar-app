@@ -78,7 +78,7 @@ export const data = {
   ],
   efficacy: {
     head: 'Efficacy',
-    url: 'https://via.placeholder.com/310',
+    url: '/images/efficacy/efficacy.png',
   },
   howToApply: {
     head: 'How to Apply',
@@ -88,7 +88,7 @@ export const data = {
     url1: '/images/frequently-bt/frequently-bt-p1.png',
     url2: '/images/frequently-bt/frequently-bt-p2.png',
     url3: '/images/frequently-bt/frequently-bt-p3.png',
-    product1url: 'https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser',
-    product2url: 'https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser',
+    product1url: 'https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser',
+    product2url: 'https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser',
   }
 };
