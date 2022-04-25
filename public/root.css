@@ -1,4 +1,39 @@
 @font-face {
+  font-family: 'DINPro';
+  src: url('./fonts/DINPro-Regular.otf') format('otf');
+  src: url('./fonts/DINPro-Regular.ttf') format('truetype');
+  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+}
+
+@font-face {
+  font-family: 'DINPro-medium';
+  src: url('./fonts/DINPro-Medium.otf') format('otf');
+  src: url('./fonts/DINPro-Medium.ttf') format('truetype');
+  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+}
+
+@font-face {
+  font-family: 'DINPro-bold';
+  src: url('./fonts/DINPro-bold.otf') format('otf');
+  src: url('./fonts/DINPro-bold.ttf') format('truetype');
+  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+}
+
+@font-face {
+  font-family: 'DINPro-condBold';
+  src: url('./fonts/DINPro-condBold.otf') format('otf');
+  src: url('./fonts/DINPro-condBold.ttf') format('truetype');
+  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+}
+
+@font-face {
+  font-family: 'DINPro-Light';
+  src: url('./fonts/DINPro-Light.otf') format('otf');
+  src: url('./fonts/DINPro-Light.ttf') format('truetype');
+  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+}
+
+/* @font-face {
   font-family: DINPro;
   src: url(./fonts/DINPro-Regular.otf);
 }
@@ -21,7 +56,7 @@
 @font-face {
   font-family: DINPro-light;
   src: url(./fonts/DINPro-Light.otf);
-}
+} */
 
 html,
 body,
@@ -111,8 +146,8 @@ video {
   display: none !important;
 }
 
-.ui-container{
+.ui-container {
   width: 100%;
   height: 100%;
-  position:absolute;
+  position: absolute;
 }
