@@ -80,7 +80,7 @@
 
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
-      <a-mixin id="hotspot-target" scale="1 1 1" geometry="primitive: sphere; radius: 0.25"
+      <a-mixin id="hotspot-target" scale="0 0 0" geometry="primitive: sphere; radius: 0.25"
         material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot></a-mixin>
 
       <!--Hotspot text-->
@@ -150,7 +150,7 @@
             <!--Review Hotspot #1-->
             <a-entity rotation="0 -48 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="1">
+                <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target"  scale="1 1 1" hotspot-value="1">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
@@ -165,7 +165,7 @@
             <!--Review Hotspot #2-->
             <a-entity rotation="0 -24 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="2">
+                <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="2">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
@@ -180,7 +180,7 @@
             <!--Review Hotspot #3-->
             <a-entity rotation="0 0 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="3">
+                <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="3">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
@@ -195,7 +195,7 @@
             <!--Review Hotspot #4-->
             <a-entity rotation="0 24 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="4">
+                <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="4">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
@@ -210,7 +210,7 @@
             <!--Review Hotspot #5-->
             <a-entity rotation="0 48 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" hotspot-value="5">
+                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
@@ -225,7 +225,6 @@
 
           <!-- Our Science State -->
           <a-entity id="our-science-state" rotation="0 90 0" visible="false">
-            <!-- <a-box position="0 0 3" rotation="0 0 0" scale="0.75 0.75 1.5" color="#00ff00"></a-box> -->
 
             <!--Our Science Hotspot #1-->
             <a-entity rotation="0 -24 0">
@@ -323,21 +322,21 @@
             <!--Frequently BT Panel #1-->
             <a-entity><a-entity>
               <a-curvedimage id="frequently-bt-panel-1" class="texture-hotspot cantap" rotation="0 -45 0" height="0.9" radius="1.5" 
-                color="white" position="0 3 0" scale="1 1 1" theta-length="90" src="#frequently-bt-p1">
+                color="white" position="0 3 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p1">
               </a-curvedimage>
             </a-entity></a-entity>
             
             <!--Frequently BT Panel #2-->
             <a-entity><a-entity>
             <a-curvedimage id="frequently-bt-panel-2" class="texture-hotspot cantap" rotation="0 -45 0" height="0.9" radius="1.5" 
-              color="white" position="0 2 0" scale="1 1 1" theta-length="90" src="#frequently-bt-p2"
+              color="white" position="0 2 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p2"
               new-tab="url: <%= data.productData.frequentlyBT.product1url %>"></a-curvedimage>
             </a-entity></a-entity>
             
             <!--Frequently BT Panel #3-->
             <a-entity><a-entity>
             <a-curvedimage id="frequently-bt-panel-3" class="texture-hotspot cantap" rotation="0 -45 0" height="0.9" radius="1.5" 
-              color="white" position="0 1 0" scale="1 1 1" theta-length="90" src="#frequently-bt-p3"
+              color="white" position="0 1 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p3"
               new-tab="url: <%= data.productData.frequentlyBT.product2url %> "></a-curvedimage>
             </a-entity></a-entity>
           </a-entity>
