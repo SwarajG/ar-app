@@ -9,7 +9,7 @@
 
 .ceramides-modal__title {
     color: #0072ce;
-    font-weight: bold;
+    font-family: DINPro-medium;
     font-size: 24px;
     line-height: 31px;
     padding-bottom: 10px;
@@ -18,7 +18,7 @@
 
 .ceramides-modal__body1 {
     padding-top: 15px;
-    font-weight: 400;
+    font-family: DINPro-medium;
     font-size: 16px;
     line-height: 18px;
     color: #0072ce;
@@ -27,7 +27,7 @@
 .ceramides-modal__body2 {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 18px;
     color: #003057;

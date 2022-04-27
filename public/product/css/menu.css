@@ -80,7 +80,7 @@
 
 .radio-label {
   text-align: center;
-  font-family: DINPro;
+  /* font-family: DINPro; */
   color: #fff;
   font-size: 12px;
   width: 90px; /*reconfigure to 80px after the label frequently bought together is changed*/

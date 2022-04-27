@@ -9,7 +9,7 @@
 
 .ingredients-modal__title {
     color: #0072ce;
-    font-weight: 700;
+    font-family: DINPro-medium;
     font-size: 24px;
     line-height: 31px;
     padding-bottom: 10px;
@@ -19,7 +19,7 @@
 .ingredients-modal__list {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 20px;
     color: #003057;
