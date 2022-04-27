@@ -28,6 +28,7 @@
   <script src="/product/handle-swipes.js"></script>
   <script src="/product/new-tab.js"></script>
   <script src="/product/cubemap-static.js"></script>
+  <script src="/product/cubemap-realtime.js"></script>
 
   <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -66,7 +67,7 @@
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
       <!-- 3D MODELS -->
-      <a-asset-item id="podium-model" src="/product/models/podium.glb"></a-asset-item>
+      <a-asset-item id="podium-model" src="/product/models/podium-white.glb"></a-asset-item>
       <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser.glb"></a-asset-item>
 
       <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
@@ -89,10 +90,12 @@
 
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
-      <a-mixin id="hotspot-target" scale="0 0 0" geometry="primitive: sphere; radius: 0.25" cubemap-static
+      <a-mixin id="hotspot-target" scale="0 0 0" geometry="primitive: sphere; radius: 0.25"
         material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot></a-mixin>
 
       <!--Hotspot text-->
+      <!-- <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: #0072ce;"
+        position="0 -0.2 0.2" tap-hotspot></a-mixin> -->
       <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: white;"
         position="0 -0.2 0.2" tap-hotspot></a-mixin>
     </a-assets>
@@ -124,20 +127,20 @@
       shadowCameraBottom: -20;
       shadowCameraRight: 20;
       shadowCameraLeft: -20;
-      target: #camera" xrextras-attach="target: camera; offset: 4 15 10" position="1 4.3 2.5" shadow>
+      target: #camera" xrextras-attach="target: camera; offset: 8 15 10" position="1 4.3 2.5" shadow>
     </a-entity>
 
     <a-light type="ambient" intensity="0.1"></a-light>
 
     <!-- Adding the cantap class allows the ground to be clicked -->
     <a-box id="ground" scale="1000 2 1000" position="0 -1 0" class="cantap" shadow="receive: true"
-      material="shader: shadow; transparent: true; opacity: 0.4">
+      material="shader: shadow; transparent: true; opacity: 0.35">
     </a-box>
 
     <!-- Base Element -->
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:3;">
       <!-- Podium -->
-      <a-entity id="podium" gltf-model="#podium-model" align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
+      <a-entity id="podium" gltf-model="#podium-model" cubemap-static align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
       </a-entity>
 
       <!-- Product -->
