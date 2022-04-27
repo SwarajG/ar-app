@@ -67,6 +67,7 @@
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
       <!-- 3D MODELS -->
+      <!-- <a-asset-item id="podium-model" src="/product/models/podium-glass.glb"></a-asset-item> -->
       <a-asset-item id="podium-model" src="/product/models/podium-white.glb"></a-asset-item>
       <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser.glb"></a-asset-item>
 
@@ -94,8 +95,6 @@
         material="transparent: true; opacity: 0.5; color: rgb(0, 114, 206)" tap-hotspot></a-mixin>
 
       <!--Hotspot text-->
-      <!-- <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: #0072ce;"
-        position="0 -0.2 0.2" tap-hotspot></a-mixin> -->
       <a-mixin id="hotspot-text" text="font: exo2bold; width: 2.5; align: center; anchor:center; color: white;"
         position="0 -0.2 0.2" tap-hotspot></a-mixin>
     </a-assets>
@@ -147,6 +146,7 @@
       <a-entity id="product" position="0 0 0" opened="0" 
         gltf-model="#hydrating-cleanser-model"  
         shadow="cast:true; receive:false;"
+        animation="property: position; to: 0 0.25 0; loop: true; dur: 1000; dir: alternate; easing: easeInOutQuad"
         xrextras-one-finger-rotate cubemap-static>
       </a-entity>
 
