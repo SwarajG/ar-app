@@ -27,6 +27,7 @@
   <script src="/product/tap-hotspot.js"></script>
   <script src="/product/handle-swipes.js"></script>
   <script src="/product/new-tab.js"></script>
+  <script src="/product/cubemap-static.js"></script>
 
   <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -66,11 +67,19 @@
     <a-assets>
       <!-- 3D MODELS -->
       <a-asset-item id="podium-model" src="/product/models/podium.glb"></a-asset-item>
-      <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser.glb"></a-asset-item>
+      <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser-new.glb"></a-asset-item>
 
       <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
       <a-asset-item id="close-icon-glb" src="/product/models/close-icon.glb"></a-asset-item>
       <a-asset-item id="magnifying-glass-icon-glb" src="/product/models/magnifying-glass-icon.glb"></a-asset-item>
+
+      <!-- Cubemap Static Images -->
+      <img id="posx" src="/images/cubemap/posx.jpg">
+      <img id="posy" src="/images/cubemap/posy.jpg">
+      <img id="posz" src="/images/cubemap/posz.jpg">
+      <img id="negx" src="/images/cubemap/negx.jpg">
+      <img id="negy" src="/images/cubemap/negy.jpg">
+      <img id="negz" src="/images/cubemap/negz.jpg">
 
       <!--Frequently BT State assets-->
       <img id="frequently-bt-p1" src="<%= data.productData.frequentlyBT.url1 %>">
@@ -115,10 +124,10 @@
       shadowCameraBottom: -20;
       shadowCameraRight: 20;
       shadowCameraLeft: -20;
-      target: #camera" xrextras-attach="target: camera; offset: 4 15 2" position="1 4.3 2.5" shadow>
+      target: #camera" xrextras-attach="target: camera; offset: 4 15 10" position="1 4.3 2.5" shadow>
     </a-entity>
 
-    <a-light type="ambient" intensity="0.5"></a-light>
+    <a-light type="ambient" intensity="0.1"></a-light>
 
     <!-- Adding the cantap class allows the ground to be clicked -->
     <a-box id="ground" scale="1000 2 1000" position="0 -1 0" class="cantap" shadow="receive: true"
@@ -135,7 +144,7 @@
       <a-entity id="product" position="0 0 0" opened="0" 
         gltf-model="#hydrating-cleanser-model"  
         shadow="cast:true; receive:false;"
-        xrextras-one-finger-rotate>
+        xrextras-one-finger-rotate cubemap-static>
       </a-entity>
 
       <!-- Hospot Aligner -->
