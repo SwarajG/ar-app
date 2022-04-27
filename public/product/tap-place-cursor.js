@@ -1,5 +1,47 @@
 // Copyright (c) 2021 8th Wall, Inc.
 /* globals AFRAME */
+let baseElement;
+let resetButton;
+let dashboard;
+
+// Resets product - hides it and the dashboard; 
+// Resets all states to present review state
+function ResetProduct(){
+  baseElement = document.getElementById('base');
+
+  // Hide the base
+  baseElement.object3D.visible = false;
+
+  // Show Reticle
+  document.getElementById('reticle').object3D.visible = true;
+
+  // Set the product-placed flag
+  baseElement.setAttribute('product-placed', '0');
+
+  // Hide dashboard UI
+  dashboard.classList.add('hide');
+
+  // Close product if opened already
+  if(document.getElementById('product').getAttribute('opened') === '1'){
+    closeProduct();
+  }
+
+  // Reset All States
+  ResetAllStates();
+
+  function ResetAllStates(){
+    prevStateVal = currentStateVal;
+    currentStateVal = 0;
+
+    const prevState = document.getElementById(states[prevStateVal]);
+    const nextState = document.getElementById(states[currentStateVal]);
+
+    allStates.setAttribute('animation', `property: rotation; to: 0, ${window.rotY + (90 * (prevStateVal - currentStateVal))}, 0; dur: 1000`);
+    window.rotY += (90 * (prevStateVal - currentStateVal));
+
+    swipeHotspots(prevState, nextState);
+  }
+}
 
 // Component that places the product when the ground is clicked
 AFRAME.registerComponent('tap-place-cursor', {
@@ -9,23 +51,22 @@ AFRAME.registerComponent('tap-place-cursor', {
     this.threeCamera = this.camera.getObject3D('camera');
     this.ground = document.getElementById('ground');
 
+    baseElement = document.getElementById('base');
+    resetButton = document.getElementById('reset-button');
+    dashboard = document.getElementById('dashboard');
+
     // 2D coordinates of the raycast origin, in normalized device coordinates (NDC)---X and Y
     // components should be between -1 and 1.  Here we want the cursor in the center of the screen.
     this.rayOrigin = new THREE.Vector2(0, 0);
     this.cursorLocation = new THREE.Vector3(0, 0, 0);
 
-    const baseElement = document.getElementById('base');
-    const resetButton = document.getElementById('reset-button');
-    const dashboard = document.getElementById('dashboard');
-
     // Hiding the baseElement to ensure modal loads with animation first time
     setTimeout(() => {
       baseElement.object3D.visible = false;
-        
     }, 1000);
 
-    // Tap Handler
-    this.el.sceneEl.addEventListener('click', (event) => {
+    // Ground Tap Handler
+    document.getElementById('ground').addEventListener('click', (event) => {
       // if product not placed yet
       if (baseElement.getAttribute('product-placed') === '0') {
         // Set pos of product according to reticle pointer
@@ -58,43 +99,6 @@ AFRAME.registerComponent('tap-place-cursor', {
     });
 
     resetButton.onclick = ResetProduct;
-
-    // Resets product - hides it and the dashboard; 
-    // Resets all states to present review state
-    function ResetProduct(){
-      // Hide the base
-      baseElement.object3D.visible = false;
-
-      // Show Reticle
-      document.getElementById('reticle').object3D.visible = true;
-
-      // Set the product-placed flag
-      baseElement.setAttribute('product-placed', '0');
-
-      // Hide dashboard UI
-      dashboard.classList.add('hide');
-
-      // Close product if opened already
-      if(document.getElementById('product').getAttribute('opened') === '1'){
-        closeProduct();
-      }
-
-      // Reset All States
-      ResetAllStates();
-
-      function ResetAllStates(){
-        prevStateVal = currentStateVal;
-        currentStateVal = 0;
-
-        const prevState = document.getElementById(states[prevStateVal]);
-        const nextState = document.getElementById(states[currentStateVal]);
-
-        allStates.setAttribute('animation', `property: rotation; to: 0, ${window.rotY + (90 * (prevStateVal - currentStateVal))}, 0; dur: 1000`);
-        window.rotY += (90 * (prevStateVal - currentStateVal));
-
-        swipeHotspots(prevState, nextState);
-      }
-    }
   },
 
   tick() {
