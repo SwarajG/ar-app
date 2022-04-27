@@ -5,7 +5,10 @@ AFRAME.registerComponent('new-tab', {
     
     init() {
         this.el.addEventListener('click', (e) => {
-            window.open(this.data.url)
+            window.open(this.data.url);
+
+            // Reset product placement as new tab is opened and camera might have shifted
+            ResetProduct();
         });
     },
 });
