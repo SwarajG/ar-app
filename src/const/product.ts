@@ -19,7 +19,7 @@ export const menuList = [
   },
   {
     id: 'radio-frequently-bt',
-    name: 'Similar Products',
+    name: 'Routines',
     value: '3',
     image: '../images/dashboard/frequently-bt-icon.png',
   },

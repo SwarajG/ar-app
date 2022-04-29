@@ -1,8 +1,30 @@
 // Copyright (c) 2021 8th Wall, Inc.
+
+
 /* globals AFRAME */
 let baseElement;
 let resetButton;
 let dashboard;
+let overlayFlag = 0;
+let overlayTimeout;
+
+//Hide Instructions overlay
+
+function closeInstructionOverlay(){
+  clearTimeout(overlayTimeout);
+  document.getElementById('instruction-container').classList.add('hide');
+  document.getElementById('info-button').classList.remove('active');  
+}
+
+function openInstructionOverlay(){
+  document.getElementById('instruction-container').classList.remove('hide');
+  document.getElementById('info-button').classList.add('active');
+  //Autohide the overlay after 5 secs
+  overlayTimeout = setTimeout(() => {
+    closeInstructionOverlay();
+  }, 5000);
+  
+}
 
 // Resets product - hides it and the dashboard; 
 // Resets all states to present review state
@@ -20,6 +42,9 @@ function ResetProduct(){
 
   // Hide dashboard UI
   dashboard.classList.add('hide');
+
+  //Hide Instructions Overlay
+  closeInstructionOverlay();
 
   // Close product if opened already
   if(document.getElementById('product').getAttribute('opened') === '1'){
@@ -87,6 +112,12 @@ AFRAME.registerComponent('tap-place-cursor', {
         // Show dashboard UI
         dashboard.classList.remove('hide');
 
+        //Open Instruction Overlay
+        if (overlayFlag === 0){
+          openInstructionOverlay();
+          overlayFlag = 1;
+        }
+        
         // Scale Up pop animation
         baseElement.setAttribute('animation', {
           property: 'scale',

@@ -9,24 +9,136 @@
   height: 100% 
 }
 
+.info-email{
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100px;
+  height: 50px;
+
+  margin-right: 10px;
+  margin-top: 10px;
+
+  background: #4040409e;
+  border-radius: 50px;
+
+  z-index: 100;
+}
+
 
 .reset-btn {
   position: absolute;
   width: 50px;
   height: 50px;
   top: 0;
-  right: 0;
+  left: 0;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
   padding: 0;
   background: #4b4b4b;
   box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
-  color: #0072ce;
+  font-family: DINPro-medium;
+  color: #fff;
   border-radius: 50%;
-  z-index:100;
+  z-index:101;
   border: transparent;
 }
 
+.info-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 0;
+  background: #4b4b4b;
+  box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+  border-radius: 50%;
+  z-index:101;
+  border: transparent;
+}
+
+.info-btn > img{
+  padding: 8px;
+}
+
+.active{
+  background: #0072CE;
+  box-shadow: inset 2px 2px 4px rgba(50, 50, 50, 0.5);
+  border-radius: 20px;
+}
+
+.email-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 0;
+  background: #4b4b4b;
+  box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+  border-radius: 50%;
+  z-index:101;
+  border: transparent;
+}
+
+.email-btn > img{
+  padding: 8px;
+}
+
+.inst{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 60px;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #4040409e;
+  z-index: 100;
+}
+
+.swipe-rotate-icon{
+  flex-grow: 1;
+  width: 40px;
+  padding: 10px;
+}
+
+.swipe-rotate-text{
+  flex-grow: 2;
+  width: 100px;
+  border-right: solid 1px #fff;
+  font-size: 14px;
+  color: white;
+  padding-right: 10px;
+}
+
+.pinch-scale-icon{
+  flex-grow: 1;
+  width: 40px;
+  padding: 10px;
+}
+
+.pinch-scale-text{
+  flex-grow: 2;
+  width: 100px;
+  border-right: solid 1px #fff;
+  font-size: 14px;
+  color: white;
+  padding-right: 10px;
+}
+
+.close-inst{
+  flex-grow: 1;
+  width: 24px;
+  padding: 10px;
+}
 
 .radio-toolbar {
   position: relative;
@@ -116,4 +228,108 @@
   height: 70px;
   border-radius: 0px;
   top: 25px;
+}
+
+.fade-out {
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }

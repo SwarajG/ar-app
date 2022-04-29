@@ -1,5 +1,19 @@
 <div id="dashboard" class="dashboard-ui hide" >
-  <button type="button" id="reset-button" class="reset-btn"><img class="icon" src="/images/dashboard/reset-icon.png"></i></button>
+  <button type="button" id="reset-button" class="reset-btn"> Reset </button>
+  
+  <div id="info-email-container" class="info-email">
+    <button type="button" id="info-button" class="info-btn active" onclick="openInstructionOverlay()"><img class="icon" src="/images/dashboard/info-icon.png"></button>
+    <button type="button" id="email-button" class="email-btn"><img class="icon" src="/images/dashboard/email-icon.png"></button>  
+  </div>
+
+  <div id="instruction-container" class="inst hide">
+    <img class="swipe-rotate-icon" src="/images/dashboard/swipe-rotate-icon.png">
+    <p class="swipe-rotate-text">Swipe to Rotate</p>
+    <img class="pinch-scale-icon" src="/images/dashboard/pinch-scale-icon.png">
+    <p class="pinch-scale-text">Pinch to Scale</p>
+    <img class="close-inst" src="/images/dashboard/close-icon.png" onclick="closeInstructionOverlay()">
+  </div>
+  
 
   <div class="radio-toolbar">
     <% menuList.forEach(function(menu) { %>
