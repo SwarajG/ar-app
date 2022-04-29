@@ -68,7 +68,7 @@
     <a-assets>
       <!-- 3D MODELS -->
       <!-- <a-asset-item id="podium-model" src="/product/models/podium-glass.glb"></a-asset-item> -->
-      <a-asset-item id="podium-model" src="/product/models/podium-white.glb"></a-asset-item>
+      <a-asset-item id="podium-model" src="/product/models/podium_surf.glb"></a-asset-item>
       <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser.glb"></a-asset-item>
 
       <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
@@ -138,8 +138,8 @@
 
     <!-- Base Element -->
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:3;">
-      <!-- Podium -->
-      <a-entity id="podium" gltf-model="#podium-model" cubemap-static align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
+      <!-- Podium --> <!--Scale changed to 25 by Deb. Original there was no scale parameter here 29 Apr 2022-->
+      <a-entity id="podium" gltf-model="#podium-model" scale="25 25 25" cubemap-static align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
       </a-entity>
 
       <!-- Product -->
