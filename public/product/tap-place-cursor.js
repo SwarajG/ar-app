@@ -1,27 +1,38 @@
-// Copyright (c) 2021 8th Wall, Inc.
-
-
 /* globals AFRAME */
 let baseElement;
 let resetButton;
 let dashboard;
 let overlayFlag = 0;
 let overlayTimeout;
+let opacityOverlay; 
+// var xx = document.getElementById('instruction-container');
+// let compStyle = window.getComputedStyle(instructionOverlay);
+let opacityTimeout; 
+var deltaOverlay = 0.1;
 
 //Hide Instructions overlay
 
 function closeInstructionOverlay(){
-  clearTimeout(overlayTimeout);
-  document.getElementById('instruction-container').classList.add('hide');
-  document.getElementById('info-button').classList.remove('active');  
+  clearTimeout(overlayTimeout); 
+  //add hide and remove active class after fadeOut function
+  $('#instruction-container').fadeOut(300, function(){
+    document.getElementById('instruction-container').classList.add('hide');
+    document.getElementById('info-button').classList.remove('active'); 
+  });
 }
 
 function openInstructionOverlay(){
   document.getElementById('instruction-container').classList.remove('hide');
   document.getElementById('info-button').classList.add('active');
-  //Autohide the overlay after 5 secs
+  console.log($('#instruction-container'));
+  $('#instruction-container').fadeIn(300);
+  
+  //Autohide the overlay after 5 secs with slow fade
   overlayTimeout = setTimeout(() => {
-    closeInstructionOverlay();
+    $('#instruction-container').click(false);
+    $('#instruction-container').fadeOut(2000, function(){
+      closeInstructionOverlay();
+    });
   }, 5000);
   
 }
