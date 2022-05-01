@@ -10,21 +10,21 @@
     <img class="swipe-rotate-icon" src="/images/dashboard/swipe-rotate-icon.png">
     <p class="swipe-rotate-text"><%= languageText.swipeInstText%></p>
     <img class="pinch-scale-icon" src="/images/dashboard/pinch-scale-icon.png">
-    <p class="pinch-scale-text">Pinch to Scale</p>
+    <p class="pinch-scale-text"><%= languageText.pinchScaleInstText%></p>
     <img class="close-inst" src="/images/dashboard/close-icon.png" onclick="closeInstructionOverlay()">
   </div>
   
 
   <div class="radio-toolbar">
-    <% menuList.forEach(function(menu) { %>
+    <% dashboardData.forEach(function(item) { %>
       <div class="radio-button">
         <div>
-          <input type="radio" id="<%= menu.id %>" name="dashboard" value="<%= menu.value %>" onclick="switchDashboard(this)" />
-          <label for="<%= menu.id %>">
-            <img class="icon" src="<%= menu.image %>">
+          <input type="radio" id="<%= item.id %>" name="dashboard" value="<%= item.value %>" onclick="switchDashboard(this)" />
+          <label for="<%= item.id %>">
+            <img class="icon" src="<%= item.image %>">
           </label>
         </div>
-        <p class="radio-label"><%= languageText[menu.name] %></p>
+        <p class="radio-label"><%= languageText[item.name] %></p>
       </div>
     <% }); %>
     <div class="radio-toolbar-wrapper"></div>

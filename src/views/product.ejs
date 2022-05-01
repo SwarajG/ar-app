@@ -11,7 +11,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/root.css">
-  <link rel="stylesheet" href="/product/css/menu.css">
+  <link rel="stylesheet" href="/product/css/dashboard.css">
   <link rel="stylesheet" href="/product/css/modal.css">
   <link rel="stylesheet" href="/product/css/review-modal.css">
   <link rel="stylesheet" href="/product/css/ingredients-modal.css">
@@ -45,7 +45,7 @@
 <body>
   <div class="ui-container">
     <!-- Dashboard UI partial -->
-    <%- include('../partials/menu', { languageText: data.languageText, menuList: data.menuList }) %>
+    <%- include('../partials/dashboard', { languageText: data.languageText, dashboardData: data.dashboardData }) %>
 
       <!-- Review Modal partial -->
       <%- include('../partials/modal', { languageText: data.languageText, type: 'review' , className: 'modal-review' ,

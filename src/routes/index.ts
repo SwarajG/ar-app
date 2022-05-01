@@ -1,6 +1,6 @@
 import express, { Router, Request, Response } from 'express';
 import { languageText } from './language';
-import { menuList } from '../const/product';
+import { dashboardData } from '../const/dashboardData';
 import { data } from './__mock__/data';
 
 const router: Router = express.Router();
@@ -14,7 +14,7 @@ router.get('/product', (req: Request, res: Response) => {
   const { language = 'en' } = req.query;
   res.render('product', {
     data: {
-      menuList,
+      dashboardData,
       language,
       languageText: languageText[language.toString()],
       productData: data,

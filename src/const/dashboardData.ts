@@ -1,4 +1,4 @@
-export const menuList = [
+export const dashboardData = [
   {
     id: 'radio-review',
     name: 'reviewLabelText',
@@ -7,19 +7,19 @@ export const menuList = [
   },
   {
     id: 'radio-our-science',
-    name: 'Our Science',
+    name: 'ourScienceLabelText',
     value: '1',
     image: '../images/dashboard/our-science-icon.png',
   },
   {
     id: 'radio-texture',
-    name: 'Texture',
+    name: 'textureLabelText',
     value: '2',
     image: '../images/dashboard/texture-icon.png',
   },
   {
     id: 'radio-frequently-bt',
-    name: 'Routines',
+    name: 'routinesLabelText',
     value: '3',
     image: '../images/dashboard/frequently-bt-icon.png',
   },
