@@ -3,8 +3,10 @@ export const data = {
   name: 'moisturizing cream',
   lang: 'en',
   variant: {
-    name: 'Hydrating Facial Cleanser', 
+    name: 'Hydrating Facial Cleanser',
     size: '8FL OZ/236 ML',
+    modelURL: '/products/hydrating-cleanser/8oz/en/3d-models/hydrating-cleanser.glb',
+    productImageURL: '/products/hydrating-cleanser/8oz/en/images/product-image.webp'
   },
   reviews: [
     {
@@ -78,16 +80,18 @@ export const data = {
   ],
   efficacy: {
     head: 'Efficacy',
-    url: '/images/efficacy/efficacy.png',
+    url: '/products/hydrating-cleanser/8oz/en/images/efficacy/efficacy.png',
   },
   howToApply: {
     head: 'How to Apply',
     url: 'https://www.youtube.com/embed/yptop_8_wqo',
+    textureImage1URL: '/products/hydrating-cleanser/8oz/en/images/texture/texture-01.png',
+    textureImage2URL: '/products/hydrating-cleanser/8oz/en/images/texture/texture-02.png',
   },
   frequentlyBT: {
-    url1: '/images/frequently-bt/frequently-bt-p1.png',
-    url2: '/images/frequently-bt/frequently-bt-p2.png',
-    url3: '/images/frequently-bt/frequently-bt-p3.png',
+    url1: '/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png',
+    url2: '/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png',
+    url3: '/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png',
     product1url: 'https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser',
     product2url: 'https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser',
   }

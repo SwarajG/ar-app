@@ -12,17 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/root.css">
-  <link rel="stylesheet" href="/dashboard/index.css">
-  <link rel="stylesheet" href="/dashboard/nice-select.css">
+  <link rel="stylesheet" href="/common/lang-select/index.css">
+  <link rel="stylesheet" href="/common/lang-select/nice-select.css">
 </head>
 
 <body>
   <div class="container">
     <div class="data-container">
-      <img class="logo" src="/images/cerave-logo.png">
-      <img class="product-image" src="/images/product-image.webp">
+      <img class="logo" src="/common/images/cerave-logo.png">
+      <img class="product-image" src="/products/hydrating-cleanser/8oz/en/images/product-image.webp">
       <p class="product-name">Hydrating Cleanser</p>
       <p class="variant">8Oz 236ml</p>
+
+      <!-- <p class="product-name"> data.productData.variant.name</p>
+      <p class="variant"> data.productData.variant.size</p> -->
+      <!-- <img class="product-image" src=" data.productData.variant.productImageURL"> -->
+
       <div class="select-container">
         <p class="select-label" >Select Language <%= product %>
         </p>
@@ -36,8 +41,8 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="/dashboard/jquery.nice-select.min.js"></script>
-  <script src="/dashboard/index.js"></script>
+  <script src="/common/lang-select/jquery.nice-select.min.js"></script>
+  <script src="/common/lang-select/index.js"></script>
 </body>
 
 </html>
