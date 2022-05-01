@@ -1,30 +1,30 @@
 @font-face {
   font-family: 'DINPro';
-  src: url('./product/fonts/DINPro-Regular.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-Regular.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 
 @font-face {
   font-family: 'DINPro-medium';
-  src: url('./product/fonts/DINPro-Medium.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-Medium.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 
 @font-face {
   font-family: 'DINPro-bold';
-  src: url('./product/fonts/DINPro-bold.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-bold.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 
 @font-face {
   font-family: 'DINPro-condBold';
-  src: url('./product/fonts/DINPro-condBold.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-condBold.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 
 @font-face {
   font-family: 'DINPro-Light';
-  src: url('./product/fonts/DINPro-Light.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-Light.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 

@@ -9,15 +9,19 @@
     CeraVe AR app
   </title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Root CSS -->
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/root.css">
-  <link rel="stylesheet" href="/product/css/dashboard.css">
-  <link rel="stylesheet" href="/product/css/modal.css">
-  <link rel="stylesheet" href="/product/css/review-modal.css">
-  <link rel="stylesheet" href="/product/css/ingredients-modal.css">
-  <link rel="stylesheet" href="/product/css/ceramides-modal.css">
-  <link rel="stylesheet" href="/product/css/efficacy-modal.css">
-  <link rel="stylesheet" href="/product/css/how-to-apply-modal.css">
+
+  <!-- Common CSS -->
+  <link rel="stylesheet" href="/common/css/dashboard.css">
+  <link rel="stylesheet" href="/common/css/modal.css">
+  <link rel="stylesheet" href="/common/css/review-modal.css">
+  <link rel="stylesheet" href="/common/css/ingredients-modal.css">
+  <link rel="stylesheet" href="/common/css/ceramides-modal.css">
+  <link rel="stylesheet" href="/common/css/efficacy-modal.css">
+  <link rel="stylesheet" href="/common/css/how-to-apply-modal.css">
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
@@ -29,12 +33,12 @@
   <script>eruda.init();</script>
 
   <!-- Written components -->
-  <script src="/product/tap-place-cursor.js"></script>
-  <script src="/product/align-to-camera.js"></script>
-  <script src="/product/tap-hotspot.js"></script>
-  <script src="/product/handle-swipes.js"></script>
-  <script src="/product/new-tab.js"></script>
-  <script src="/product/cubemap-static.js"></script>
+  <script src="/common/components/tap-place-cursor.js"></script>
+  <script src="/common/components/align-to-camera.js"></script>
+  <script src="/common/components/tap-hotspot.js"></script>
+  <script src="/common/components/handle-swipes.js"></script>
+  <script src="/common/components/new-tab.js"></script>
+  <script src="/common/components/cubemap-static.js"></script>
   
   <!-- Look At component -->
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
@@ -45,23 +49,27 @@
 <body>
   <div class="ui-container">
     <!-- Dashboard UI partial -->
-    <%- include('../partials/dashboard', { languageText: data.languageText, dashboardData: data.dashboardData }) %>
+    <%- include('../views/partials/dashboard', { languageText: data.languageText, dashboardData: data.dashboardData }) %>
 
       <!-- Review Modal partial -->
-      <%- include('../partials/modal', { languageText: data.languageText, type: 'review' , className: 'modal-review' ,
+      <%- include('../views/partials/modal', { languageText: data.languageText, type: 'review' , className: 'modal-review' ,
         reviews: data.productData.reviews }) %>
 
-        <!-- Our Science partial -->
-        <%- include('../partials/modal', { languageText: data.languageText, type: 'ingredients' ,
+        <!-- Ingredients modal partial -->
+        <%- include('../views/partials/modal', { languageText: data.languageText, type: 'ingredients' ,
           className: 'modal-ingredients' , ingredients: data.productData.ingredients }) %>
-          <%- include('../partials/modal', { languageText: data.languageText, type: 'ceramides' ,
-            className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %>
-            <%- include('../partials/modal', { languageText: data.languageText, type: 'efficacy' ,
-              className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %>
 
-              <!-- Texture How to Apply modal partial -->
-              <%- include('../partials/modal', { languageText: data.languageText, type: 'howToApply' ,
-                className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
+        <!-- Ceramides modal partial -->
+        <%- include('../views/partials/modal', { languageText: data.languageText, type: 'ceramides' ,
+          className: 'modal-ceramides' , ceramides: data.productData.ceramides }) %>
+
+        <!-- Efficacy modal partial -->
+        <%- include('../views/partials/modal', { languageText: data.languageText, type: 'efficacy' ,
+          className: 'modal-efficacy' , efficacy: data.productData.efficacy }) %>
+
+        <!-- How to Apply modal partial -->
+        <%- include('../views/partials/modal', { languageText: data.languageText, type: 'howToApply' ,
+          className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
   </div>
 
   <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
@@ -70,21 +78,22 @@
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets>
       <!-- 3D MODELS -->
-      <!-- <a-asset-item id="podium-model" src="/product/models/podium-glass.glb"></a-asset-item> -->
-      <a-asset-item id="podium-model" src="/product/models/podium_surf.glb"></a-asset-item>
-      <a-asset-item id="hydrating-cleanser-model" src="/product/models/hydrating-cleanser.glb"></a-asset-item>
+      <!-- Common models -->
+      <a-asset-item id="podium-model" src="/common/3d-models/podium.glb"></a-asset-item>
+      <a-asset-item id="star-glb" src="/common/3d-models/star.glb"></a-asset-item>
+      <a-asset-item id="close-icon-glb" src="/common/3d-models/close-icon.glb"></a-asset-item>
+      <a-asset-item id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
 
-      <a-asset-item id="star-glb" src="/product/models/star.glb"></a-asset-item>
-      <a-asset-item id="close-icon-glb" src="/product/models/close-icon.glb"></a-asset-item>
-      <a-asset-item id="magnifying-glass-icon-glb" src="/product/models/magnifying-glass-icon.glb"></a-asset-item>
+      <!-- P1 - Hydrating Cleanser -->
+      <a-asset-item id="hydrating-cleanser-model" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
 
       <!-- Cubemap Static Images -->
-      <img id="posx" src="/images/cubemap/posx.jpg">
-      <img id="posy" src="/images/cubemap/posy.jpg">
-      <img id="posz" src="/images/cubemap/posz.jpg">
-      <img id="negx" src="/images/cubemap/negx.jpg">
-      <img id="negy" src="/images/cubemap/negy.jpg">
-      <img id="negz" src="/images/cubemap/negz.jpg">
+      <img id="posx" src="/common/images/cubemap/posx.jpg">
+      <img id="posy" src="/common/images/cubemap/posy.jpg">
+      <img id="posz" src="/common/images/cubemap/posz.jpg">
+      <img id="negx" src="/common/images/cubemap/negx.jpg">
+      <img id="negy" src="/common/images/cubemap/negy.jpg">
+      <img id="negz" src="/common/images/cubemap/negz.jpg">
 
       <!--Frequently BT State assets-->
       <img id="frequently-bt-p1" src="<%= data.productData.frequentlyBT.url1 %>">
@@ -92,8 +101,10 @@
       <img id="frequently-bt-p3" src="<%= data.productData.frequentlyBT.url3 %>">  
 
       <!-- Cream Texture Images -->
-      <img id="cream-tex-img-1" src="/images/texture-01.png">
-      <img id="cream-tex-img-2" src="/images/texture-02.png">
+      <!-- <img id="cream-tex-img-1" src="/images/texture-01.png">
+      <img id="cream-tex-img-2" src="/images/texture-02.png"> -->
+      <img id="cream-tex-img-1" src="<%= data.productData.howToApply.textureImage1URL%>">
+      <img id="cream-tex-img-2" src="<%= data.productData.howToApply.textureImage2URL%>">
 
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
@@ -381,7 +392,7 @@
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <script src="/product/js/index.js"></script>
+  <!-- <script src="/product/js/index.js"></script> -->
 </body>
 
 </html>
