@@ -1,7 +1,7 @@
 export const menuList = [
   {
     id: 'radio-review',
-    name: 'Reviews',
+    name: 'reviewLabelText',
     value: '0',
     image: '../images/dashboard/reviews-icon.png',
   },
