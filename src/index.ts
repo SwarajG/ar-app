@@ -4,10 +4,10 @@ import http from 'http';
 import https from 'https';
 import path from 'path';
 
-import { connect } from "./database";
+// import { connect } from "./database";
 import routes from './routes';
 
-connect();
+// connect();
 const app = express();
 const HTTPS_PORT = process.env.PORT || 3000;
 const HTTP_PORT = process.env.PORT || 8080;
