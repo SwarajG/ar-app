@@ -99,6 +99,9 @@ function openProduct(){
     document.getElementById('magnifying-glass-icon').object3D.visible = false;
     document.getElementById('close-icon').object3D.visible = true;
 
+    document.getElementById('cream-tex-1').object3D.visible = true;
+    document.getElementById('cream-tex-2').object3D.visible = true;
+
     document.getElementById('product').setAttribute('opened', '1');
 }
 
@@ -108,6 +111,9 @@ function closeProduct(){
     document.getElementById('magnifying-glass-icon').object3D.visible = true;
     document.getElementById('close-icon').object3D.visible = false;
     
+    document.getElementById('cream-tex-1').object3D.visible = false;
+    document.getElementById('cream-tex-2').object3D.visible = false;
+
     document.getElementById('product').setAttribute('opened', '0');
 }
 

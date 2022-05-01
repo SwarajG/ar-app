@@ -21,21 +21,25 @@
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
   <script async
-    src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM"></script>
+    src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM">
+  </script>
+
+  <!-- Mobile Console -->
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+
+  <!-- Written components -->
   <script src="/product/tap-place-cursor.js"></script>
   <script src="/product/align-to-camera.js"></script>
   <script src="/product/tap-hotspot.js"></script>
   <script src="/product/handle-swipes.js"></script>
   <script src="/product/new-tab.js"></script>
   <script src="/product/cubemap-static.js"></script>
-  <script src="/product/cubemap-realtime.js"></script>
-
-  <!-- Mobile Console -->
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
-
+  
   <!-- Look At component -->
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  <!-- Meshline component -->
+  <script src="https://raw.githack.com/andreasplesch/aframe-meshline-component/master/dist/aframe-meshline-component.min.js"></script>
 </head>
 
 <body>
@@ -58,7 +62,6 @@
               <!-- Texture How to Apply modal partial -->
               <%- include('../partials/modal', { languageText: data.languageText, type: 'howToApply' ,
                 className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
-
   </div>
 
   <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
@@ -88,6 +91,9 @@
       <img id="frequently-bt-p2" src="<%= data.productData.frequentlyBT.url2 %>">
       <img id="frequently-bt-p3" src="<%= data.productData.frequentlyBT.url3 %>">  
 
+      <!-- Cream Texture Images -->
+      <img id="cream-tex-img-1" src="/images/texture-01.png">
+      <img id="cream-tex-img-2" src="/images/texture-02.png">
 
       <!--DEFINING MIXINS-->
       <!--Hotspot mixin for creating hotspot spheres-->
@@ -137,7 +143,7 @@
     </a-box>
 
     <!-- Base Element -->
-    <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:3;">
+    <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:5;">
       <!-- Podium --> <!--Scale changed to 25 by Deb. Original there was no scale parameter here 29 Apr 2022-->
       <a-entity id="podium" gltf-model="#podium-model" scale="25 25 25" cubemap-static align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
       </a-entity>
@@ -327,6 +333,18 @@
                 </a-entity>
               </a-entity>
             </a-entity>
+
+            <!-- Cream Texture Image #1 -->
+            <a-entity><a-entity><a-entity id="cream-tex-1" visible="false">
+              <a-image src="#cream-tex-img-1" position="2 4 0.01" scale="1.5 1.5 1.5"></a-image>
+              <a-entity meshline="lineWidth: 3; path: 0 2 0, 1 2 0, 2 4 0; color: rgb(0, 114, 206)"></a-entity>
+            </a-entity></a-entity></a-entity>
+
+            <!-- Cream Texture Image #2 -->
+            <a-entity><a-entity><a-entity id="cream-tex-2" visible="false">
+              <a-image src="#cream-tex-img-2" position="-2 3.5 0.01" scale="1.5 1.5 1.5"></a-image>
+              <a-entity meshline="lineWidth: 3; path: 0 2 0, -1 2 0, -2 3.5 0; color: rgb(0, 114, 206)"></a-entity>
+            </a-entity></a-entity></a-entity>
           </a-entity>
 
           <!-- Frequently BT State -->
@@ -354,13 +372,15 @@
           </a-entity>
         </a-entity>
       </a-entity>
-
-
     </a-entity>
   </a-scene>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <script src="/product/js/index.js"></script>
 </body>
 
