@@ -98,7 +98,7 @@
       <!--Frequently BT State assets-->
       <img id="frequently-bt-p1" src="<%= data.productData.frequentlyBT.url1 %>">
       <img id="frequently-bt-p2" src="<%= data.productData.frequentlyBT.url2 %>">
-      <img id="frequently-bt-p3" src="<%= data.productData.frequentlyBT.url3 %>">  
+      <img id="frequently-bt-p3" src="<%= data.productData.frequentlyBT.url3 %>">
 
       <!-- Cream Texture Images -->
       <!-- <img id="cream-tex-img-1" src="/images/texture-01.png">
@@ -133,19 +133,7 @@
       </a-entity>
     </a-entity>
 
-    <a-entity light="
-      type: directional;
-      intensity: 0.8;
-      castShadow: true;
-      shadowMapHeight:2048;
-      shadowMapWidth:2048;
-      shadowCameraTop: 20;
-      shadowCameraBottom: -20;
-      shadowCameraRight: 20;
-      shadowCameraLeft: -20;
-      target: #camera" xrextras-attach="target: camera; offset: 8 15 10" position="1 4.3 2.5" shadow>
-    </a-entity>
-
+    <!-- Ambient light -->
     <a-light type="ambient" intensity="0.1"></a-light>
 
     <!-- Adding the cantap class allows the ground to be clicked -->
@@ -155,9 +143,26 @@
 
     <!-- Base Element -->
     <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:5;">
-      <!-- Podium --> <!--Scale changed to 25 by Deb. Original there was no scale parameter here 29 Apr 2022-->
-      <a-entity id="podium" gltf-model="#podium-model" scale="25 25 25" cubemap-static align-to-camera shadow="cast:true; receive:true;" material="shader: shadow; transparent: true; opacity: 0.4">
+      <a-entity id="podium" 
+        gltf-model="#podium-model"
+        cubemap-static align-to-camera
+        shadow="cast:true; receive:true;" 
+        material="shader: shadow; transparent: true; opacity: 0.4">
+        <a-entity light="
+          type: directional;
+          intensity: 0.8;
+          castShadow: true;
+          shadowMapHeight:2048;
+          shadowMapWidth:2048;
+          shadowCameraTop: 20;
+          shadowCameraBottom: -20;
+          shadowCameraRight: 20;
+          shadowCameraLeft: -20;
+          target: #base" position="8 15 10" shadow>
+        </a-entity>
       </a-entity>
+
+      
 
       <!-- Product -->
       <a-entity id="product" position="0 0 0" opened="0" 
