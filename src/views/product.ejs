@@ -128,7 +128,7 @@
       <!-- Reticle Group -->
       <a-entity id="reticle-group" align-to-camera>
         <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
-          <a-text value="Place Here" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+          <a-text value="<%= data.languageText.placeHereText %>" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
         </a-ring>
       </a-entity>
     </a-entity>
@@ -186,7 +186,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="4.5" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+                  <a-text value="<%= data.productData.reviews[0].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -201,7 +201,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="4.7" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                  <a-text value="<%= data.productData.reviews[1].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -216,7 +216,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="4.8" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+                  <a-text value="<%= data.productData.reviews[2].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -231,7 +231,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="5" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="4"></a-text>
+                  <a-text value="<%= data.productData.reviews[3].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="4"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -246,7 +246,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="4.9" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
+                  <a-text value="<%= data.productData.reviews[4].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -266,7 +266,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="Ingredients" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+                  <a-text value="<%= data.languageText.ingredientsHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -282,7 +282,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="Ceramides" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                  <a-text value="<%= data.languageText.ceramidesHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -298,7 +298,7 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="Efficacy" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+                  <a-text value="<%= data.languageText.efficacyHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -322,7 +322,7 @@
                   </a-entity>
 
                   <!--Hotspot Text-->
-                  <a-text id="texture-hotspot-1-text" value="Look inside" mixin="hotspot-text" position="0 -0.2 0.2"
+                  <a-text id="texture-hotspot-1-text" value="<%= data.languageText.lookInsideHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2"
                     hotspot-value="1"></a-text>
                 </a-entity>
               </a-entity>
@@ -340,7 +340,7 @@
                   </a-entity>
 
                   <!--Hotspot Text-->
-                  <a-text value="How to Apply" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                  <a-text value="<%= data.languageText.howToApplyHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
