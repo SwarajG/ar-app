@@ -1,7 +1,7 @@
 import express, { Router, Request, Response } from 'express';
 import { languageText } from './language';
 import { dashboardData } from '../const/dashboardData';
-import { data } from './__mock__/data';
+import { data } from './__mock__/data2';
 
 const router: Router = express.Router();
 
