@@ -106,8 +106,8 @@
 
 .swipe-rotate-icon{
   flex-grow: 1;
-  width: 40px;
-  padding: 10px;
+  width: 60px;
+  padding: 0px;
 }
 
 .swipe-rotate-text{
@@ -121,8 +121,8 @@
 
 .pinch-scale-icon{
   flex-grow: 1;
-  width: 40px;
-  padding: 10px;
+  width: 60px;
+  padding: 0px;
 }
 
 .pinch-scale-text{
