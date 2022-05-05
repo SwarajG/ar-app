@@ -1,5 +1,5 @@
 import express, { Router, Request, Response } from 'express';
-import { getProduct } from '../controller/productController';
+import { getProduct, setProduct } from '../controller/productController';
 import { languageText } from './language';
 import { dashboardData } from '../const/dashboardData';
 
@@ -28,9 +28,9 @@ router.get('/product', async (req: Request, res: Response) => {
   });
 });
 
-router.post('/product', (req: Request, res: Response) => {
-  console.log(req.body);
-  res.json(req.body);
+router.post('/product', async (req: Request, res: Response) => {
+  const productData = await setProduct(req.body);
+  res.json(productData);
 });
 
 export default router;

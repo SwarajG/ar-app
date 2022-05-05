@@ -15,3 +15,9 @@ export const getProduct = async ({
   const product = await Product.find({ name, lang, size });
   return product;
 };
+
+export const setProduct = async (data: Product) => {
+  const NewProduct = new Product(data);
+  const product = await NewProduct.save();
+  return product;
+};
