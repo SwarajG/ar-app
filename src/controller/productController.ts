@@ -12,7 +12,7 @@ export const getProduct = async ({
   lang: string;
   size: string;
 }) => {
-  const product = await Product.find({ name, lang, size });
+  const product = await Product.findOne({ name, size, lang });
   return product;
 };
 
