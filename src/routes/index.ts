@@ -11,18 +11,18 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.get('/product', async (req: Request, res: Response) => {
-  const { product = '', size = '', language = 'en' } = req.query;
+  const { name = '', size = '', lang = 'en' } = req.query;
   const query = {
-    id: String(product),
+    name: String(name),
     size: String(size),
-    lang: String(language),
+    lang: String(lang),
   };
   const productData = await getProduct(query);
   res.render('product', {
     data: {
       dashboardData,
-      language,
-      languageText: languageText[language.toString()],
+      language: lang,
+      languageText: languageText[lang.toString()],
       productData: productData,
     },
   });

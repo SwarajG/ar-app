@@ -4,14 +4,14 @@ import { productSchema, Product } from '../schema/product';
 const Product = model<Product>('Product', productSchema);
 
 export const getProduct = async ({
-  id,
+  name,
   lang,
   size,
 }: {
-  id: string;
+  name: string;
   lang: string;
   size: string;
 }) => {
-  const product = await Product.find({ name: id, lang, size });
+  const product = await Product.find({ name, lang, size });
   return product;
 };
