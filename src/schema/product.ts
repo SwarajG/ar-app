@@ -57,6 +57,7 @@ const productSchema = new Schema<Product>({
   id: String,
   name: String,
   lang: String,
+  size: String,
   variant: {
     name: String,
     size: String,
