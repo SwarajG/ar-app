@@ -5,8 +5,8 @@ export const data = {
   variant: {
     name: 'Hydrating Facial Cleanser',
     size: '8FL OZ/236 ML',
-    modelURL: '/products/hydrating-cleanser/8oz/en/3d-models/hydrating-cleanser.glb',
-    productImageURL: '/products/hydrating-cleanser/8oz/en/images/product-image.webp'
+    modelURL: '/products/hydrating-cleanser/8oz/en/3d-models/product.glb',
+    productImageURL: '/products/hydrating-cleanser/8oz/en/images/product-image.png'
   },
   reviews: [
     {

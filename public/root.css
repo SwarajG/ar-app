@@ -12,13 +12,13 @@
 
 @font-face {
   font-family: 'DINPro-bold';
-  src: url('./common/fonts/DINPro-bold.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-Bold.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 
 @font-face {
   font-family: 'DINPro-condBold';
-  src: url('./common/fonts/DINPro-condBold.ttf') format('truetype');
+  src: url('./common/fonts/DINPro-CondBold.ttf') format('truetype');
   /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
 }
 
