@@ -5,6 +5,7 @@ interface Product {
   id: string,
   name: string,
   lang: string,
+  size: string,
   variant: {
     name: string,
     size: string,
