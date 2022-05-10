@@ -26,6 +26,7 @@ interface languageText {
     efficacyHotspotLabel : string,
     lookInsideHotspotLabel : string,
     howToApplyHotspotLabel : string,
+    moreReviewsHotspotLabel: string,
 
     //Place here message
     placeHereText: string,
@@ -61,6 +62,7 @@ export const languageText: languageText = {
     efficacyHotspotLabel : 'Efficacy',
     lookInsideHotspotLabel : 'Look Inside',
     howToApplyHotspotLabel : 'How to Apply',
+    moreReviewsHotspotLabel: 'More',
 
     //Place here message
     placeHereText: 'Place Here',
@@ -92,6 +94,7 @@ export const languageText: languageText = {
     efficacyHotspotLabel : 'Efficacia',
     lookInsideHotspotLabel : 'Mirar Dentro',
     howToApplyHotspotLabel : 'Como Aplicar',
+    moreReviewsHotspotLabel: 'Mas',
 
     //Place here message
     placeHereText: 'Lugar Aqui',

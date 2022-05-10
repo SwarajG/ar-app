@@ -41,15 +41,18 @@ export const data = {
         rating: 5,
         review: 'This lotion is the best at keeping both my face and body from getting overly dry in the winter or too oily on those warm, summer days. What I like most about Cerave is that it has no unnecessary colored dyes and is perfume free so that it does not fight with whatever cologne I put on that day. I use it when I am fresh out of the shower to lock in the water still on my face & skin and it always goes on smooth. I purchased several containers for a friend of mine as a casual gift and now she uses and swears by it, too.',
       },
-      {
-        id: '5',
-        head: 'My perfect facial moisturizer (yes, I said FACIAL)',
-        name: 'Lena H',
-        age: 'Female - 55 to 64',
-        rating: 5,
-        review: 'My once healthy facial skin developed red scaly patches, cracks, and irritations for more than a year, all while I used some of the most highly rated products on the market to address the problem. Then, a dermatologist told me I had damaged my skin barrier and I needed to stop all the other madness and just use this (after a gentle CeraVe skin cleanser) on my face. In less than 90 days my skin quieted and now, after 3 years as a CeraVe girl, I get compliments on the texture and luminosity of my 57 year-old skin, which is now so healthy that no one believes me when I tell them my age. There are always two jars of this in my house - one is in use and one on reserve so that I will never be without this wonder cream.',
-      },
+      // {
+      //   id: '5',
+      //   head: 'My perfect facial moisturizer (yes, I said FACIAL)',
+      //   name: 'Lena H',
+      //   age: 'Female - 55 to 64',
+      //   rating: 5,
+      //   review: 'My once healthy facial skin developed red scaly patches, cracks, and irritations for more than a year, all while I used some of the most highly rated products on the market to address the problem. Then, a dermatologist told me I had damaged my skin barrier and I needed to stop all the other madness and just use this (after a gentle CeraVe skin cleanser) on my face. In less than 90 days my skin quieted and now, after 3 years as a CeraVe girl, I get compliments on the texture and luminosity of my 57 year-old skin, which is now so healthy that no one believes me when I tell them my age. There are always two jars of this in my house - one is in use and one on reserve so that I will never be without this wonder cream.',
+      // },
     ],
+    moreReviews: {
+      url: 'https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser',
+    },
     ingredients: {
       head: 'Ingredients',
       list: 'AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN',
