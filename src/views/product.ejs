@@ -244,14 +244,15 @@
             <!--Review Hotspot #5-->
             <a-entity rotation="0 48 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5">
+                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5" 
+                  new-tab="url: <%= data.productData.moreReviews.url %>">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[4].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
+                  <a-text value="<%= data.languageText.moreReviewsHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>

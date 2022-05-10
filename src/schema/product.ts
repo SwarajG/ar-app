@@ -22,6 +22,9 @@ interface Product {
       review: string,
     },
   ],
+  moreReviews: {
+    url: string,
+  },
   ingredients: {
     head: string,
     list: string,
@@ -74,6 +77,9 @@ const productSchema = new Schema<Product>({
       review: String,
     },
   ],
+  moreReviews: {
+    url: String,
+  },
   ingredients: {
     head: String,
     list: String,
