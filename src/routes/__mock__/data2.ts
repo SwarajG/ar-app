@@ -99,4 +99,3 @@ export const data = {
       product2url: 'https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser',
     }
   };
-  
