@@ -90,7 +90,7 @@
             },
             {
                 "description": "Rinse"
-            },
+            }
         ],
         "textureImage1URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-01.png",
         "textureImage2URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-02.png"

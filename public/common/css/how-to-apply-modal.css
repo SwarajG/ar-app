@@ -4,7 +4,7 @@
 
 .how-to-apply__content-container{
     height: 310px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
 .how-to-apply-modal__title {
@@ -20,10 +20,27 @@
 }
 
 .how-to-apply-modal__body {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #003057;
+}
+
+.how-to-apply-modal__steps{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: DINPro-medium;
+    line-height: 18px;
+    color: #003057;
+}
+
+.how-to-apply-modal__list{
+    list-style: decimal;
+    padding-left: 20px;
+    color: #0072ce;
+    font-family: DINPro-medium;
 }

@@ -19,6 +19,7 @@ interface languageText {
     ceramidesHead : string,
     efficacyHead : string,
     howToApplyHead: string,
+    howToApplySteps: string,
 
     //Hotspot Labels
     ingredientsHotspotLabel : string,
@@ -55,6 +56,7 @@ export const languageText: languageText = {
     ceramidesHead : 'Science of Ceramides',
     efficacyHead : 'Efficacy',
     howToApplyHead: 'How to Apply',
+    howToApplySteps: 'Steps',
 
     //Hotspot Labels
     ingredientsHotspotLabel : 'Ingredients',
@@ -87,6 +89,7 @@ export const languageText: languageText = {
     ceramidesHead : 'Ciencia de las Ceramidas',
     efficacyHead : 'Eficacia',
     howToApplyHead: 'Cómo Aplicar',
+    howToApplySteps: 'Pasos',
 
     //Hotspot Labels
     ingredientsHotspotLabel : 'Ingredientes',

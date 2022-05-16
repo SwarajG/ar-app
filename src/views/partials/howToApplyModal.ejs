@@ -1,11 +1,12 @@
 <div id="texture-2" class="texture-modal hide">
     <p class="how-to-apply-modal__title"><%= languageText.howToApplyHead %></p>
     <div class="how-to-apply__content-container">
-        <iframe width="310" height="310" src="<%= howToApply.url%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <ul>
+        <iframe width="310" height="200" src="<%= howToApply.url%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="how-to-apply-modal__steps"><%= languageText.howToApplySteps %></p>
+        <ol class="how-to-apply-modal__list">
             <% howToApply.steps.forEach(function(step) { %>
-                <li><p class="how-to-apply-modal__body"><%= step.description%></p></li>
+                <li class="how-to-apply-modal__body"><%= step.description%></li>
             <% }); %>
-        </ul>
+        </ol>
     </div>
 </div>
