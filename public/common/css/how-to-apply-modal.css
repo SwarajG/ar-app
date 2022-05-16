@@ -18,3 +18,12 @@
 .how-to-apply-image{
     /* margin-bottom: 10px; */
 }
+
+.how-to-apply-modal__body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #003057;
+}

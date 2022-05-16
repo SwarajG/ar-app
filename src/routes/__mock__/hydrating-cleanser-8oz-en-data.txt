@@ -3,6 +3,7 @@
     "name": "hydrating-cleanser",
     "size": "8oz",
     "lang": "en",
+    "crmURL": "https://www.cerave.de/newsletter-anmeldung",
     "variant": {
         "name": "Hydrating Facial Cleanser",
         "size": "8FL OZ/236 ML",
@@ -80,6 +81,17 @@
     "howToApply": {
         "head": "How to Apply",
         "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "Wet skin with lukewarm water"
+            },
+            {
+                "description": "Massage cleanser into skin in a gentle, circular motion"
+            },
+            {
+                "description": "Rinse"
+            },
+        ],
         "textureImage1URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-01.png",
         "textureImage2URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-02.png"
     },

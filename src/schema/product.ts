@@ -4,8 +4,9 @@ const { Schema } = mongoose;
 interface Product {
   id: string,
   name: string,
-  lang: string,
   size: string,
+  lang: string,
+  crmURL: string,
   variant: {
     name: string,
     size: string,
@@ -44,6 +45,11 @@ interface Product {
   howToApply: {
     head: string,
     url: string,
+    steps:[
+      {
+        description: string,
+      },
+    ],
     textureImage1URL: string,
     textureImage2URL: string,
   },
@@ -59,8 +65,9 @@ interface Product {
 const productSchema = new Schema<Product>({
   id: String,
   name: String,
-  lang: String,
   size: String,
+  lang: String,
+  crmURL: String,
   variant: {
     name: String,
     size: String,
@@ -99,6 +106,11 @@ const productSchema = new Schema<Product>({
   howToApply: {
     head: String,
     url: String,
+    steps:[
+      {
+        description: String,
+      },
+    ],
     textureImage1URL: String,
     textureImage2URL: String,
   },
