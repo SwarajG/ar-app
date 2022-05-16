@@ -39,7 +39,7 @@ function openInstructionOverlay(){
 
 // Resets product - hides it and the dashboard; 
 // Resets all states to present review state
-function ResetProduct(){
+function resetProduct(){
   baseElement = document.getElementById('base');
 
   // Hide the base
@@ -140,7 +140,7 @@ AFRAME.registerComponent('tap-place-cursor', {
       }
     });
 
-    resetButton.onclick = ResetProduct;
+    resetButton.onclick = resetProduct;
   },
 
   tick() {
