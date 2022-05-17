@@ -31,6 +31,7 @@ interface languageText {
 
     //Place here message
     placeHereText: string,
+    placeHereInfo: string,
 
   }
 }
@@ -68,6 +69,7 @@ export const languageText: languageText = {
 
     //Place here message
     placeHereText: 'Place Here',
+    placeHereInfo: 'Tap to place the product on a flat surface'
   },
   es: {
     //Buttons
@@ -101,5 +103,6 @@ export const languageText: languageText = {
 
     //Place here message
     placeHereText: 'Lugar Aqui',
+    placeHereInfo: 'Toque para colocar el producto en una superficie plana',
   },
 };

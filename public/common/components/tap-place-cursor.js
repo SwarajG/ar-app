@@ -48,6 +48,9 @@ function resetProduct(){
   // Show Reticle
   document.getElementById('reticle').object3D.visible = true;
 
+  // Show product place here info message container
+  document.getElementById('place-product').classList.remove('hide');
+
   // Set the product-placed flag
   baseElement.setAttribute('product-placed', '0');
 
@@ -119,6 +122,9 @@ AFRAME.registerComponent('tap-place-cursor', {
 
         // Hide Reticle
         document.getElementById('reticle').object3D.visible = false;
+
+        // Hide product place here info message container
+        document.getElementById('place-product').classList.add('hide');
 
         // Show dashboard UI
         dashboard.classList.remove('hide');
