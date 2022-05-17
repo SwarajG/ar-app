@@ -48,6 +48,11 @@
 
 <body>
   <div class="ui-container">
+    <!-- Place Product info -->
+    <div id="place-product" class="place-product-info">
+      <img class="place-product-icon" src="/common/images/dashboard/place-product.gif">
+      <p class="place-product-text"><%= data.languageText.placeHereInfo%></p>
+    </div>
     <!-- Dashboard UI partial -->
     <%- include('../views/partials/dashboard', { languageText: data.languageText, dashboardData: data.dashboardData }) %>
 

@@ -121,3 +121,33 @@ video {
   height: 100%;
   position: absolute;
 }
+
+.place-product-info{
+  position: relative;
+  width: 340px;
+  height: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 90;
+  top: 85%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #4040409e;
+}
+
+.place-product-icon{
+  width: 50px;
+  padding: 10px;
+}
+
+.place-product-text{
+  width: 150px;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  padding-right: 10px;
+}
