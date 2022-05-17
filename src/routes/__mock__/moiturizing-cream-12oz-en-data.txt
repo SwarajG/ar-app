@@ -3,6 +3,7 @@
     "name": "moisturizing-cream",
     "size": "12oz",
     "lang": "en",
+    "crmURL": "https://www.cerave.de/newsletter-anmeldung",
     "variant": {
         "name": "moisturizing Cream",
         "size": "12FL OZ/340 GM",
@@ -80,6 +81,14 @@
     "howToApply": {
         "head": "How to Apply",
         "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "Collect product from the tub"
+            },
+            {
+                "description": "Apply Liberally to dry skin"
+            }
+        ],
         "textureImage1URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-01.png",
         "textureImage2URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-02.png"
     },
