@@ -29,8 +29,8 @@
   </script>
 
   <!-- Mobile Console -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script> -->
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
 
   <!-- Written components -->
   <script src="/common/components/tap-place-cursor.js"></script>
@@ -88,6 +88,7 @@
       <a-asset-item id="star-glb" src="/common/3d-models/star.glb"></a-asset-item>
       <a-asset-item id="close-icon-glb" src="/common/3d-models/close-icon.glb"></a-asset-item>
       <a-asset-item id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
+      <a-asset-item id="pin-icon-glb" src="/common/3d-models/pin.glb"></a-asset-item>
 
       <!-- P1 - Hydrating Cleanser -->
       <a-asset-item id="hydrating-cleanser-model" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
@@ -132,9 +133,16 @@
 
       <!-- Reticle Group -->
       <a-entity id="reticle-group" align-to-camera>
-        <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
-          <a-text value="<%= data.languageText.placeHereText %>" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+        <a-ring rotation="-90 0 0" material="shader: flat; color: #0072ce;" 
+          radius-inner="0.4" radius-outer="0.6">
+          <a-text value="<%= data.languageText.placeHereText %>" position="0 0 2.5" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
         </a-ring>
+
+        <!-- Pin -->
+        <a-entity gltf-model="#pin-icon-glb"
+          animation="property: position; to: 0 0.5 0; loop: true; dur: 1000; dir: alternate; easing: easeInOutQuad"
+          animation__spin="property: rotation; to: 0 360 0; dur: 10000; dir: normal; easing: linear; loop: true">
+        </a-entity>
       </a-entity>
     </a-entity>
 
@@ -147,7 +155,7 @@
     </a-box>
 
     <!-- Base Element -->
-    <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:5;">
+    <a-entity id="base" visible="true" scale="1 1 1" product-placed="0">
       <a-entity id="podium" 
         gltf-model="#podium-model"
         cubemap-static align-to-camera
@@ -166,8 +174,6 @@
           target: #base" position="8 15 10" shadow>
         </a-entity>
       </a-entity>
-
-      
 
       <!-- Product -->
       <a-entity id="product" position="0 0 0" opened="0" 

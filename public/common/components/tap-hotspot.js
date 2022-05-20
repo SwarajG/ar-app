@@ -3,6 +3,10 @@ const bottleOpenCloseDur = 1500
 AFRAME.registerComponent('tap-hotspot', {
     init() {
         this.el.addEventListener('click', (event) => {
+            // If product not placed -> Do Nothing!!
+            if(document.getElementById('base').getAttribute('product-placed') === '0')
+                return;
+
             let value = this.el.getAttribute('hotspot-value');
             let className = this.el.getAttribute('class');
             let modalId;
