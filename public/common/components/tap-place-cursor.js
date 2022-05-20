@@ -24,7 +24,7 @@ function closeInstructionOverlay(){
 function openInstructionOverlay(){
   document.getElementById('instruction-container').classList.remove('hide');
   document.getElementById('info-button').classList.add('active');
-  console.log($('#instruction-container'));
+  // console.log($('#instruction-container'));
   $('#instruction-container').fadeIn(300);
   
   //Autohide the overlay after 5 secs with slow fade
@@ -38,9 +38,15 @@ function openInstructionOverlay(){
 }
 
 // Resets product - hides it and the dashboard; 
-// Resets all states to present review state
+// Resets all states to review state
 function resetProduct(){
   baseElement = document.getElementById('base');
+
+  // Set Scale Zero for the bottle hotspots to become untappable
+  baseElement.setAttribute('scale', {x: 0, y: 0, z: 0});
+
+  // Remove pinch scale to solve the jump-scale-bug
+  baseElement.removeAttribute('xrextras-pinch-scale');
 
   // Hide the base
   baseElement.object3D.visible = false;
@@ -82,6 +88,58 @@ function resetProduct(){
   }
 }
 
+// Places Product - Makes it visible and applies a pop scale animation
+function placeProduct() {
+  // Set BaseElement
+  baseElement = document.getElementById('base');
+
+  // if product not placed yet
+  if (baseElement.getAttribute('product-placed') === '0') {
+    // Set pos of product according to reticle pointer
+    baseElement.setAttribute('position', document.getElementById('reticle').object3D.position);
+    
+    // Make visible
+    baseElement.object3D.visible = true;
+
+    // Remove animation before adding to be safe
+    baseElement.removeAttribute('animation');
+
+    // Set the product-placed flag
+    baseElement.setAttribute('product-placed', '1');
+
+    // Hide Reticle
+    document.getElementById('reticle').object3D.visible = false;
+
+    // Hide product place here info message container
+    document.getElementById('place-product').classList.add('hide');
+
+    // Show dashboard UI
+    dashboard.classList.remove('hide');
+
+    //Open Instruction Overlay
+    if (overlayFlag === 0){
+      openInstructionOverlay();
+      overlayFlag = 1;
+    }
+    
+    // Setting pinch scale component attributes
+    baseElement.setAttribute('xrextras-pinch-scale', {
+      min: 0.5,
+      scale: 1,
+      max: 5
+    });
+    
+    // Scale Up pop animation
+    baseElement.setAttribute('animation', {
+      property: 'scale',
+      from: '0.001 0.001 0.001',
+      to: '1, 1, 1',
+      easing: 'easeOutElastic',
+      dur: 1500,
+    });
+  }
+}
+
 // Component that places the product when the ground is clicked
 AFRAME.registerComponent('tap-place-cursor', {
   init() {
@@ -106,44 +164,12 @@ AFRAME.registerComponent('tap-place-cursor', {
 
     // Ground Tap Handler
     document.getElementById('ground').addEventListener('click', (event) => {
-      // if product not placed yet
-      if (baseElement.getAttribute('product-placed') === '0') {
-        // Set pos of product according to reticle pointer
-        baseElement.setAttribute('position', this.el.object3D.position);
+      placeProduct();
+    });
 
-        // Make visible
-        baseElement.object3D.visible = true;
-
-        // Remove animation before adding to be safe
-        baseElement.removeAttribute('animation');
-
-        // Set the product-placed flag
-        baseElement.setAttribute('product-placed', '1');
-
-        // Hide Reticle
-        document.getElementById('reticle').object3D.visible = false;
-
-        // Hide product place here info message container
-        document.getElementById('place-product').classList.add('hide');
-
-        // Show dashboard UI
-        dashboard.classList.remove('hide');
-
-        //Open Instruction Overlay
-        if (overlayFlag === 0){
-          openInstructionOverlay();
-          overlayFlag = 1;
-        }
-        
-        // Scale Up pop animation
-        baseElement.setAttribute('animation', {
-          property: 'scale',
-          from: '0.001 0.001 0.001',
-          to: '1, 1, 1',
-          easing: 'easeOutElastic',
-          dur: 1500,
-        });
-      }
+    // Reticle Tap Handler
+    document.getElementById('reticle').addEventListener('click', (event) => {
+      placeProduct();
     });
 
     resetButton.onclick = resetProduct;
