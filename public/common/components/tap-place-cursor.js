@@ -1,6 +1,7 @@
 /* globals AFRAME */
 let scene;
 let baseElement;
+let prod;
 let resetButton;
 let dashboard;
 let overlayFlag = 0;
@@ -31,8 +32,7 @@ function openInstructionOverlay(){
     $('#instruction-container').fadeOut(2000, function(){
       closeInstructionOverlay();
     });
-  }, 5000);
-  
+  }, 5000);  
 }
 
 // Recenters Camera
@@ -48,14 +48,15 @@ function resetProduct(){
   // Get Base Entity reference
   baseElement = document.getElementById('base');
 
-  // Set Scale Zero for the bottle hotspots to become untappable
-  baseElement.setAttribute('scale', {x: 0, y: 0, z: 0});
+  // Hide the base
+  baseElement.object3D.visible = false;
 
   // Remove pinch scale to solve the jump-scale-bug
   baseElement.removeAttribute('xrextras-pinch-scale');
 
-  // Hide the base
-  baseElement.object3D.visible = false;
+  // Remove one finger rotate component from PRODUCT && Add Align-To-Camera
+  prod.removeAttribute('xrextras-one-finger-rotate');
+  prod.setAttribute('align-to-camera', '');
 
   // Show Reticle
   document.getElementById('reticle').object3D.visible = true;
@@ -111,8 +112,13 @@ function placeProduct() {
     baseElement.removeAttribute('animation');
 
     // Set the product-placed flag
-    baseElement.setAttribute('product-placed', '1');
-
+    baseElement.setAttribute('product-placed', '1');    
+    
+    setTimeout(() => {
+      prod.removeAttribute('align-to-camera');
+      prod.setAttribute('xrextras-one-finger-rotate', '');
+    }, 100)
+    
     // Hide Reticle
     document.getElementById('reticle').object3D.visible = false;
 
@@ -159,6 +165,7 @@ AFRAME.registerComponent('tap-place-cursor', {
     baseElement = document.getElementById('base');
     resetButton = document.getElementById('reset-button');
     dashboard = document.getElementById('dashboard');
+    prod = document.getElementById('product');
 
     // 2D coordinates of the raycast origin, in normalized device coordinates (NDC)---X and Y
     // components should be between -1 and 1.  Here we want the cursor in the center of the screen.
