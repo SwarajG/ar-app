@@ -1,33 +1,31 @@
 /* globals AFRAME */
+let scene;
 let baseElement;
 let resetButton;
 let dashboard;
 let overlayFlag = 0;
 let overlayTimeout;
 let opacityOverlay; 
-// var xx = document.getElementById('instruction-container');
-// let compStyle = window.getComputedStyle(instructionOverlay);
 let opacityTimeout; 
 var deltaOverlay = 0.1;
 
-//Hide Instructions overlay
-
+// Hide Instructions overlay
 function closeInstructionOverlay(){
   clearTimeout(overlayTimeout); 
-  //add hide and remove active class after fadeOut function
+  // Add hide and remove active class after fadeOut function
   $('#instruction-container').fadeOut(300, function(){
     document.getElementById('instruction-container').classList.add('hide');
     document.getElementById('info-button').classList.remove('active'); 
   });
 }
 
+// Open Instructions overlay
 function openInstructionOverlay(){
   document.getElementById('instruction-container').classList.remove('hide');
   document.getElementById('info-button').classList.add('active');
-  // console.log($('#instruction-container'));
   $('#instruction-container').fadeIn(300);
   
-  //Autohide the overlay after 5 secs with slow fade
+  // Autohide the overlay after 5 secs with slow fade
   overlayTimeout = setTimeout(() => {
     $('#instruction-container').click(false);
     $('#instruction-container').fadeOut(2000, function(){
@@ -37,9 +35,17 @@ function openInstructionOverlay(){
   
 }
 
+// Recenters Camera
+function recenter(){
+  scene.emit('recenter', {origin: this.origin, facing: {w: 0, x: 0, y: 0, z: 0}});
+}
+
 // Resets product - hides it and the dashboard; 
 // Resets all states to review state
 function resetProduct(){
+  recenter();
+
+  // Get Base Entity reference
   baseElement = document.getElementById('base');
 
   // Set Scale Zero for the bottle hotspots to become untappable
@@ -147,7 +153,9 @@ AFRAME.registerComponent('tap-place-cursor', {
     this.camera = document.getElementById('camera');
     this.threeCamera = this.camera.getObject3D('camera');
     this.ground = document.getElementById('ground');
+    this.origin = this.camera.object3D.position.clone();
 
+    scene = this.el.sceneEl;
     baseElement = document.getElementById('base');
     resetButton = document.getElementById('reset-button');
     dashboard = document.getElementById('dashboard');
