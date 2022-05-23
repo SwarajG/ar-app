@@ -165,11 +165,6 @@ AFRAME.registerComponent('tap-place-cursor', {
     this.rayOrigin = new THREE.Vector2(0, 0);
     this.cursorLocation = new THREE.Vector3(0, 0, 0);
 
-    // Hiding the baseElement to ensure modal loads with animation first time
-    setTimeout(() => {
-      baseElement.object3D.visible = false;
-    }, 1000);
-
     // Ground Tap Handler
     document.getElementById('ground').addEventListener('click', (event) => {
       placeProduct();
