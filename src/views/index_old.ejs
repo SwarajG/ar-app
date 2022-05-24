@@ -20,14 +20,24 @@
   <div class="container">
     <div class="data-container">
       <img class="logo" src="/common/images/cerave-logo.png">
-      <div class="button-ctn">
-        <button class='index-btn' onclick="window.location.href='https://cerave-web-ar.herokuapp.com/product?lang=en&name=hydrating-cleanser&size=8oz';">Hydrating Cleanser | 8oz | EN</button>
-        <button class='index-btn' onclick="window.location.href='https://cerave-web-ar.herokuapp.com/product?lang=en&name=foaming-cleanser&size=8oz';">Foaming Cleanser | 8oz | EN</button>
-        <button class='index-btn' onclick="window.location.href='https://cerave-web-ar.herokuapp.com/product?lang=en&name=moisturizing-lotion&size=8oz';">Moisturizing Cleanser | 8oz | EN</button>
-        <button class='index-btn' onclick="window.location.href='https://cerave-web-ar.herokuapp.com/product?lang=en&name=moisturizing-cream&size=12oz';">Foaming Cleanser | 8oz | EN</button>
-        <!-- <button class='index-btn' onclick="window.location.href='https://cerave-web-ar.herokuapp.com/product?lang=en&name=cream-to-foam-cleanser&size=8oz';">Cream-to-Foam Cleanser | 8oz | EN</button> -->
-      </div> 
-    </div> 
+      <img class="product-image" src="/products/hydrating-cleanser/8oz/en/images/product-image.png">
+      <p class="product-name">Hydrating Cleanser</p>
+      <p class="variant">8Oz 236ml</p>
+
+      <!-- <p class="product-name"> data.productData.variant.name</p>
+      <p class="variant"> data.productData.variant.size</p> -->
+      <!-- <img class="product-image" src=" data.productData.variant.productImageURL"> -->
+
+      <div class="select-container">
+        <p class="select-label" >Select Language <%= product %>
+        </p>
+        <select>
+        </select>
+      </div>
+      <div class="submit-button">
+        <button class="submit" onclick="location.href = '/product'">Start Experience</button>
+      </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
