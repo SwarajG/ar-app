@@ -193,7 +193,7 @@
           <!-- Review State -->
           <a-entity id="review-state" visible="true">
             <!--Review Hotspot #1-->
-            <a-entity rotation="0 -48 0">
+            <a-entity rotation="0 -36 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target"  scale="1 1 1" hotspot-value="1">
                   <!--Star inside sphere-->
@@ -208,7 +208,7 @@
             </a-entity>
 
             <!--Review Hotspot #2-->
-            <a-entity rotation="0 -24 0">
+            <a-entity rotation="0 -12 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="2">
                   <!--Star inside sphere-->
@@ -223,7 +223,7 @@
             </a-entity>
 
             <!--Review Hotspot #3-->
-            <a-entity rotation="0 0 0">
+            <a-entity rotation="0 12 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="3">
                   <!--Star inside sphere-->
@@ -236,24 +236,9 @@
                 </a-entity>
               </a-entity>
             </a-entity>
-
-            <!--Review Hotspot #4-->
-            <a-entity rotation="0 24 0">
-              <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="4">
-                  <!--Star inside sphere-->
-                  <a-entity gltf-model="#star-glb"
-                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
-                  </a-entity>
-
-                  <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[3].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="4"></a-text>
-                </a-entity>
-              </a-entity>
-            </a-entity>
-
+            
             <!--Review Hotspot #5-->
-            <a-entity rotation="0 48 0">
+            <a-entity rotation="0 36 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5" 
                   new-tab="url: <%= data.productData.moreReviews.url %>">
