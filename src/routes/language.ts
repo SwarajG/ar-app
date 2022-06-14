@@ -55,14 +55,14 @@ export const languageText: languageText = {
     //Modal Heads
     ingredientsHead : 'Ingredients',
     ceramidesHead : 'Science of Ceramides',
-    efficacyHead : 'Efficacy',
+    efficacyHead : 'Highlights',
     howToApplyHead: 'How to Apply',
     howToApplySteps: 'Steps',
 
     //Hotspot Labels
     ingredientsHotspotLabel : 'Ingredients',
     ceramidesHotspotLabel : 'Ceramides',
-    efficacyHotspotLabel : 'Efficacy',
+    efficacyHotspotLabel : 'Highlights',
     lookInsideHotspotLabel : 'Look Inside',
     howToApplyHotspotLabel : 'How to Apply',
     moreReviewsHotspotLabel: 'More',
@@ -89,14 +89,14 @@ export const languageText: languageText = {
     //Modal Heads
     ingredientsHead : 'Ingredientes',
     ceramidesHead : 'Ciencia de las Ceramidas',
-    efficacyHead : 'Eficacia',
+    efficacyHead : 'Destacar',
     howToApplyHead: 'Cómo Aplicar',
     howToApplySteps: 'Pasos',
 
     //Hotspot Labels
     ingredientsHotspotLabel : 'Ingredientes',
     ceramidesHotspotLabel : 'Ceramidas',
-    efficacyHotspotLabel : 'Efficacia',
+    efficacyHotspotLabel : 'Descatar',
     lookInsideHotspotLabel : 'Mirar Dentro',
     howToApplyHotspotLabel : 'Como Aplicar',
     moreReviewsHotspotLabel: 'Mas',
