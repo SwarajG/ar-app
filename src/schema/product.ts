@@ -59,6 +59,7 @@ interface Product {
     url3: string,
     product1url: string,
     product2url: string,
+    product3url: string,
   },
 }
 
@@ -120,6 +121,7 @@ const productSchema = new Schema<Product>({
     url3: String,
     product1url: String,
     product2url: String,
+    product3url: String,
   },
 });
 
