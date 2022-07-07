@@ -8,7 +8,7 @@ AFRAME.registerComponent('new-tab', {
             window.open(this.data.url);
 
             // Reset product placement as new tab is opened and camera might have shifted
-            ResetProduct();
+            resetProduct();
         });
     },
 });

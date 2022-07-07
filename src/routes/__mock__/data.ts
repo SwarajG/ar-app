@@ -41,15 +41,18 @@ export const data = {
       rating: 5,
       review: 'I use CeraVe products exclusively. This cleanser is essential to remove makeup and leaves my skin feeling refreshed, smooth and hydrated. I have used this product for over 2 years and would never use anything else to cleanse my face and neck.',
     },
-    {
-      id: '5',
-      head: 'Leaves my face baby soft',
-      name: 'DandyD',
-      age: 'Male - 45 to 54',
-      rating: 5,
-      review: 'I love how this Cerave moisturizer leaves my face super soft & hydrated. Great ingredients for beautiful skin.',
-    },
+    // {
+    //   id: '5',
+    //   head: 'Leaves my face baby soft',
+    //   name: 'DandyD',
+    //   age: 'Male - 45 to 54',
+    //   rating: 5,
+    //   review: 'I love how this Cerave moisturizer leaves my face super soft & hydrated. Great ingredients for beautiful skin.',
+    // },
   ],
+  moreReviews: {
+    url: 'https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser',
+  },
   ingredients: {
     head: 'Ingredients',
     list: 'AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, PEG-40 STEARATE, STEARYL ALCOHOL, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, GLYCERYL STEARATE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, CETYL ALCOHOL, POLYSORBATE 20, ETHYLHEXYLGLYCERIN',

@@ -29,8 +29,8 @@
   </script>
 
   <!-- Mobile Console -->
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script> -->
 
   <!-- Written components -->
   <script src="/common/components/tap-place-cursor.js"></script>
@@ -48,6 +48,11 @@
 
 <body>
   <div class="ui-container">
+    <!-- Place Product info -->
+    <div id="place-product" class="place-product-info">
+      <img class="place-product-icon" src="/common/images/dashboard/place-product.gif">
+      <p class="place-product-text"><%= data.languageText.placeHereInfo%></p>
+    </div>
     <!-- Dashboard UI partial -->
     <%- include('../views/partials/dashboard', { languageText: data.languageText, dashboardData: data.dashboardData }) %>
 
@@ -83,6 +88,7 @@
       <a-asset-item id="star-glb" src="/common/3d-models/star.glb"></a-asset-item>
       <a-asset-item id="close-icon-glb" src="/common/3d-models/close-icon.glb"></a-asset-item>
       <a-asset-item id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
+      <a-asset-item id="pin-icon-glb" src="/common/3d-models/pin.glb"></a-asset-item>
 
       <!-- P1 - Hydrating Cleanser -->
       <a-asset-item id="hydrating-cleanser-model" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
@@ -127,9 +133,16 @@
 
       <!-- Reticle Group -->
       <a-entity id="reticle-group" align-to-camera>
-        <a-ring rotation="-90 0 0" material="shader: flat; color: #5AC8FA" radius-inner="0.5" radius-outer="0.8">
-          <a-text value="<%= data.languageText.placeHereText %>" position="0 2 0" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+        <a-ring rotation="-90 0 0" material="shader: flat; color: #ffffff;"
+          radius-inner="0.4" radius-outer="0.6">
+          <a-text value="<%= data.languageText.placeHereText %>" position="0 0 3" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
         </a-ring>
+
+        <!-- Pin -->
+        <a-entity gltf-model="#pin-icon-glb"
+          animation="property: position; to: 0 0.5 0; loop: true; dur: 1000; dir: alternate; easing: easeInOutQuad"
+          animation__spin="property: rotation; to: 0 360 0; dur: 10000; dir: normal; easing: linear; loop: true">
+        </a-entity>
       </a-entity>
     </a-entity>
 
@@ -142,7 +155,7 @@
     </a-box>
 
     <!-- Base Element -->
-    <a-entity id="base" visible="true" scale="1 1 1" product-placed="0" xrextras-pinch-scale="min:0.5; max:5;">
+    <a-entity id="base" visible="true" scale="0 0 0" position="0 0 -10" product-placed="0">
       <a-entity id="podium" 
         gltf-model="#podium-model"
         cubemap-static align-to-camera
@@ -162,14 +175,13 @@
         </a-entity>
       </a-entity>
 
-      
-
+      <!-- TEST MAC BRANCH -->
       <!-- Product -->
-      <a-entity id="product" position="0 0 0" opened="0" 
-        gltf-model="#hydrating-cleanser-model"  
+      <a-entity id="product" position="0 0 0" rotation="0 0 0" opened="0" align-to-camera
+        gltf-model="#hydrating-cleanser-model"
         shadow="cast:true; receive:false;"
         animation="property: position; to: 0 0.25 0; loop: true; dur: 1000; dir: alternate; easing: easeInOutQuad"
-        xrextras-one-finger-rotate cubemap-static>
+        cubemap-static>
       </a-entity>
 
       <!-- Hospot Aligner -->
@@ -182,7 +194,7 @@
           <!-- Review State -->
           <a-entity id="review-state" visible="true">
             <!--Review Hotspot #1-->
-            <a-entity rotation="0 -48 0">
+            <a-entity rotation="0 -36 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-1" class="review-hotspot cantap" mixin="hotspot-target"  scale="1 1 1" hotspot-value="1">
                   <!--Star inside sphere-->
@@ -197,7 +209,7 @@
             </a-entity>
 
             <!--Review Hotspot #2-->
-            <a-entity rotation="0 -24 0">
+            <a-entity rotation="0 -12 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-2" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="2">
                   <!--Star inside sphere-->
@@ -212,7 +224,7 @@
             </a-entity>
 
             <!--Review Hotspot #3-->
-            <a-entity rotation="0 0 0">
+            <a-entity rotation="0 12 0">
               <a-entity position="0 1 1.5">
                 <a-entity id="review-hotspot-3" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="3">
                   <!--Star inside sphere-->
@@ -225,33 +237,19 @@
                 </a-entity>
               </a-entity>
             </a-entity>
-
-            <!--Review Hotspot #4-->
-            <a-entity rotation="0 24 0">
-              <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="4">
-                  <!--Star inside sphere-->
-                  <a-entity gltf-model="#star-glb"
-                    animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
-                  </a-entity>
-
-                  <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[3].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="4"></a-text>
-                </a-entity>
-              </a-entity>
-            </a-entity>
-
+            
             <!--Review Hotspot #5-->
-            <a-entity rotation="0 48 0">
+            <a-entity rotation="0 36 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5">
+                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5" 
+                  new-tab="url: <%= data.productData.moreReviews.url %>">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[4].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
+                  <a-text value="<%= data.languageText.moreReviewsHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -266,7 +264,7 @@
                 <a-entity id="ingredients-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target"
                   hotspot-value="1">
                   <!--dodecahedron inside sphere-->
-                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #5BC2E7"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
                   </a-entity>
 
@@ -282,7 +280,7 @@
                 <a-entity id="ceramides-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target"
                   hotspot-value="2">
                   <!--dodecahedron inside sphere-->
-                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #5BC2E7"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
                   </a-entity>
 
@@ -298,7 +296,7 @@
                 <a-entity id="efficacy-hotspot" class="our-science-hotspot cantap" mixin="hotspot-target"
                   hotspot-value="3">
                   <!--dodecahedron inside sphere-->
-                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #6815B8"
+                  <a-entity geometry="primitive: dodecahedron; radius: 0.15;" material="color: #5BC2E7"
                     animation="property: rotation; to: 0 360 0; dur: 7000; dir: normal; easing: linear; loop: true">
                   </a-entity>
 
@@ -352,14 +350,14 @@
 
             <!-- Cream Texture Image #1 -->
             <a-entity><a-entity><a-entity id="cream-tex-1" visible="false">
-              <a-image src="#cream-tex-img-1" position="2 4 0.01" scale="1.5 1.5 1.5"></a-image>
-              <a-entity meshline="lineWidth: 3; path: 0 2 0, 1 2 0, 2 4 0; color: rgb(0, 114, 206)"></a-entity>
+              <a-image src="#cream-tex-img-1" position="-1 2.5 1" scale="1 1 1"></a-image>
+              <!-- <a-entity meshline="lineWidth: 3; path: 0 1.25 0, 1.5 1.25 0, 2 4 0; color: rgb(0, 114, 206)"></a-entity> -->
             </a-entity></a-entity></a-entity>
 
             <!-- Cream Texture Image #2 -->
             <a-entity><a-entity><a-entity id="cream-tex-2" visible="false">
-              <a-image src="#cream-tex-img-2" position="-2 3.5 0.01" scale="1.5 1.5 1.5"></a-image>
-              <a-entity meshline="lineWidth: 3; path: 0 2 0, -1 2 0, -2 3.5 0; color: rgb(0, 114, 206)"></a-entity>
+              <a-image src="#cream-tex-img-2" position="-1 1.5 1" scale="1 1 1"></a-image>
+              <!-- <a-entity meshline="lineWidth: 3; path: 0 1.25 0, -1.5 1.25 0, -2 3.5 0; color: rgb(0, 114, 206)"></a-entity> -->
             </a-entity></a-entity></a-entity>
           </a-entity>
 
@@ -367,23 +365,23 @@
           <a-entity id="frequently-bt-state" rotation="0 270" visible="false">
             <!--Frequently BT Panel #1-->
             <a-entity><a-entity>
-              <a-curvedimage id="frequently-bt-panel-1" class="cantap" rotation="0 -45 0" height="0.9" radius="1.5" 
-                color="white" position="0 3 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p1">
-              </a-curvedimage>
+              <a-curvedimage id="frequently-bt-panel-1" class="cantap" rotation="0 -45 0" height="0.9" radius="1.5"
+                color="white" position="0 3 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p1"
+                new-tab="url: <%= data.productData.frequentlyBT.product1url %>"></a-curvedimage>
             </a-entity></a-entity>
             
             <!--Frequently BT Panel #2-->
             <a-entity><a-entity>
             <a-curvedimage id="frequently-bt-panel-2" class="cantap" rotation="0 -45 0" height="0.9" radius="1.5" 
               color="white" position="0 2 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p2"
-              new-tab="url: <%= data.productData.frequentlyBT.product1url %>"></a-curvedimage>
+              new-tab="url: <%= data.productData.frequentlyBT.product2url %>"></a-curvedimage>
             </a-entity></a-entity>
             
             <!--Frequently BT Panel #3-->
             <a-entity><a-entity>
             <a-curvedimage id="frequently-bt-panel-3" class="cantap" rotation="0 -45 0" height="0.9" radius="1.5" 
               color="white" position="0 1 0" scale="0 0 0" theta-length="90" src="#frequently-bt-p3"
-              new-tab="url: <%= data.productData.frequentlyBT.product2url %> "></a-curvedimage>
+              new-tab="url: <%= data.productData.frequentlyBT.product3url %> "></a-curvedimage>
             </a-entity></a-entity>
           </a-entity>
         </a-entity>
