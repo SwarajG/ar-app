@@ -1,39 +1,4 @@
-interface languageText {
-  [key: string]: {
-    //Buttons
-    closeButtonText: string,
-    resetButtonText: string,
-  
-    //Dashboard Labels
-    reviewLabelText: string,
-    ourScienceLabelText: string,
-    textureLabelText: string,
-    routinesLabelText: string,
-    
-    //Instructions
-    swipeInstText: string,
-    pinchScaleInstText: string,
-
-    //Modal Heads
-    ingredientsHead : string,
-    ceramidesHead : string,
-    efficacyHead : string,
-    howToApplyHead: string,
-
-    //Hotspot Labels
-    ingredientsHotspotLabel : string,
-    ceramidesHotspotLabel : string,
-    efficacyHotspotLabel : string,
-    lookInsideHotspotLabel : string,
-    howToApplyHotspotLabel : string,
-
-    //Place here message
-    placeHereText: string,
-
-  }
-}
-
-export const languageText: languageText = {
+const languageText = {
   en: {
     //Buttons
     closeButtonText: 'Close',
@@ -97,3 +62,7 @@ export const languageText: languageText = {
     placeHereText: 'Lugar Aqui',
   },
 };
+
+module.exports = {
+  languageText
+}

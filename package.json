@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "nodemon",
     "copy-assets": "ts-node tools/copyAssets",
-    "start": "node build/index.js",
+    "start": "node app.js",
     "postinstall": "tsc && cp -R public build/ && npm run copy-assets",
     "watch-node": "nodemon build/index.js",
     "watch-ts": "tsc -w"
