@@ -1,4 +1,4 @@
-export const dashboardData = [
+const dashboardData = [
   {
     id: 'radio-review',
     name: 'reviewLabelText',
@@ -24,3 +24,5 @@ export const dashboardData = [
     image: '../common/images/dashboard/frequently-bt-icon.png',
   },
 ];
+
+module.exports = { dashboardData };

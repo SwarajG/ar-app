@@ -1,11 +1,10 @@
-import express from 'express';
-import fs from 'fs';
-import http from 'http';
-import https from 'https';
-import path from 'path';
-
-import { connect } from "./database";
-import routes from './routes';
+const express = require('express');
+const fs = require('fs');
+const http = require('http');
+const https = require('https');
+const path = require('path');
+const { connect } = require('./src/database');
+const routes = require('./src/routes');
 
 connect();
 const app = express();
@@ -21,7 +20,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // Set Templating engine
-app.set('views', path.join(__dirname, '../src/views/'));
+app.set('views', path.join(__dirname, './src/views/'));
 app.set('view engine', 'ejs');
 
 app.use(routes);

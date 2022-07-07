@@ -1,16 +1,16 @@
-import express, { Router, Request, Response } from 'express';
-import { getProduct, setProduct } from '../controller/productController';
-import { languageText } from './language';
-import { dashboardData } from '../const/dashboardData';
+const express = require('express');
+const { getProduct, setProduct } = require('../controller/productController');
+const { languageText } = require('./language');
+const { dashboardData } = require('../const/dashboardData');
 
-const router: Router = express.Router();
+const router = express.Router();
 
-router.get('/', (req: Request, res: Response) => {
+router.get('/', (req, res) => {
   const { product } = req.query;
   res.render('index', { product });
 });
 
-router.get('/product', async (req: Request, res: Response) => {
+router.get('/product', async (req, res) => {
   const { name = '', size = '', lang = 'en' } = req.query;
   const query = {
     name: String(name),
@@ -28,9 +28,9 @@ router.get('/product', async (req: Request, res: Response) => {
   });
 });
 
-router.post('/product', async (req: Request, res: Response) => {
+router.post('/product', async (req, res) => {
   const productData = await setProduct(req.body);
   res.json(productData);
 });
 
-export default router;
+module.exports = router;
