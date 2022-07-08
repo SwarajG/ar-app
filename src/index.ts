@@ -9,7 +9,7 @@ import routes from './routes';
 
 connect();
 const app = express();
-const HTTPS_PORT = process.env.PORT || 3000;
+const HTTPS_PORT = process.env.PORT || 443;
 const HTTP_PORT = process.env.PORT || 8080;
 const privateKey = fs.readFileSync('key.pem');
 const certificate = fs.readFileSync('cert.pem');
