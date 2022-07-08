@@ -15,8 +15,6 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "copy-assets": "ts-node tools/copyAssets",
-    "compile-assets": "tsc && cp -R public build/ && npm run copy-assets ",
     "start": "node app.js",
     "watch-node": "nodemon build/index.js",
     "watch-ts": "tsc -w"
