@@ -13,6 +13,9 @@ interface languageText {
     //Instructions
     swipeInstText: string,
     pinchScaleInstText: string,
+    instructionsText: string,
+    tapHotspotInstText: string,
+    changeSectionInstText: string,
 
     //Modal Heads
     ingredientsHead : string,
@@ -48,9 +51,12 @@ export const languageText: languageText = {
     textureLabelText: 'Texture',
     routinesLabelText: 'Routines',
 
-    //instructions
+    //Instructions
+    instructionsText: 'Instructions',
     swipeInstText: 'Swipe to Rotate',
     pinchScaleInstText: 'Pinch to Scale',
+    tapHotspotInstText: 'Tap on Hotspots',
+    changeSectionInstText: 'Change Sections',
 
     //Modal Heads
     ingredientsHead : 'Ingredients',
@@ -83,26 +89,66 @@ export const languageText: languageText = {
     routinesLabelText: 'Rutinas',
 
     //Instructions
+    instructionsText: 'Instrucciones',
     swipeInstText: 'Deslizar para Rotar',
-    pinchScaleInstText: 'Pellizcar a Escala',
+    pinchScaleInstText: 'Amplia la Imagen Utilizando dos dedos',
+    tapHotspotInstText: 'Toca los puntos de Acceso',
+    changeSectionInstText: 'Cambiar Secciones',
 
     //Modal Heads
     ingredientsHead : 'Ingredientes',
-    ceramidesHead : 'Ciencia de las Ceramidas',
-    efficacyHead : 'Destacar',
-    howToApplyHead: 'Cómo Aplicar',
+    ceramidesHead : 'La Ciencia de las Ceramidas',
+    efficacyHead : 'Datos Relevantes',
+    howToApplyHead: 'Cómo utilizarlo?',
     howToApplySteps: 'Pasos',
 
     //Hotspot Labels
     ingredientsHotspotLabel : 'Ingredientes',
     ceramidesHotspotLabel : 'Ceramidas',
     efficacyHotspotLabel : 'Descatar',
-    lookInsideHotspotLabel : 'Mirar Dentro',
+    lookInsideHotspotLabel : 'Descubre Más',
     howToApplyHotspotLabel : 'Como Aplicar',
-    moreReviewsHotspotLabel: 'Mas',
+    moreReviewsHotspotLabel: 'Más',
 
     //Place here message
-    placeHereText: 'Lugar Aqui',
+    placeHereText: 'Colocar Aquí',
     placeHereInfo: 'Toque para colocar el producto en una superficie plana',
+  },
+  ar: {
+    //Buttons
+    closeButtonText: 'اغلاق',
+    resetButtonText: 'إعادة تحميل',
+    
+    //Dashboard Labels 
+    reviewLabelText: 'آراء المستهلكين​',
+    ourScienceLabelText: 'علمنا',
+    textureLabelText: 'التركيبة',
+    routinesLabelText: 'روتين العناية​',
+
+    //Instructions
+    instructionsText: 'تعليمات',
+    swipeInstText: 'انتقد للتدوير',
+    pinchScaleInstText: 'قرصة على نطاق واسع',
+    tapHotspotInstText:'اضغط على النقاط الساخنة',
+    changeSectionInstText: 'أقسام التغيير',
+
+    //Modal Heads
+    ingredientsHead : 'المكونات',
+    ceramidesHead : 'علم السيراميدات',
+    efficacyHead : 'المميزات',
+    howToApplyHead: 'كيف يستعمل',
+    howToApplySteps: 'المراحل',
+
+    //Hotspot Labels
+    ingredientsHotspotLabel : 'المكونات',
+    ceramidesHotspotLabel : 'السيراميدات',
+    efficacyHotspotLabel : 'المميزات',
+    lookInsideHotspotLabel : 'انظر بالداخل',
+    howToApplyHotspotLabel : 'كيف يستعمل',
+    moreReviewsHotspotLabel: 'تعرف عن المزيد',
+
+    //Place here message
+    placeHereText: 'انقر هنا',
+    placeHereInfo: 'انقر لوضع المنتج على سطح مستو',
   },
 };
