@@ -82,9 +82,10 @@ select {
   height: 60px;
   border: 0;
   border-radius: 0px;
-  background: #0072Ce;
-  color: white;
-  margin: 10px;
+  background-color: rgba(0,114,206,0.05);
+  border-bottom: 1px solid #0072CE;
+  color: #0072CE;
+  /* margin: 10px; */
   font-size: 14px;
   font-weight: 700;
 }
@@ -92,4 +93,52 @@ select {
 .button-ctn{
   display: flex;
   flex-direction: column;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: #0072CE;
+  cursor: pointer;
+  padding: 18px;
+  width: 300px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: #0072CE;
+  color: white;
+  /* color: white; */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #ffffff;
+  display: none;
+  overflow: hidden;
+  width: 300px;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+}
+.accordion:after {
+  content: '\002B';
+  color: #0072CE;
+  font-weight: bold;
+  float: right;
+
+}
+.active:after {
+  content: "\2212";
+  color:#ffffff;
 }

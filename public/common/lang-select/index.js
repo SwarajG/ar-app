@@ -1,37 +1,25 @@
-$(document).ready(function () {
-  function init() {
-    var response = new Promise(function (resolve) {
-      resolve([
-        {
-          label: 'English',
-          value: 'en',
-        },
-        {
-          label: 'Spanish',
-          value: 'es',
-        },
-      ]);
-    });
-    response.then(function (data) {
-      $('select').html(`
-        ${data
-          .map(function ({ value, label }) {
-            return `<option value=${value}>${label}</option>`;
-          })
-          .join('')}
-      `);
-      $('select').niceSelect();
-    });
-  }
 
-  $('.submit').on('click', function () {
-    var value = $('select').find(':selected').val();
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-      get: (searchParams, prop) => searchParams.get(prop),
-    });
-    location.href = `/product?language=${value}&product=${params.product}&size=${params.size}`;
-  });
+//Accrodion Behavior
+let section = document.querySelectorAll(".accordion");
+let aRRay = Array.from(section);
 
-  // init page from here
-  init();
-});
+aRRay.map((items) => {
+  items.addEventListener("click", function(){
+      
+    items.classList.toggle("active");
+    let nextdiv = items.nextElementSibling;
+
+    if(nextdiv.style.display == "block"){
+      nextdiv.style.display = "none"
+    }else{
+      nextdiv.style.display = "block"
+    }
+
+    if ( nextdiv.style.maxHeight) {
+      nextdiv.style.maxHeight = null;
+    } else {
+      nextdiv.style.maxHeight = nextdiv.scrollHeight + "px";
+    } 
+
+  })
+})
