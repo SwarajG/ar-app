@@ -1,17 +1,17 @@
 <% reviews.forEach(function(review) { %>
   <div id="review-<%= review.id %>" class="review-modal hide">
-    <p class="review-modal__title"><%= review.head %></p>
-    <div class="review-modal__info">
-      <p class="review-modal__info-text"><%= review.name %></p>
-      <p class="review-modal__info-text"><%= review.age %></p>
+    <p dir="auto" class="review-modal__title"><%= review.head %></p>
+    <div id="review-modal-info" dir="auto" class="review-modal__info">
+      <p id="review-modal-info-text-1" dir="auto" class="review-modal__info-text"><%= review.name %></p>
+      <p dir="auto" class="review-modal__info-text"><%= review.age %></p>
     </div>
-    <div class="review-modal__rating">
+    <div dir="auto" class="review-modal__rating">
       <% [...Array(Math.round(review.rating))].forEach(function(menu) { %>
-        <i class="fa fa-star" style="color: #0072CE"></i>
+        <i id="star" dir="auto" class="fa fa-star" style="padding-right: 2px; color: #0072CE"></i>
         <% }); %>
     </div>
-    <div class="review-modal__content">
+    <div dir="auto" class="review-modal__content">
       <%= review.review %>
     </div>
   </div>
-  <% }); %>
+<% }); %>

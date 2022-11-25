@@ -8,9 +8,9 @@
 
   <div id="instruction-container" class="inst hide">
     <img class="swipe-rotate-icon" src="/common/images/dashboard/swipe-to-rotate.gif">
-    <p class="swipe-rotate-text"><%= languageText.swipeInstText%></p>
+    <p dir="auto" class="swipe-rotate-text"><%= languageText.swipeInstText%></p>
     <img class="pinch-scale-icon" src="/common/images/dashboard/pinch-to-scale.gif">
-    <p class="pinch-scale-text"><%= languageText.pinchScaleInstText%></p>
+    <p dir="auto" class="pinch-scale-text"><%= languageText.pinchScaleInstText%></p>
     <img class="close-inst" src="/common/images/dashboard/close-icon.png" onclick="closeInstructionOverlay()">
   </div>
   
@@ -24,7 +24,7 @@
             <img class="icon" src="<%= item.image %>">
           </label>
         </div>
-        <p class="radio-label"><%= languageText[item.name] %></p>
+        <p dir="auto" class="radio-label"><%= languageText[item.name] %></p>
       </div>
     <% }); %>
     <div class="radio-toolbar-wrapper"></div>
