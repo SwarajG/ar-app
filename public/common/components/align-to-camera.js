@@ -11,8 +11,11 @@ AFRAME.registerComponent('align-to-camera', {
         if(this.el.getAttribute('id') === 'reticle-group'){
             rot_y = this.reticleAligner.getAttribute('rotation').y;
         }
-        else {
-            rot_y = this.hotspotAligner.getAttribute('rotation').y;
+        else if(this.el.getAttribute('id') === 'all-states-aligner' 
+            || this.el.getAttribute('id') === 'podium' 
+            || this.el.getAttribute('id') === 'product'
+            || this.el.getAttribute('id') === '3d-inst-parent'){
+                rot_y = this.hotspotAligner.getAttribute('rotation').y;
         }
 
         let rot_z = this.el.getAttribute('rotation').z;
