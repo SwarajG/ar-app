@@ -1,4 +1,4 @@
-public/products/
+products
 node_modules
 dist
 build
