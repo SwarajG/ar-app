@@ -27,6 +27,7 @@
   <script async
     src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM">
   </script>
+  <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
 
   <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -39,7 +40,7 @@
   <script src="/common/components/handle-swipes.js"></script>
   <script src="/common/components/new-tab.js"></script>
   <script src="/common/components/cubemap-static.js"></script>
-
+  <script src="/common/components/text-component.js"></script>
   
   <!-- Look At component -->
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
@@ -136,7 +137,12 @@
       <a-entity id="reticle-group" align-to-camera>
         <a-ring rotation="-90 0 0" material="shader: flat; color: #ffffff;"
           radius-inner="0.4" radius-outer="0.6">
-          <a-text value="<%= data.languageText.placeHereText %>" position="0 0 3" scale="5 5 1" rotation="90 0 0" align="center"></a-text>
+          <a-entity
+            position="0 0 3"
+            scale = "5 5 1"
+            rotation = " 90 0 0"
+            text-component = "value: <%= data.languageText.placeHereText %>; color: #ffffff">
+          </a-entity>
         </a-ring>
 
         <!-- Pin -->
@@ -204,7 +210,13 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[0].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "1"
+                    text-component = "value: <%= data.productData.reviews[0].rating %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -219,7 +231,13 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[1].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "2"
+                    text-component = "value: <%= data.productData.reviews[1].rating %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -234,15 +252,21 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.productData.reviews[2].rating %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "3"
+                    text-component = "value: <%= data.productData.reviews[2].rating %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
             
-            <!--Review Hotspot #5-->
+            <!--Review Hotspot #4-->
             <a-entity rotation="0 36 0">
               <a-entity position="0 1 1.5">
-                <a-entity id="review-hotspot-5" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="5" 
+                <a-entity id="review-hotspot-4" class="review-hotspot cantap" mixin="hotspot-target" scale="1 1 1" hotspot-value="4" 
                   new-tab="url: <%= data.productData.moreReviews.url %>">
                   <!--Star inside sphere-->
                   <a-entity gltf-model="#star-glb"
@@ -250,7 +274,13 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.languageText.moreReviewsHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="5"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "4"
+                    text-component = "value: <%= data.languageText.moreReviewsHotspotLabel %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -270,7 +300,13 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.languageText.ingredientsHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="1"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "1"
+                    text-component = "value: <%= data.languageText.ingredientsHotspotLabel %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -286,7 +322,13 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.languageText.ceramidesHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "2"
+                    text-component = "value: <%= data.languageText.ceramidesHotspotLabel %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -302,7 +344,13 @@
                   </a-entity>
 
                   <!--Rating Text-->
-                  <a-text value="<%= data.languageText.efficacyHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="3"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "3"
+                    text-component = "value: <%= data.languageText.efficacyHotspotLabel %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
@@ -326,9 +374,15 @@
                   </a-entity>
 
                   <!--Hotspot Text-->
-                  <a-text id="texture-hotspot-1-text" value="<%= data.languageText.lookInsideHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2"
-                    hotspot-value="1"></a-text>
-                </a-entity>
+                  <a-entity
+                    id = "texture-hotspot-1-text"
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "1"
+                    text-component = "value: <%= data.languageText.lookInsideHotspotLabel %>; color: #ffffff">
+                  </a-entity>
+                </a-entity>  
               </a-entity>
             </a-entity>
 
@@ -344,7 +398,13 @@
                   </a-entity>
 
                   <!--Hotspot Text-->
-                  <a-text value="<%= data.languageText.howToApplyHotspotLabel %>" mixin="hotspot-text" position="0 -0.2 0.2" hotspot-value="2"></a-text>
+                  <a-entity
+                    position="0 -0.2 0.2"
+                    scale = "0.6 0.6 0.6"
+                    rotation = "0 0 0"
+                    hotspot-value = "2"
+                    text-component = "value: <%= data.languageText.howToApplyHotspotLabel %>; color: #ffffff">
+                  </a-entity>
                 </a-entity>
               </a-entity>
             </a-entity>
