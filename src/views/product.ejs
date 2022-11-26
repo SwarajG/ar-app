@@ -22,13 +22,16 @@
   <link rel="stylesheet" href="/common/css/ceramides-modal.css">
   <link rel="stylesheet" href="/common/css/efficacy-modal.css">
   <link rel="stylesheet" href="/common/css/how-to-apply-modal.css">
+
+  <!-- 8th Wall Resources-->
   <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
   <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+
+  <!-- 8th wall APP KEY -->
   <script async
     src="//apps.8thwall.com/xrweb?appKey=pgr1mJBpjruZlel5ZFsHcX0jy4zRxrZhTvoqMIuK2fHLbni1uvrftOtsB6R58eQ4VQEUpM">
   </script>
-  <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
-
+  
   <!-- Mobile Console -->
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
   <script>eruda.init();</script>
@@ -46,6 +49,8 @@
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
   <!-- Meshline component -->
   <script src="https://raw.githack.com/andreasplesch/aframe-meshline-component/master/dist/aframe-meshline-component.min.js"></script>
+  <!-- Troika Text component -->
+  <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
 </head>
 
 <body>
@@ -79,18 +84,26 @@
           className: 'modal-how-to-apply' , howToApply: data.productData.howToApply }) %>
   </div>
 
-  <a-scene xrextras-gesture-detector xrextras-almost-there xrextras-loading xrextras-runtime-error
-    renderer="colorManagement: true" xrweb handle-swipes swipeEnabled="0" dasboardTapEnabled="1">
+  <a-scene 
+    xrextras-gesture-detector 
+    xrextras-almost-there 
+    xrextras-loading = "loadBackgroundColor: #ffffff; cameraBackgroundColor: #0072CE; loadAnimation: spin;"
+    xrextras-runtime-error
+    renderer="colorManagement: true" 
+    xrweb 
+    handle-swipes 
+    swipeEnabled="0" 
+    dasboardTapEnabled="1">
 
     <!-- We can define assets here to be loaded when A-Frame initializes -->
     <a-assets timeout="70000">
       <!-- 3D MODELS -->
       <!-- Common models -->
-      <a-asset-item crossorigin="anonymous" id="podium-model" src="/common/3d-models/podium.glb"></a-asset-item>
-      <a-asset-item crossorigin="anonymous" id="star-glb" src="/common/3d-models/star.glb"></a-asset-item>
-      <a-asset-item crossorigin="anonymous" id="close-icon-glb" src="/common/3d-models/close-icon.glb"></a-asset-item>
-      <a-asset-item crossorigin="anonymous" id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
-      <a-asset-item crossorigin="anonymous" id="pin-icon-glb" src="/common/3d-models/pin.glb"></a-asset-item>
+      <a-asset-item id="podium-model" crossorigin="anonymous" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/podium.glb"></a-asset-item>
+      <a-asset-item id="star-glb" crossorigin="anonymous" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/star.glb"></a-asset-item>
+      <a-asset-item id="close-icon-glb" crossorigin="anonymous" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/close-icon.glb"></a-asset-item>
+      <a-asset-item id="magnifying-glass-icon-glb" crossorigin="anonymous" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
+      <a-asset-item id="pin-icon-glb" crossorigin="anonymous" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/pin.glb"></a-asset-item>
 
       <!-- 3d Instruction Arrow Strip -->
       <a-asset-item crossorigin="anonymous" id="arrow-glb" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/arrow-strip.glb"></a-asset-item>
