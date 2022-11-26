@@ -104,22 +104,52 @@
   z-index: 100;
 }
 
-.swipe-rotate-icon{
-  flex-grow: 1;
-  width: 60px;
+/* New Instructions UI CSS */
+
+.inst-box{
+  width: 100%;
+  display: flex;
+}
+
+.inst-icon{
+  flex-grow: 0.25;
+  width: 50px;
   padding: 0px;
 }
 
-.swipe-rotate-text{
+.inst-text{
+  flex-grow: 2;
+  width: 100px;
+  font-size: 16px;
+  color: white;
+  padding-right: 10px;
+  line-height: 60px;
+}
+
+.close-inst{
+  flex-grow: 0.25;
+  width: 24px;
+  padding: 10px;
+}
+
+/* Old Instructions UI - Can be deleted once you see this */
+/* .swipe-rotate-icon{
+  flex-grow: 1;
+  width: 60px;
+  padding: 0px;
+} */
+
+/* .swipe-rotate-text{
   flex-grow: 2;
   width: 100px;
   border-right: solid 1px #fff;
   font-size: 14px;
   color: white;
   padding-right: 10px;
-}
+  line-height: 60px;
+} */
 
-.pinch-scale-icon{
+/* .pinch-scale-icon{
   flex-grow: 1;
   width: 60px;
   padding: 0px;
@@ -132,13 +162,13 @@
   font-size: 14px;
   color: white;
   padding-right: 10px;
-}
+} */
 
-.close-inst{
+/* .close-inst{
   flex-grow: 1;
   width: 24px;
   padding: 10px;
-}
+} */
 
 .radio-toolbar {
   position: relative;
@@ -228,4 +258,18 @@
   height: 70px;
   border-radius: 0px;
   top: 25px;
+  display: flex;
+}
+
+#dashboard-toolbar-inst {
+  display: none;
+  text-align: center;
+  margin: auto;
+  color: white;
+  margin-top: 70px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  width: 340px;
+  border-top: solid 1px #fff;
 }

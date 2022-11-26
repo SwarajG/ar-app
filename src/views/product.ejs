@@ -92,8 +92,11 @@
       <a-asset-item id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
       <a-asset-item id="pin-icon-glb" src="/common/3d-models/pin.glb"></a-asset-item>
 
-      <!-- P1 - Hydrating Cleanser -->
-      <a-asset-item id="hydrating-cleanser-model" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
+      <!-- 3d Instruction Arrow Strip -->
+      <a-asset-item id="arrow-glb" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/arrow-strip.glb"></a-asset-item>
+
+      <!-- Product model -->
+      <a-asset-item id="product-glb" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
 
       <!-- Cubemap Static Images -->
       <img id="posx" crossorigin="anonymous" src="/common/images/cubemap/posx.jpg">
@@ -182,10 +185,122 @@
         </a-entity>
       </a-entity>
 
-      <!-- TEST MAC BRANCH -->
+      <!-- ----------------------------------------- -->
+      <!-- 3d-Instuctions Here -->
+      <a-entity id="3d-inst-parent" align-to-camera>
+        <!-- Swipe to Rotate 3d instruction -->
+        <a-entity 
+          id="instructions-swipe-rotate" 
+          position="0 0.8 0"
+          visible="false"
+          shadow="cast:false; receive:false;">
+
+          <!-- Curved Panel for bg -->
+          <a-curvedimage rotation="0 -35 0" height="0.5" radius="1.75"
+            color="#50b1ff"
+            opacity="0.85"
+            position="0 0 0" scale="1 1 1" theta-length="70"
+            shadow="cast:false; receive:false;"
+            visible="true">
+          </a-curvedimage>
+
+          <!-- Swipe to Rotate Text -->
+          <a-entity
+            position = "0 0 1.8"
+            text-component = "value: <%= data.languageText.swipeInstText %>; color: #ffffff; curveRadius: -1.4; fontSize: 0.15; maxWidth: 1.5;"
+            shadow="cast: false; receive: false">
+          </a-entity>
+
+          <!-- Left arrow -->
+          <a-entity 
+            id="left-curved-arrow"
+            position="-1.25 0 1.25"
+            rotation="0 -45 0"
+            scale="-1 1 1" 
+            gltf-model="#arrow-glb"
+            shadow="cast:false; receive:false;">
+          </a-entity>
+
+          <!-- Right arrow -->
+          <a-entity 
+            id="right-curved-arrow"
+            position="1.25 0 1.25"
+            rotation="0 45 0"
+            scale="1 1 1" 
+            gltf-model="#arrow-glb"
+            shadow="cast:false; receive:false;">
+          </a-entity>
+        </a-entity>
+
+        <!-- Pinch to Scale 3d instruction -->
+        <a-entity 
+          id="instructions-pinch-scale" 
+          position="0 1.8 1.55"
+          visible="false">
+
+          <!-- Rectangular Panel for bg -->
+          <a-entity
+            scale="2 0.5 1"
+            geometry="primitive: plane"
+            material="shader: flat; color: #50b1ff; opacity: 0.85;"
+            visible="true">
+          </a-entity>
+
+          <!-- Pinch to Scale Text -->
+          <a-entity
+            position = "0 0 0.01"
+            text-component = "value: <%= data.languageText.pinchScaleInstText %>; color: white; fontSize: 0.15; maxWidth: 1.5;"
+            shadow="cast:false; receive:false;">
+          </a-entity>
+
+          <!-- Top Right Arrow -->
+          <a-entity 
+            id="top-right-arrow"
+            position="1.25 0.345 0"
+            rotation="0 0 30"
+            scale="1 1 1" 
+            gltf-model="#arrow-glb"
+            shadow="cast:false; receive:false;">
+          </a-entity>
+
+          <!-- Bottom Left Arrow -->
+          <a-entity 
+            id="bottom-left-arrow"
+            position="-1.25 -0.36 0"
+            rotation="0 0 30"
+            scale="-1 1 1"
+            gltf-model="#arrow-glb"
+            shadow="cast:false; receive:false;">
+          </a-entity>
+        </a-entity>
+
+        <!-- Tap on Hotspot instruction -->
+        <a-entity 
+        id="instructions-tap-hotspot"
+        position="0 1.8 1.55"
+        visible="false">
+
+        <!-- Rectangular Panel for bg -->
+        <a-entity
+          scale="2 0.5 1"
+          geometry="primitive: plane"
+          material="shader: flat; color: #50b1ff; opacity: 0.85;"
+          visible="true">
+        </a-entity>
+
+        <!-- Tap on Hotspot Text -->
+        <a-entity
+          position="0 0 0.01"
+          text-component = "value: <%= data.languageText.tapHotspotInstText %>; color: white; fontSize: 0.15; maxWidth: 1.5;"
+          shadow="cast:false; receive:false;">
+        </a-entity>
+        </a-entity>
+      </a-entity>
+      <!-- ----------------------------------------- -->
+
       <!-- Product -->
       <a-entity id="product" position="0 0 0" rotation="0 0 0" opened="0" align-to-camera
-        gltf-model="#hydrating-cleanser-model"
+        gltf-model="#product-glb"
         shadow="cast:true; receive:false;"
         animation="property: position; to: 0 0.25 0; loop: true; dur: 1000; dir: alternate; easing: easeInOutQuad"
         cubemap-static>
