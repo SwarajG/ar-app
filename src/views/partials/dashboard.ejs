@@ -1,21 +1,29 @@
 <div id="dashboard" class="dashboard-ui hide" >
+  <!-- Reset Button -->
   <button type="button" id="reset-button" class="reset-btn">  <%= languageText.resetButtonText %> </button>
   
+  <!-- CRM & Inst Button -->
   <div id="info-email-container" class="info-email">
     <button type="button" id="info-button" class="info-btn active" onclick="openInstructionOverlay()"><img class="icon" src="/common/images/dashboard/info-icon.png"></button>
     <button type="button" id="email-button" class="email-btn"><img class="icon" src="/common/images/dashboard/email-icon.png" onclick="window.open('<%= data.productData.crmURL %>'); resetProduct();"></button>   
   </div>
 
+  <!-- Instructions UI -->
   <div id="instruction-container" class="inst hide">
-    <img class="swipe-rotate-icon" src="/common/images/dashboard/swipe-to-rotate.gif">
-    <p dir="auto" class="swipe-rotate-text"><%= languageText.swipeInstText%></p>
-    <img class="pinch-scale-icon" src="/common/images/dashboard/pinch-to-scale.gif">
-    <p dir="auto" class="pinch-scale-text"><%= languageText.pinchScaleInstText%></p>
+    <!-- Inst icon -->
+    <i class="fa fa-info-circle" aria-hidden="true" style="width: 60px; height: 60px; font-size: 28px; line-height: 60px; text-align: center; color: white;"></i>
+    
+    <!-- Instructions Header text -->
+    <div id="inst-head" class="inst-box" style="display: flex;">
+      <p dir="auto" class="inst-text"><%= languageText.instructionsText%></p>
+    </div>
+
+    <!-- Close Button -->
     <img class="close-inst" src="/common/images/dashboard/close-icon.png" onclick="closeInstructionOverlay()">
   </div>
   
-
-  <div class="radio-toolbar">
+  <!-- Bottom Dashboard for different Sections -->
+  <div id="dashboard-toolbar" class="radio-toolbar">
     <% dashboardData.forEach(function(item) { %>
       <div class="radio-button">
         <div>
@@ -24,10 +32,12 @@
             <img class="icon" src="<%= item.image %>">
           </label>
         </div>
-        <p dir="auto" class="radio-label"><%= languageText[item.name] %></p>
+        <p id="<%= item.id %>-label" class="radio-label"><%= languageText[item.name] %></p>
       </div>
     <% }); %>
-    <div class="radio-toolbar-wrapper"></div>
+    <div id="dashboard-toolbar-bg" class="radio-toolbar-wrapper">
+      <p id="dashboard-toolbar-inst" dir="auto"><%= languageText.changeSectionInstText %></p>
+    </div>
   </div>
 
 </div>

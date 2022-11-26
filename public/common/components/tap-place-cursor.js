@@ -6,33 +6,181 @@ let resetButton;
 let dashboard;
 let overlayFlag = 0;
 let overlayTimeout;
-let opacityOverlay; 
-let opacityTimeout; 
-var deltaOverlay = 0.1;
+let opacityOverlay;
 
-// Hide Instructions overlay
+let overlayTimeout1;
+let overlayTimeout2;
+let overlayTimeout3;
+let overlayTimeout4;
+
+let instructionTimer = 3000;
+
+var deltaOverlay = 0.1;
+let instState = 1;
+
+let firstHospots = ['review-hotspot-3', 'efficacy-hotspot', 'texture-hotspot-2']
+let instructions3d = ['instructions-swipe-rotate', 'instructions-pinch-scale', 'instructions-tap-hotspot']
+let highlightedHotspot = -1;
+
+// Change instructions
+function changeInstructionState(){
+  // Hide the 3d instructions for insState = 1, 2, 3
+  hideAllInstructions3D();
+
+  // Activate current instruction3d
+  // Skip insState = 4 as it doesn't have 3d-instruction
+  if(instState < 4){
+    document.getElementById(instructions3d[instState-1]).object3D.visible = true;
+  }
+
+  // For insState = 3 : Start Highlight Animation on active
+  if(instState === 3){
+    // Highlight Review Hotspot 1 by animating color
+    highlightFirstHotspots();
+
+    // After InstructionTimer dur the highlighting should stop
+    setTimeout(()=>{
+      stopHotspotHighlighting();
+    }, instructionTimer);
+  }
+
+  // Turn On UI for 'Tap on Dashboard'
+  if(instState === 4){
+    // Show 2d instruction for Changing Sections
+    document.getElementById('dashboard-toolbar-inst').style.display = "block";
+    document.getElementById('dashboard-toolbar').style.top = "75%";
+    document.getElementById('dashboard-toolbar-bg').style.backgroundColor = "#50b1ff9e";
+    document.getElementById('dashboard-toolbar-bg').style.height = "120px";
+
+    // Reset Dashboard UI
+    setTimeout(()=>{
+      resetChangeSectionInstruction();
+    }, instructionTimer);
+  }
+
+  instState = instState + 1;
+
+  if(instState === 5){
+    instState = 1
+  }
+}
+
+// Resets Dashboard UI to normal
+function resetChangeSectionInstruction(){
+  document.getElementById('dashboard-toolbar').style.top = "85%";
+  document.getElementById('dashboard-toolbar-bg').style.backgroundColor = "#4040409e";
+  document.getElementById('dashboard-toolbar-bg').style.height = "70px";
+  document.getElementById('dashboard-toolbar-inst').style.display = "none";
+}
+
+// Stop the highlight animation on hotspot
+function stopHotspotHighlighting(){
+  // Removing animation and mixin from first hotspots and applying the mixin back again
+  if(highlightedHotspot !== -1){
+    // Remove Highlight Animation
+    document.getElementById(firstHospots[highlightedHotspot]).removeAttribute('animation__highlight');
+
+    // Remove mixin as animation was interfering the material even after removal
+    document.getElementById(firstHospots[highlightedHotspot]).removeAttribute('mixin');
+
+    // Reapplying origin mixin - hotspot-target to get default color back
+    document.getElementById(firstHospots[highlightedHotspot]).setAttribute('mixin', 'hotspot-target');
+
+    // Resetting the scale for the highlighted hotspot
+    if(highlightedHotspot === currentStateVal){
+      document.getElementById(firstHospots[highlightedHotspot]).object3D.scale.set(1, 1, 1);
+    }
+    else{
+      document.getElementById(firstHospots[highlightedHotspot]).object3D.scale.set(0, 0, 0);
+    }
+  }
+  highlightedHotspot = -1;
+}
+
+// Animating First Hotspot for tutorial
+function highlightFirstHotspots(){
+  // Start Highlight animation on first 3 sections only
+  if(currentStateVal !== '3'){
+    // Storing highlighted hotspot in a var
+    highlightedHotspot = currentStateVal
+
+    // Applying highlight animation
+    // Animating Color from default blue to accent yellow
+    document.getElementById(firstHospots[highlightedHotspot]).setAttribute('animation__highlight',
+    'property: components.material.material.color; type: color; from: #0072ce; to: #eca221; dir: alternate; loop: true; enabled: true');
+  }
+}
+
+// Hide all 3d instructions
+function hideAllInstructions3D(){
+  for(let i = 0; i < instructions3d.length; i++){
+    document.getElementById(instructions3d[i]).object3D.visible = false;
+  }
+}   
+
+// When Close Instructions button pressed
+// Clear all timeouts
 function closeInstructionOverlay(){
-  clearTimeout(overlayTimeout); 
+  clearTimeout(overlayTimeout1);
+  clearTimeout(overlayTimeout2);
+  clearTimeout(overlayTimeout3);
+  clearTimeout(overlayTimeout4);
+  instState = 1;
+
   // Add hide and remove active class after fadeOut function
   $('#instruction-container').fadeOut(300, function(){
     document.getElementById('instruction-container').classList.add('hide');
     document.getElementById('info-button').classList.remove('active'); 
+
+    // Hide all 3d instructions - first three
+    hideAllInstructions3D();
+
+    // Hide the fourth instruction - Change Sections
+    resetChangeSectionInstruction();
   });
+
+  // Stop Highlight Animation if clicked on close
+  stopHotspotHighlighting();
 }
 
 // Open Instructions overlay
 function openInstructionOverlay(){
+  // Start by Clearing Timeouts
+  clearTimeout(overlayTimeout1);
+  clearTimeout(overlayTimeout2);
+  clearTimeout(overlayTimeout3);
+  clearTimeout(overlayTimeout4);
+
+  // Instructions start from 1
+  instState = 1;
+
+  // Show Instructions Header
   document.getElementById('instruction-container').classList.remove('hide');
   document.getElementById('info-button').classList.add('active');
   $('#instruction-container').fadeIn(300);
-  
-  // Autohide the overlay after 5 secs with slow fade
-  overlayTimeout = setTimeout(() => {
-    $('#instruction-container').click(false);
-    $('#instruction-container').fadeOut(2000, function(){
-      closeInstructionOverlay();
-    });
-  }, 5000);  
+
+  // Show Instruction-1 : Swipe to Rotate
+  changeInstructionState();
+
+  // Show Instruction-2 : Pinch to Scale
+  overlayTimeout1 = setTimeout(() => {
+    changeInstructionState();
+  }, instructionTimer);
+
+  // Show Instruction-3 : Tap on Hotspot
+  overlayTimeout2 = setTimeout(() => {
+    changeInstructionState();
+  }, instructionTimer * 2);
+
+  // Show Instruction-4 : Change Section
+  overlayTimeout3 = setTimeout(() => {
+    changeInstructionState();
+  }, instructionTimer * 3);
+
+  // Close Intruction and Reset Timeouts
+  overlayTimeout4 = setTimeout(() => {
+    closeInstructionOverlay();
+  }, instructionTimer * 4);
 }
 
 // Recenters Camera
@@ -196,5 +344,11 @@ AFRAME.registerComponent('tap-place-cursor', {
     this.el.object3D.position.y = 0.1;
     this.el.object3D.position.lerp(this.cursorLocation, 0.1);
     this.el.object3D.rotation.y = this.threeCamera.rotation.y;
+
+    // Check if we are in FBT section
+    // Hide the Tap On Hotspot3d inst
+    if (currentStateVal === '3' && document.getElementById(instructions3d[2]).object3D.visible){
+      document.getElementById(instructions3d[2]).object3D.visible = false;
+    }
   },
 });
