@@ -83,20 +83,20 @@
     renderer="colorManagement: true" xrweb handle-swipes swipeEnabled="0" dasboardTapEnabled="1">
 
     <!-- We can define assets here to be loaded when A-Frame initializes -->
-    <a-assets>
+    <a-assets timeout="70000">
       <!-- 3D MODELS -->
       <!-- Common models -->
-      <a-asset-item id="podium-model" src="/common/3d-models/podium.glb"></a-asset-item>
-      <a-asset-item id="star-glb" src="/common/3d-models/star.glb"></a-asset-item>
-      <a-asset-item id="close-icon-glb" src="/common/3d-models/close-icon.glb"></a-asset-item>
-      <a-asset-item id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
-      <a-asset-item id="pin-icon-glb" src="/common/3d-models/pin.glb"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="podium-model" src="/common/3d-models/podium.glb"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="star-glb" src="/common/3d-models/star.glb"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="close-icon-glb" src="/common/3d-models/close-icon.glb"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="magnifying-glass-icon-glb" src="/common/3d-models/magnifying-glass-icon.glb"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="pin-icon-glb" src="/common/3d-models/pin.glb"></a-asset-item>
 
       <!-- 3d Instruction Arrow Strip -->
-      <a-asset-item id="arrow-glb" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/arrow-strip.glb"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="arrow-glb" src="https://ceraveeuuataugsa.blob.core.windows.net/cerave-aug-images/assets/common/3d-models/arrow-strip.glb"></a-asset-item>
 
       <!-- Product model -->
-      <a-asset-item id="product-glb" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
+      <a-asset-item crossorigin="anonymous" id="product-glb" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
 
       <!-- Cubemap Static Images -->
       <img id="posx" crossorigin="anonymous" src="/common/images/cubemap/posx.jpg">
