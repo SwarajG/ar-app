@@ -87,7 +87,7 @@
   <a-scene 
     xrextras-gesture-detector 
     xrextras-almost-there 
-    xrextras-loading = "loadBackgroundColor: #ffffff; cameraBackgroundColor: #0072CE; loadAnimation: spin;"
+    xrextras-loading = "loadBackgroundColor: #ffffff; cameraBackgroundColor: #0072CE; loadImage: #loading-image; loadAnimation: pulse;"
     xrextras-runtime-error
     renderer="colorManagement: true" 
     xrweb 
@@ -110,6 +110,9 @@
 
       <!-- Product model -->
       <a-asset-item crossorigin="anonymous" id="product-glb" src="<%= data.productData.variant.modelURL%>"></a-asset-item>
+
+      <!-- Loader GIF -->
+      <img id="loading-image" src="/common/images/loader.gif">
 
       <!-- Cubemap Static Images -->
       <img id="posx" crossorigin="anonymous" src="/common/images/cubemap/posx.jpg">
