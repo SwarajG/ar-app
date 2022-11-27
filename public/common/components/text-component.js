@@ -5,12 +5,16 @@ AFRAME.registerComponent('text-component', {
     schema: {
         'color': {default: ''},
         'value': {default: 'Place Here'},
-        'curve-radius': {default: '-2'},
-        'font-size': {default: '0.2'},
-        'max-width': {default: ''},
+        'curveRadius': {default: '-2'},
+        'fontSize': {default: '0.2'},
+        'maxWidth': {default: ''},
       },
     init(){
-        if(langDetect == 'ar'){
+        let queryStr = window.location.search;
+        let urlPars = new URLSearchParams(queryStr);
+        let langDet = urlPars.get('lang');
+
+        if(langDet == 'ar'){
             this.el.setAttribute('troika-text', `value: ${this.data.value}; font: ./common/fonts/NotoSans-Arabic.ttf; color: ${this.data.color}; align: center; curve-radius: ${this.data.curveRadius}; font-size: ${this.data.fontSize};  max-width: ${this.data.maxWidth};`);
         }
         else{
