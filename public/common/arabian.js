@@ -21,7 +21,6 @@ if (langDetect == 'ar'){
     var ratingStarsAlign = document.getElementsByClassName("review-modal__rating")
     for (var i = 0; i < ratingStarsAlign.length; i++){
         ratingStarsAlign[i].style.justifyContent = "flex-end";
-        console.log(i);
     }
 
     var ratingStarsPadding = document.getElementsByClassName("fa");

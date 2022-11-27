@@ -1,4 +1,3 @@
-
 //Accrodion Behavior
 let section = document.querySelectorAll(".accordion");
 let aRRay = Array.from(section);

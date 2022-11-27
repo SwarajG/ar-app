@@ -98,8 +98,6 @@ window.switchDashboard = (dashboardRadio) => {
 }
 
 window.assignEntityValues = () => {
-    console.log('assignEntityValues');
-
     // ReAssign value to all state-group vars
     allStates = document.querySelector('#all-states')
     frequentlyBTState = document.querySelector('#frequently-bt-state')
