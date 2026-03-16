@@ -1,0 +1,98 @@
+{
+    "id": "hydrating-cleanser-8oz-ar",
+    "name": "hydrating-cleanser",
+    "size": "8oz",
+    "lang": "ar",
+    "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+    "variant": {
+        "name": "غسول مرطب",
+        "size": "8FL OZ/236 ML",
+        "modelURL": "/products/hydrating-cleanser/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/hydrating-cleanser/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "مريح جدا على البشرة",
+            "name": "ليان",
+            "age": "أنثى - 25 إلى 34",
+            "rating": 5,
+            "review": "أنظف بشرتي به صباحا ومساء، وأحب أنه لا يسبب الجفاف. بعد الغسل تبقى البشرة ناعمة ومريحة."
+        },
+        {
+            "id": "2",
+            "head": "غسول لطيف للاستخدام اليومي",
+            "name": "هبة",
+            "age": "أنثى - 18 إلى 24",
+            "rating": 4,
+            "review": "يعجبني لأنه لطيف وسهل الشطف، وخصوصا عندما تكون البشرة حساسة أو متعبة. أعتبره خيارا عمليا جدا."
+        },
+        {
+            "id": "3",
+            "head": "ترطيب جيد مع تنظيف خفيف",
+            "name": "ريم",
+            "age": "أنثى - 35 إلى 44",
+            "rating": 5,
+            "review": "القوام ناعم ولا يترك إحساسا مشدودا بعد الغسل. مناسب جدا عندما أحتاج تنظيفا مريحا بدون رغوة قوية."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser"
+    },
+    "ingredients": {
+        "head": "المكونات",
+        "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, PEG-40 STEARATE, STEARYL ALCOHOL, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, GLYCERYL STEARATE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, CETYL ALCOHOL, POLYSORBATE 20, ETHYLHEXYLGLYCERIN",
+        "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "ما هي السيراميدات؟",
+            "description": "السيراميدات دهون طبيعية تساعد على تكوين حاجز البشرة والحفاظ على الترطيب."
+        },
+        {
+            "id": "2",
+            "title": "لماذا هي مهمة؟",
+            "description": "تساعد على الحفاظ على راحة البشرة وتقليل فقدان الرطوبة ودعم الحاجز الواقي."
+        },
+        {
+            "id": "3",
+            "title": "3 سيراميدات أساسية",
+            "description": "تركيبة CeraVe تحتوي على 3 سيراميدات أساسية للمساعدة في دعم الحاجز الطبيعي للبشرة."
+        },
+        {
+            "id": "4",
+            "title": "تنظيف لطيف",
+            "description": "يساعد على إزالة الشوائب مع الحفاظ على ملمس ناعم ومريح للبشرة العادية إلى الجافة."
+        }
+    ],
+    "efficacy": {
+        "head": "الفعالية",
+        "url": "/products/hydrating-cleanser/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "طريقة الاستخدام",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "بللي البشرة بالماء الفاتر"
+            },
+            {
+                "description": "دلكي الغسول بلطف بحركات دائرية"
+            },
+            {
+                "description": "اشطفي جيدا ثم جففي البشرة برفق"
+            }
+        ],
+        "textureImage1URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+        "product2url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+        "product3url": ""
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "id": "foaming-cleanser-8oz-en",
+    "name": "foaming-cleanser",
+    "size": "8oz",
+    "lang": "en",
+    "crmURL": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+    "variant": {
+        "name": "Foaming Cleanser",
+        "size": "8 FL OZ / 236 ML",
+        "modelURL": "/products/foaming-cleanser/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/foaming-cleanser/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "Fresh clean feel without over-drying",
+            "name": "Alicia",
+            "age": "Female - 25 to 34",
+            "rating": 5,
+            "review": "This cleanser gives me a really clean feeling after a long day but still feels balanced on my skin. It foams nicely, rinses quickly, and leaves my face feeling refreshed."
+        },
+        {
+            "id": "2",
+            "head": "Very good for everyday use",
+            "name": "Brandon",
+            "age": "Male - 18 to 24",
+            "rating": 4,
+            "review": "I use it in the morning and after workouts. It removes oil well and feels lightweight. For me it works best when I follow it with a moisturizer right away."
+        },
+        {
+            "id": "3",
+            "head": "Reliable and easy to use",
+            "name": "Danielle",
+            "age": "Female - 35 to 44",
+            "rating": 5,
+            "review": "The pump bottle is convenient and the texture is exactly what I want in a foaming cleanser. It leaves my skin smooth and clean without feeling heavy or sticky."
+        },
+        {
+            "id": "4",
+            "head": "Great, with only a small downside",
+            "name": "Marcus",
+            "age": "Male - 45 to 54",
+            "rating": 4,
+            "review": "Overall I like this a lot because it handles shine and buildup well. On colder days my skin can feel a little tight afterward, but with a good moisturizer it works very well."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser"
+    },
+    "ingredients": {
+        "head": "Ingredients",
+        "list": "AQUA / WATER / EAU, COCAMIDOPROPYL HYDROXYSULTAINE, GLYCERIN, SODIUM LAUROYL SARCOSINATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, NIACINAMIDE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, CITRIC ACID",
+        "disclaimer": "Please note that ingredient lists may be updated periodically. Refer to the ingredient list on your product packaging for the most current list before use."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "What are Ceramides?",
+            "description": "Ceramides are lipids that help form the skin barrier and support moisture retention."
+        },
+        {
+            "id": "2",
+            "title": "Why are they important?",
+            "description": "They help keep skin comfortable by supporting the protective barrier and reducing moisture loss."
+        },
+        {
+            "id": "3",
+            "title": "3 Essential Ceramides",
+            "description": "CeraVe uses 3 essential ceramides to help maintain and restore the skin barrier."
+        },
+        {
+            "id": "4",
+            "title": "Balanced cleansing",
+            "description": "The formula helps remove excess oil and impurities while keeping skin feeling clean and comfortable."
+        }
+    ],
+    "efficacy": {
+        "head": "Efficacy",
+        "url": "/products/foaming-cleanser/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "How to Apply",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "Wet skin with lukewarm water"
+            },
+            {
+                "description": "Massage cleanser onto the face in gentle circular motions"
+            },
+            {
+                "description": "Rinse thoroughly and pat dry"
+            }
+        ],
+        "textureImage1URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product3url": ""
+    }
+}

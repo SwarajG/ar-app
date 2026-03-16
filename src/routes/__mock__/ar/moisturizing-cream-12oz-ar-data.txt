@@ -1,0 +1,98 @@
+{
+    "id": "moisturizing-cream-12oz-ar",
+    "name": "moisturizing-cream",
+    "size": "12oz",
+    "lang": "ar",
+    "crmURL": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+    "variant": {
+        "name": "كريم مرطب",
+        "size": "12FL OZ/340 GM",
+        "modelURL": "/products/moisturizing-cream/12oz/en/3d-models/product.glb",
+        "productImageURL": "/products/moisturizing-cream/12oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "مرطب غني جدا",
+            "name": "يارا",
+            "age": "أنثى - 25 إلى 34",
+            "rating": 5,
+            "review": "أستخدمه للمناطق شديدة الجفاف وفي المساء. القوام غني ويعطي إحساسا واضحا بالراحة بعد الاستخدام."
+        },
+        {
+            "id": "2",
+            "head": "مناسب للأيام الجافة",
+            "name": "منى",
+            "age": "أنثى - 35 إلى 44",
+            "rating": 5,
+            "review": "عندما تكون البشرة جافة جدا يكون هذا الكريم خيارا ممتازا. كمية صغيرة تكفي ويستمر الإحساس بالترطيب لفترة جيدة."
+        },
+        {
+            "id": "3",
+            "head": "قوام غني لكن عملي",
+            "name": "فهد",
+            "age": "ذكر - 45 إلى 54",
+            "rating": 4,
+            "review": "المنتج فعال جدا للمناطق الخشنة والجافة. بالنسبة لي هو ممتاز خصوصا في الليل أو بعد الاستحمام."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream"
+    },
+    "ingredients": {
+        "head": "المكونات",
+        "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+        "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "ما هي السيراميدات؟",
+            "description": "السيراميدات دهون تساعد على تكوين الحاجز الطبيعي للبشرة والحفاظ على الرطوبة."
+        },
+        {
+            "id": "2",
+            "title": "لماذا هي مهمة؟",
+            "description": "تساعد على تقليل فقدان الرطوبة ودعم راحة البشرة خصوصا عندما تكون جافة."
+        },
+        {
+            "id": "3",
+            "title": "3 سيراميدات أساسية",
+            "description": "تستخدم CeraVe ثلاث سيراميدات أساسية للمساعدة في دعم الحاجز الواقي للبشرة."
+        },
+        {
+            "id": "4",
+            "title": "ترطيب غني",
+            "description": "القوام الكريمي الغني يساعد على تهدئة الجفاف وترك البشرة أكثر نعومة وراحة."
+        }
+    ],
+    "efficacy": {
+        "head": "الفعالية",
+        "url": "/products/moisturizing-cream/12oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "طريقة الاستخدام",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "خذي كمية مناسبة من العبوة"
+            },
+            {
+                "description": "ضعيها على البشرة النظيفة والجافة"
+            },
+            {
+                "description": "دلكي بلطف حتى يتم الامتصاص"
+            }
+        ],
+        "textureImage1URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product3url": ""
+    }
+}

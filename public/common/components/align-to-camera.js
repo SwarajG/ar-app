@@ -2,6 +2,7 @@ AFRAME.registerComponent('align-to-camera', {
     init(){
         this.reticleAligner = document.getElementById("reticle-aligner");
         this.hotspotAligner = document.getElementById("hotspot-aligner");
+        this.mathUtils = (window.THREE && (THREE.MathUtils || THREE.Math)) || null;
     },
     tick(){
         let rot_x = this.el.getAttribute('rotation').x;
@@ -20,10 +21,14 @@ AFRAME.registerComponent('align-to-camera', {
 
         let rot_z = this.el.getAttribute('rotation').z;
 
+        if (!this.mathUtils || !this.mathUtils.degToRad) {
+            return;
+        }
+
         this.el.object3D.rotation.set(
-            THREE.Math.degToRad(rot_x),
-            THREE.Math.degToRad(rot_y),
-            THREE.Math.degToRad(rot_z)
+            this.mathUtils.degToRad(rot_x),
+            this.mathUtils.degToRad(rot_y),
+            this.mathUtils.degToRad(rot_z)
         );
     },
 });

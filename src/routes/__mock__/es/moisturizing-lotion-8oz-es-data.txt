@@ -1,0 +1,98 @@
+{
+    "id": "moisturizing-lotion-8oz-es",
+    "name": "moisturizing-lotion",
+    "size": "8oz",
+    "lang": "es",
+    "crmURL": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+    "variant": {
+        "name": "Loción Hidratante",
+        "size": "8 FL OZ / 236 ML",
+        "modelURL": "/products/moisturizing-lotion/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/moisturizing-lotion/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "Ligera y cómoda",
+            "name": "Elena",
+            "age": "Femenino - 25 a 34",
+            "rating": 5,
+            "review": "Se extiende muy bien y se absorbe rápido. La uso a diario y deja la piel suave sin sensación pesada."
+        },
+        {
+            "id": "2",
+            "head": "Buena hidratación diaria",
+            "name": "Pablo",
+            "age": "Masculino - 35 a 44",
+            "rating": 4,
+            "review": "Me gusta porque hidrata lo suficiente para el día a día y sigue sintiéndose ligera. Después de la ducha funciona muy bien."
+        },
+        {
+            "id": "3",
+            "head": "Una loción muy práctica",
+            "name": "Natalia",
+            "age": "Femenino - 18 a 24",
+            "rating": 5,
+            "review": "Es una buena opción cuando quiero hidratación sencilla y efectiva. La textura es cómoda y deja un acabado agradable."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion"
+    },
+    "ingredients": {
+        "head": "Ingredientes",
+        "list": "AQUA / WATER / EAU, GLYCERIN, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETEARYL ALCOHOL, CETYL ALCOHOL, DIMETHICONE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, PHYTOSPHINGOSINE, XANTHAN GUM",
+        "disclaimer": "Las listas de ingredientes pueden cambiar. Consulta el envase del producto para obtener la información más actualizada antes de usarlo."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "¿Qué son las ceramidas?",
+            "description": "Las ceramidas ayudan a reforzar la barrera cutánea y a mantener la hidratación."
+        },
+        {
+            "id": "2",
+            "title": "¿Por qué usarlas a diario?",
+            "description": "Ayudan a mantener la piel más cómoda y equilibrada a lo largo del día."
+        },
+        {
+            "id": "3",
+            "title": "3 ceramidas esenciales",
+            "description": "CeraVe combina 3 ceramidas esenciales para ayudar a mantener la barrera natural de la piel."
+        },
+        {
+            "id": "4",
+            "title": "Hidratación ligera",
+            "description": "La textura en loción ofrece hidratación diaria con una sensación más ligera que una crema rica."
+        }
+    ],
+    "efficacy": {
+        "head": "Eficacia",
+        "url": "/products/moisturizing-lotion/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "Modo de uso",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "Dispensa una cantidad adecuada en las manos"
+            },
+            {
+                "description": "Aplica de forma uniforme sobre la piel"
+            },
+            {
+                "description": "Masajea hasta su absorción"
+            }
+        ],
+        "textureImage1URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+        "product3url": ""
+    }
+}

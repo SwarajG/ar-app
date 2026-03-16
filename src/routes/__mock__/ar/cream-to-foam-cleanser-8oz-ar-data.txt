@@ -1,0 +1,98 @@
+{
+    "id": "cream-to-foam-cleanser-8oz-ar",
+    "name": "cream-to-foam-cleanser",
+    "size": "8oz",
+    "lang": "ar",
+    "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+    "variant": {
+        "name": "غسول كريم إلى رغوة",
+        "size": "8FL OZ/236 ML",
+        "modelURL": "/products/cream-to-foam-cleanser/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/cream-to-foam-cleanser/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "لطيف وفعال",
+            "name": "نورا",
+            "age": "أنثى - 25 إلى 34",
+            "rating": 5,
+            "review": "أحب هذا الغسول لأنه يزيل المكياج الخفيف بدون أن يترك البشرة مشدودة. القوام كريمي في البداية ثم يتحول إلى رغوة ناعمة بسهولة."
+        },
+        {
+            "id": "2",
+            "head": "مناسب للبشرة الحساسة",
+            "name": "سارة",
+            "age": "أنثى - 18 إلى 24",
+            "rating": 5,
+            "review": "استخدمه صباحا ومساء. ينظف بشكل جيد جدا، ويترك البشرة مريحة وناعمة بدون أي إحساس بالجفاف."
+        },
+        {
+            "id": "3",
+            "head": "عملي للاستخدام اليومي",
+            "name": "مها",
+            "age": "أنثى - 35 إلى 44",
+            "rating": 4,
+            "review": "المنتج ممتاز للاستخدام اليومي، خصوصا إذا كنت أريد تنظيفا سريعا ولطيفا في نفس الوقت. أحب أنه لا يسبب تهيجا حول العينين."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser"
+    },
+    "ingredients": {
+        "head": "المكونات",
+        "list": "AQUA / WATER / EAU, GLYCERIN, COCAMIDOPROPYL HYDROXYSULTAINE, SODIUM METHYL COCOYL TAURATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, AMINO ACIDS, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA",
+        "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "ما هي السيراميدات؟",
+            "description": "السيراميدات هي دهون طبيعية تساعد على تكوين حاجز البشرة والحفاظ على الترطيب."
+        },
+        {
+            "id": "2",
+            "title": "ماذا تفعل السيراميدات؟",
+            "description": "تساعد على تقوية حاجز البشرة حتى يحتفظ بالرطوبة ويقاوم العوامل الخارجية."
+        },
+        {
+            "id": "3",
+            "title": "يحتوي على 3 سيراميدات أساسية",
+            "description": "تركيبة CeraVe تحتوي على 3 سيراميدات أساسية للمساعدة في دعم الحاجز الطبيعي للبشرة."
+        },
+        {
+            "id": "4",
+            "title": "تنظيف بدون جفاف",
+            "description": "ينظف البشرة ويزيل الشوائب مع الحفاظ على الإحساس بالراحة والنعومة."
+        }
+    ],
+    "efficacy": {
+        "head": "الفعالية",
+        "url": "/products/cream-to-foam-cleanser/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "طريقة الاستخدام",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "بللي البشرة بالماء الفاتر"
+            },
+            {
+                "description": "دلكي الغسول بلطف حتى يتحول إلى رغوة"
+            },
+            {
+                "description": "اشطفي جيدا ثم جففي البشرة برفق"
+            }
+        ],
+        "textureImage1URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product2url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "product3url": ""
+    }
+}

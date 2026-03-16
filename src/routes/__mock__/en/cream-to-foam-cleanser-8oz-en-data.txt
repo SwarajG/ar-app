@@ -1,0 +1,98 @@
+{
+    "id": "cream-to-foam-cleanser-8oz-en",
+    "name": "cream-to-foam-cleanser",
+    "size": "8oz",
+    "lang": "en",
+    "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+    "variant": {
+        "name": "Hydrating Cream-to-Foam Cleanser",
+        "size": "8FL OZ/236 ML",
+        "modelURL": "/products/cream-to-foam-cleanser/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/cream-to-foam-cleanser/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "Cleans gently",
+            "name": "Mia",
+            "age": "Female - 25 to 34",
+            "rating": 5,
+            "review": "I like that this cleanser starts creamy and then foams lightly. It removes daily buildup well and still feels comfortable on dry skin."
+        },
+        {
+            "id": "2",
+            "head": "Good everyday option",
+            "name": "Lena",
+            "age": "Female - 35 to 44",
+            "rating": 5,
+            "review": "It is easy to use, rinses clean, and does not leave my skin tight. I would use it morning and night without hesitation."
+        },
+        {
+            "id": "3",
+            "head": "Works well after makeup",
+            "name": "Nadia",
+            "age": "Female - 18 to 24",
+            "rating": 4,
+            "review": "This does a nice job removing light makeup and sunscreen. The texture is pleasant and the bottle format is practical."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser"
+    },
+    "ingredients": {
+        "head": "Ingredients",
+        "list": "AQUA / WATER / EAU, GLYCERIN, COCAMIDOPROPYL HYDROXYSULTAINE, SODIUM METHYL COCOYL TAURATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, AMINO ACIDS, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA",
+        "disclaimer": "Ingredient lists may change over time. Please refer to the product packaging for the most up to date ingredient list before use."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "What are Ceramides?",
+            "description": "Ceramides are lipids that support the skin barrier and help maintain moisture."
+        },
+        {
+            "id": "2",
+            "title": "Why do they matter?",
+            "description": "They help keep skin feeling balanced by reducing moisture loss and supporting barrier health."
+        },
+        {
+            "id": "3",
+            "title": "3 Essential Ceramides",
+            "description": "CeraVe formulas use 3 essential ceramides to help reinforce the skin barrier."
+        },
+        {
+            "id": "4",
+            "title": "Comfortable cleansing",
+            "description": "This cleanser is designed to clean effectively while still feeling gentle on normal to dry skin."
+        }
+    ],
+    "efficacy": {
+        "head": "Efficacy",
+        "url": "/products/cream-to-foam-cleanser/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "How to Apply",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "Wet skin with lukewarm water"
+            },
+            {
+                "description": "Massage gently until the cream transforms into a light foam"
+            },
+            {
+                "description": "Rinse thoroughly and pat dry"
+            }
+        ],
+        "textureImage1URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+        "product3url": ""
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "id": "foaming-cleanser-8oz-ar",
+    "name": "foaming-cleanser",
+    "size": "8oz",
+    "lang": "ar",
+    "crmURL": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+    "variant": {
+        "name": "غسول رغوي",
+        "size": "8FL OZ/236 ML",
+        "modelURL": "/products/foaming-cleanser/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/foaming-cleanser/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "يشعرك بالنظافة والانتعاش",
+            "name": "مريم",
+            "age": "أنثى - 25 إلى 34",
+            "rating": 5,
+            "review": "هذا الغسول ينظف الدهون والشوائب بشكل واضح ويترك البشرة منتعشة. أحب الرغوة الخفيفة وسهولة الشطف."
+        },
+        {
+            "id": "2",
+            "head": "جيد جدا للاستخدام اليومي",
+            "name": "خالد",
+            "age": "ذكر - 18 إلى 24",
+            "rating": 4,
+            "review": "أستخدمه بعد التمرين وفي الصباح. يعطي تنظيفا جيدا، لكنني أفضل أن أتبعه بمرطب مباشرة خصوصا في الطقس الجاف."
+        },
+        {
+            "id": "3",
+            "head": "غسول عملي ومتوازن",
+            "name": "دانا",
+            "age": "أنثى - 35 إلى 44",
+            "rating": 5,
+            "review": "القوام والرغوة مناسبين جدا، والمنتج سهل الاستخدام يوميا. النتيجة بشرة نظيفة بدون شعور مزعج."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser"
+    },
+    "ingredients": {
+        "head": "المكونات",
+        "list": "AQUA / WATER / EAU, COCAMIDOPROPYL HYDROXYSULTAINE, GLYCERIN, SODIUM LAUROYL SARCOSINATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, NIACINAMIDE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, CITRIC ACID",
+        "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "ما هي السيراميدات؟",
+            "description": "السيراميدات دهون تساعد على دعم حاجز البشرة والحفاظ على الرطوبة."
+        },
+        {
+            "id": "2",
+            "title": "لماذا هي مهمة؟",
+            "description": "تساعد على الحفاظ على راحة البشرة وتقليل فقدان الرطوبة بعد التنظيف."
+        },
+        {
+            "id": "3",
+            "title": "3 سيراميدات أساسية",
+            "description": "تستخدم CeraVe ثلاث سيراميدات أساسية لدعم الحاجز الطبيعي للبشرة."
+        },
+        {
+            "id": "4",
+            "title": "تنظيف متوازن",
+            "description": "تساعد التركيبة على إزالة الدهون والشوائب مع الحفاظ على إحساس مريح ومتوازن."
+        }
+    ],
+    "efficacy": {
+        "head": "الفعالية",
+        "url": "/products/foaming-cleanser/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "طريقة الاستخدام",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "بللي البشرة بالماء الفاتر"
+            },
+            {
+                "description": "دلكي الغسول بحركات دائرية لطيفة"
+            },
+            {
+                "description": "اشطفي جيدا ثم جففي البشرة"
+            }
+        ],
+        "textureImage1URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product3url": ""
+    }
+}

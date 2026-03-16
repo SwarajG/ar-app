@@ -1,0 +1,98 @@
+{
+    "id": "moisturizing-cream-16oz-es",
+    "name": "moisturizing-cream",
+    "size": "16oz",
+    "lang": "es",
+    "crmURL": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+    "variant": {
+        "name": "Crema Hidratante",
+        "size": "16FL OZ/453 GM",
+        "modelURL": "/products/moisturizing-cream/12oz/en/3d-models/product.glb",
+        "productImageURL": "/products/moisturizing-cream/12oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "Muy buena para piel seca",
+            "name": "Laura",
+            "age": "Femenino - 25 a 34",
+            "rating": 5,
+            "review": "La uso en rostro y cuerpo. Tiene una textura rica pero se absorbe bien y deja la piel calmada durante muchas horas."
+        },
+        {
+            "id": "2",
+            "head": "Ideal para uso diario",
+            "name": "Marta",
+            "age": "Femenino - 35 a 44",
+            "rating": 5,
+            "review": "Me gusta porque hidrata bastante sin perfume fuerte. La aplico después de la ducha y noto la piel mucho más suave."
+        },
+        {
+            "id": "3",
+            "head": "Buena opción para todo el año",
+            "name": "Carlos",
+            "age": "Masculino - 45 a 54",
+            "rating": 4,
+            "review": "Funciona muy bien en codos, manos y zonas secas. El formato grande también es práctico para tenerlo siempre en casa."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream"
+    },
+    "ingredients": {
+        "head": "Ingredientes",
+        "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+        "disclaimer": "Las listas de ingredientes pueden cambiar. Consulta el envase del producto para obtener la información más actualizada antes de usarlo."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "¿Qué son las ceramidas?",
+            "description": "Las ceramidas son lípidos que ayudan a formar la barrera natural de la piel."
+        },
+        {
+            "id": "2",
+            "title": "¿Para qué sirven?",
+            "description": "Ayudan a retener la hidratación y a proteger la piel frente a agresores externos."
+        },
+        {
+            "id": "3",
+            "title": "3 ceramidas esenciales",
+            "description": "La fórmula de CeraVe combina 3 ceramidas esenciales para apoyar la barrera cutánea."
+        },
+        {
+            "id": "4",
+            "title": "Hidratación duradera",
+            "description": "Su textura rica ayuda a aliviar la sequedad y deja la piel con sensación confortable."
+        }
+    ],
+    "efficacy": {
+        "head": "Eficacia",
+        "url": "/products/moisturizing-cream/12oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "Modo de uso",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "Toma una cantidad adecuada del tarro"
+            },
+            {
+                "description": "Aplícala sobre la piel limpia y seca"
+            },
+            {
+                "description": "Masajea suavemente hasta su absorción"
+            }
+        ],
+        "textureImage1URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product3url": ""
+    }
+}

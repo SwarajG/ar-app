@@ -1,0 +1,98 @@
+{
+    "id": "moisturizing-lotion-8oz-ar",
+    "name": "moisturizing-lotion",
+    "size": "8oz",
+    "lang": "ar",
+    "crmURL": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+    "variant": {
+        "name": "لوشن مرطب",
+        "size": "8FL OZ/236 ML",
+        "modelURL": "/products/moisturizing-lotion/8oz/en/3d-models/product.glb",
+        "productImageURL": "/products/moisturizing-lotion/8oz/en/images/product-image.png"
+    },
+    "reviews": [
+        {
+            "id": "1",
+            "head": "خفيف ومريح",
+            "name": "آية",
+            "age": "أنثى - 25 إلى 34",
+            "rating": 5,
+            "review": "اللوشن خفيف ويمتص بسرعة، لذلك يناسب الاستخدام اليومي صباحا ومساء. يترك البشرة ناعمة بدون ملمس دهني."
+        },
+        {
+            "id": "2",
+            "head": "ترطيب جيد بشكل يومي",
+            "name": "طارق",
+            "age": "ذكر - 35 إلى 44",
+            "rating": 4,
+            "review": "أستخدمه بعد الغسل أو بعد الاستحمام. النتيجة مريحة ومرطبة، لكنه قد لا يكون كافيا وحده في الأجواء الباردة جدا."
+        },
+        {
+            "id": "3",
+            "head": "خيار أساسي ممتاز",
+            "name": "سلمى",
+            "age": "أنثى - 18 إلى 24",
+            "rating": 5,
+            "review": "أحب هذا اللوشن لأنه بسيط وعملي ويعطي ترطيبا جيدا مع إحساس خفيف على البشرة. أعود إليه دائما."
+        }
+    ],
+    "moreReviews": {
+        "url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion"
+    },
+    "ingredients": {
+        "head": "المكونات",
+        "list": "AQUA / WATER / EAU, GLYCERIN, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETEARYL ALCOHOL, CETYL ALCOHOL, DIMETHICONE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, PHYTOSPHINGOSINE, XANTHAN GUM",
+        "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+    },
+    "ceramides": [
+        {
+            "id": "1",
+            "title": "ما هي السيراميدات؟",
+            "description": "السيراميدات دهون تساعد على تقوية حاجز البشرة والحفاظ على الرطوبة."
+        },
+        {
+            "id": "2",
+            "title": "لماذا للاستخدام اليومي؟",
+            "description": "تساعد على دعم راحة البشرة يوميا والحفاظ على توازنها."
+        },
+        {
+            "id": "3",
+            "title": "3 سيراميدات أساسية",
+            "description": "تجمع CeraVe بين 3 سيراميدات أساسية للمساعدة في دعم الحاجز الطبيعي للبشرة."
+        },
+        {
+            "id": "4",
+            "title": "ترطيب خفيف",
+            "description": "صيغة اللوشن تعطي ترطيبا يوميا بملمس أخف من الكريم الغني."
+        }
+    ],
+    "efficacy": {
+        "head": "الفعالية",
+        "url": "/products/moisturizing-lotion/8oz/en/images/efficacy/efficacy.png"
+    },
+    "howToApply": {
+        "head": "طريقة الاستخدام",
+        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "steps": [
+            {
+                "description": "ضعي كمية مناسبة من اللوشن على اليدين"
+            },
+            {
+                "description": "وزعيه بالتساوي على البشرة"
+            },
+            {
+                "description": "دلكي بلطف حتى يتم الامتصاص"
+            }
+        ],
+        "textureImage1URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-01.png",
+        "textureImage2URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-02.png"
+    },
+    "frequentlyBT": {
+        "url1": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+        "product3url": ""
+    }
+}
