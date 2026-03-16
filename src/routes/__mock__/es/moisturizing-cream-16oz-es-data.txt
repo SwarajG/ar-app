@@ -3,12 +3,12 @@
     "name": "moisturizing-cream",
     "size": "16oz",
     "lang": "es",
-    "crmURL": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+    "crmURL": "https://www.cerave.com/es/skincare/moisturizers/moisturizing-cream",
     "variant": {
         "name": "Crema Hidratante",
         "size": "16FL OZ/453 GM",
-        "modelURL": "/products/moisturizing-cream/12oz/en/3d-models/product.glb",
-        "productImageURL": "/products/moisturizing-cream/12oz/en/images/product-image.png"
+        "modelURL": "/products/moisturizing-cream/16oz/es/3d-models/product.glb",
+        "productImageURL": "/products/moisturizing-cream/16oz/es/images/product-image.png"
     },
     "reviews": [
         {
@@ -37,7 +37,7 @@
         }
     ],
     "moreReviews": {
-        "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream"
+        "url": "https://www.cerave.com/es/skincare/moisturizers/moisturizing-cream"
     },
     "ingredients": {
         "head": "Ingredientes",
@@ -68,7 +68,7 @@
     ],
     "efficacy": {
         "head": "Eficacia",
-        "url": "/products/moisturizing-cream/12oz/en/images/efficacy/efficacy.png"
+        "url": "/products/moisturizing-cream/16oz/es/images/efficacy/efficacy.png"
     },
     "howToApply": {
         "head": "Modo de uso",
@@ -84,15 +84,15 @@
                 "description": "Masajea suavemente hasta su absorción"
             }
         ],
-        "textureImage1URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-01.png",
-        "textureImage2URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-02.png"
+        "textureImage1URL": "/products/moisturizing-cream/16oz/es/images/texture/texture-01.png",
+        "textureImage2URL": "/products/moisturizing-cream/16oz/es/images/texture/texture-02.png"
     },
     "frequentlyBT": {
-        "url1": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p1.png",
-        "url2": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p2.png",
-        "url3": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p3.png",
-        "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
-        "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "url1": "/products/moisturizing-cream/16oz/es/images/frequently-bt/frequently-bt-p1.png",
+        "url2": "/products/moisturizing-cream/16oz/es/images/frequently-bt/frequently-bt-p2.png",
+        "url3": "/products/moisturizing-cream/16oz/es/images/frequently-bt/frequently-bt-p3.png",
+        "product1url": "https://www.cerave.com/es/skincare/moisturizers/daily-moisturizing-lotion",
+        "product2url": "https://www.cerave.com/es/skincare/cleansers/hydrating-facial-cleanser",
         "product3url": ""
     }
 }
