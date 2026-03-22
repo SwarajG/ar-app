@@ -3,7 +3,7 @@
     "name": "moisturizing-lotion",
     "size": "8oz",
     "lang": "es",
-    "crmURL": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+    "crmURL": "https://www.cerave.com/es/skincare/moisturizers/daily-moisturizing-lotion",
     "variant": {
         "name": "Loción Hidratante",
         "size": "8 FL OZ / 236 ML",
@@ -37,7 +37,7 @@
         }
     ],
     "moreReviews": {
-        "url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion"
+        "url": "https://www.cerave.com/es/skincare/moisturizers/daily-moisturizing-lotion"
     },
     "ingredients": {
         "head": "Ingredientes",
@@ -71,17 +71,12 @@
         "url": "/products/moisturizing-lotion/8oz/en/images/efficacy/efficacy.png"
     },
     "howToApply": {
-        "head": "Modo de uso",
-        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "head": "Pasos",
+        "url": "https://www.youtube.com/embed/JuRFnBlokuU",
         "steps": [
             {
-                "description": "Dispensa una cantidad adecuada en las manos"
-            },
-            {
-                "description": "Aplica de forma uniforme sobre la piel"
-            },
-            {
-                "description": "Masajea hasta su absorción"
+                "description": "Aplicar una cantidad generosa tantas veces como sea necesario o según las indicaciones del médico
+"
             }
         ],
         "textureImage1URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-01.png",
@@ -91,8 +86,8 @@
         "url1": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p1.png",
         "url2": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p2.png",
         "url3": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p3.png",
-        "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
-        "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+        "product1url": "https://www.cerave.com/es/skincare/cleansers/hydrating-facial-cleanser",
+        "product2url": "https://www.cerave.com/es/skincare/moisturizers/moisturizing-cream",
         "product3url": ""
     }
 }

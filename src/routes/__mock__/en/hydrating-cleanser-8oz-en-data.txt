@@ -3,7 +3,7 @@
     "name": "hydrating-cleanser",
     "size": "8oz",
     "lang": "en",
-    "crmURL": "https://www.cerave.de/newsletter-anmeldung",
+    "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
     "variant": {
         "name": "Hydrating Facial Cleanser",
         "size": "8FL OZ/236 ML",

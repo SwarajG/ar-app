@@ -71,8 +71,8 @@
         "url": "/products/moisturizing-cream/16oz/es/images/efficacy/efficacy.png"
     },
     "howToApply": {
-        "head": "Modo de uso",
-        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "head": "Pasos",
+        "url": "https://www.youtube.com/embed/Sjynjw6cJJI",
         "steps": [
             {
                 "description": "Toma una cantidad adecuada del tarro"

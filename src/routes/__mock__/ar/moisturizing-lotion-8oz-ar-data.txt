@@ -72,7 +72,7 @@
     },
     "howToApply": {
         "head": "طريقة الاستخدام",
-        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "url": "https://www.youtube.com/embed/JuRFnBlokuU",
         "steps": [
             {
                 "description": "ضعي كمية مناسبة من اللوشن على اليدين"

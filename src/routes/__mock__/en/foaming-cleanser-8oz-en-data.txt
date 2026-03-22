@@ -80,7 +80,7 @@
     },
     "howToApply": {
         "head": "How to Apply",
-        "url": "https://www.youtube.com/embed/yptop_8_wqo",
+        "url": "https://www.youtube.com/embed/ebl5LLtuQe4",
         "steps": [
             {
                 "description": "Wet skin with lukewarm water"

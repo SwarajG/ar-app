@@ -4,7 +4,7 @@ let baseElement;
 let prod;
 let resetButton;
 let dashboard;
-let overlayFlag = 0;
+let overlayFlag = 1;
 let overlayTimeout;
 let opacityOverlay;
 

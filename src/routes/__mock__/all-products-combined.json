@@ -1,0 +1,1201 @@
+[
+    {
+        "id": "hydrating-cleanser-8oz-en",
+        "name": "hydrating-cleanser",
+        "size": "8oz",
+        "lang": "en",
+        "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "variant": {
+            "name": "Hydrating Facial Cleanser",
+            "size": "8FL OZ/236 ML",
+            "modelURL": "/products/hydrating-cleanser/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/hydrating-cleanser/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Could not love this cleanser more!",
+                "name": "lizajw",
+                "age": "Female - 18 to 24",
+                "rating": 5,
+                "review": "If I could come up with a dream cleanser on my own, this one would be it. For someone who has dry skin, this cleanser is a LIFE SAVER. My skin never feels dry or stripped after using this, which is amazing. It makes my skin so soft, smooth, and glowy. It also does a pretty great job of taking off any products left on throughout the day. I use it morning and night! And the price point is incredible too! Ticking off all my boxes with this cleanser! THANK YOU CERAVE!"
+            },
+            {
+                "id": "2",
+                "head": "Cleared up my skin!",
+                "name": "kmenzel",
+                "age": "Female - 17 or under",
+                "rating": 5,
+                "review": "This cleanser leaves my skin feeling soft and hydrated and in just a couple of weeks cleared all of my acne. I am lucky to have nice skin to begin with but as an athlete, I got acne from sweat in certain areas like between my brows, on my chin and nose and this cleanser cleared it within a couple of weeks. My sensitive skin is clear and I rarely find a pimple on my face anymore since I began using this."
+            },
+            {
+                "id": "3",
+                "head": "As good as an expensive Spa product",
+                "name": "Shirleyjones",
+                "age": "Female - 65 or over",
+                "rating": 5,
+                "review": "I am 68 and have worked in a high-end Spa with extremely expensive skin care products. My local drugstore expert told me about CeraVe saying it used to be prescription only - she highly recommended it. When I saw the words Hyaluronic Acid I knew right away that was good as that is what attracts and binds moisture. Also the fragrance free product was a big plus for me. Although I have very good skin I had a few dry scaly patches near my eyes and mouth that no matter what I used would always resurface. Not any more! This product is gentle and creamy and doesn't leave my skin feeling either dry or greasy. Worth every penny! Highly recommend!"
+            },
+            {
+                "id": "4",
+                "head": "Excellent Product",
+                "name": "Ginny",
+                "age": "Female - 65 or over",
+                "rating": 5,
+                "review": "I use CeraVe products exclusively. This cleanser is essential to remove makeup and leaves my skin feeling refreshed, smooth and hydrated. I have used this product for over 2 years and would never use anything else to cleanse my face and neck."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser"
+        },
+        "ingredients": {
+            "head": "Ingredients",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, PEG-40 STEARATE, STEARYL ALCOHOL, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, GLYCERYL STEARATE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, CETYL ALCOHOL, POLYSORBATE 20, ETHYLHEXYLGLYCERIN",
+            "disclaimer": "Please be aware that ingredient lists for the products of our brand are updated regularly. Please refer to the ingredient list on your product package for the most up to date list of ingredients to ensure it issuitable to your personal use.(For refilled products in the store, the most up to date list of ingredients should be obtained locally after refill of the product on the point of sale)."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "What are Ceramides?",
+                "description": "Ceramides are lipids that make up to ~50% of the skin composition to form the natural skin barrier."
+            },
+            {
+                "id": "2",
+                "title": "What Do Ceramides Do?",
+                "description": "Ceramides are essentially the glue that holds our skin cells together to keep our skin barrier intact and healthy. A healthy skin barrier helps seal in moisture and seal out impurities"
+            },
+            {
+                "id": "3",
+                "title": "CeraVe Contains 3 Essential Ceramides",
+                "description": "CeraVe has a unique blend of ceramides that are identical to those found naturally in your skin. They were carefully selected by dermatologists to help restore the natural skin barrier."
+            },
+            {
+                "id": "4",
+                "title": "Restore Your Skin's Natural Barrier",
+                "description": "By replenishing ceramides where they are most needed, CeraVe helps restore your skins natural barrier, helping to keep moisture in and harmful elements out."
+            }
+        ],
+        "efficacy": {
+            "head": "Efficacy",
+            "url": "/products/hydrating-cleanser/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "How to Apply",
+            "url": "https://www.youtube.com/embed/yptop_8_wqo",
+            "steps": [
+                {
+                    "description": "Wet skin with lukewarm water"
+                },
+                {
+                    "description": "Massage cleanser into skin in a gentle, circular motion"
+                },
+                {
+                    "description": "Rinse"
+                }
+            ],
+            "textureImage1URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+            "product2url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "foaming-cleanser-8oz-en",
+        "name": "foaming-cleanser",
+        "size": "8oz",
+        "lang": "en",
+        "crmURL": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+        "variant": {
+            "name": "Foaming Cleanser",
+            "size": "8 FL OZ / 236 ML",
+            "modelURL": "/products/foaming-cleanser/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/foaming-cleanser/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Fresh clean feel without over-drying",
+                "name": "Alicia",
+                "age": "Female - 25 to 34",
+                "rating": 5,
+                "review": "This cleanser gives me a really clean feeling after a long day but still feels balanced on my skin. It foams nicely, rinses quickly, and leaves my face feeling refreshed."
+            },
+            {
+                "id": "2",
+                "head": "Very good for everyday use",
+                "name": "Brandon",
+                "age": "Male - 18 to 24",
+                "rating": 4,
+                "review": "I use it in the morning and after workouts. It removes oil well and feels lightweight. For me it works best when I follow it with a moisturizer right away."
+            },
+            {
+                "id": "3",
+                "head": "Reliable and easy to use",
+                "name": "Danielle",
+                "age": "Female - 35 to 44",
+                "rating": 5,
+                "review": "The pump bottle is convenient and the texture is exactly what I want in a foaming cleanser. It leaves my skin smooth and clean without feeling heavy or sticky."
+            },
+            {
+                "id": "4",
+                "head": "Great, with only a small downside",
+                "name": "Marcus",
+                "age": "Male - 45 to 54",
+                "rating": 4,
+                "review": "Overall I like this a lot because it handles shine and buildup well. On colder days my skin can feel a little tight afterward, but with a good moisturizer it works very well."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser"
+        },
+        "ingredients": {
+            "head": "Ingredients",
+            "list": "AQUA / WATER / EAU, COCAMIDOPROPYL HYDROXYSULTAINE, GLYCERIN, SODIUM LAUROYL SARCOSINATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, NIACINAMIDE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, CITRIC ACID",
+            "disclaimer": "Please note that ingredient lists may be updated periodically. Refer to the ingredient list on your product packaging for the most current list before use."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "What are Ceramides?",
+                "description": "Ceramides are lipids that help form the skin barrier and support moisture retention."
+            },
+            {
+                "id": "2",
+                "title": "Why are they important?",
+                "description": "They help keep skin comfortable by supporting the protective barrier and reducing moisture loss."
+            },
+            {
+                "id": "3",
+                "title": "3 Essential Ceramides",
+                "description": "CeraVe uses 3 essential ceramides to help maintain and restore the skin barrier."
+            },
+            {
+                "id": "4",
+                "title": "Balanced cleansing",
+                "description": "The formula helps remove excess oil and impurities while keeping skin feeling clean and comfortable."
+            }
+        ],
+        "efficacy": {
+            "head": "Efficacy",
+            "url": "/products/foaming-cleanser/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "How to Apply",
+            "url": "https://www.youtube.com/embed/ebl5LLtuQe4",
+            "steps": [
+                {
+                    "description": "Wet skin with lukewarm water"
+                },
+                {
+                    "description": "Massage cleanser onto the face in gentle circular motions"
+                },
+                {
+                    "description": "Rinse thoroughly and pat dry"
+                }
+            ],
+            "textureImage1URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+            "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "cream-to-foam-cleanser-8oz-en",
+        "name": "cream-to-foam-cleanser",
+        "size": "8oz",
+        "lang": "en",
+        "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+        "variant": {
+            "name": "Hydrating Cream-to-Foam Cleanser",
+            "size": "8FL OZ/236 ML",
+            "modelURL": "/products/cream-to-foam-cleanser/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/cream-to-foam-cleanser/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Cleans gently",
+                "name": "Mia",
+                "age": "Female - 25 to 34",
+                "rating": 5,
+                "review": "I like that this cleanser starts creamy and then foams lightly. It removes daily buildup well and still feels comfortable on dry skin."
+            },
+            {
+                "id": "2",
+                "head": "Good everyday option",
+                "name": "Lena",
+                "age": "Female - 35 to 44",
+                "rating": 5,
+                "review": "It is easy to use, rinses clean, and does not leave my skin tight. I would use it morning and night without hesitation."
+            },
+            {
+                "id": "3",
+                "head": "Works well after makeup",
+                "name": "Nadia",
+                "age": "Female - 18 to 24",
+                "rating": 4,
+                "review": "This does a nice job removing light makeup and sunscreen. The texture is pleasant and the bottle format is practical."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser"
+        },
+        "ingredients": {
+            "head": "Ingredients",
+            "list": "AQUA / WATER / EAU, GLYCERIN, COCAMIDOPROPYL HYDROXYSULTAINE, SODIUM METHYL COCOYL TAURATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, AMINO ACIDS, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA",
+            "disclaimer": "Ingredient lists may change over time. Please refer to the product packaging for the most up to date ingredient list before use."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "What are Ceramides?",
+                "description": "Ceramides are lipids that support the skin barrier and help maintain moisture."
+            },
+            {
+                "id": "2",
+                "title": "Why do they matter?",
+                "description": "They help keep skin feeling balanced by reducing moisture loss and supporting barrier health."
+            },
+            {
+                "id": "3",
+                "title": "3 Essential Ceramides",
+                "description": "CeraVe formulas use 3 essential ceramides to help reinforce the skin barrier."
+            },
+            {
+                "id": "4",
+                "title": "Comfortable cleansing",
+                "description": "This cleanser is designed to clean effectively while still feeling gentle on normal to dry skin."
+            }
+        ],
+        "efficacy": {
+            "head": "Efficacy",
+            "url": "/products/cream-to-foam-cleanser/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "How to Apply",
+            "url": "https://www.youtube.com/embed/yptop_8_wqo",
+            "steps": [
+                {
+                    "description": "Wet skin with lukewarm water"
+                },
+                {
+                    "description": "Massage gently until the cream transforms into a light foam"
+                },
+                {
+                    "description": "Rinse thoroughly and pat dry"
+                }
+            ],
+            "textureImage1URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "moisturizing-cream-12oz-en",
+        "name": "moisturizing-cream",
+        "size": "12oz",
+        "lang": "en",
+        "crmURL": "https://www.cerave.de/newsletter-anmeldung",
+        "variant": {
+            "name": "moisturizing Cream",
+            "size": "12FL OZ/340 GM",
+            "modelURL": "/products/moisturizing-cream/12oz/en/3d-models/product.glb",
+            "productImageURL": "/products/moisturizing-cream/12oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Best Moisturizer Ever!!",
+                "name": "Dana",
+                "age": "Female - 18 to 24",
+                "rating": 5,
+                "review": "This is my holy grail product. I have terribly dry skin, and eczema on my hands and wrists. My dermatologist recommended this stuff, specifically the cream, not the lotion, and it is life changing. (The lotion has more water which will evaporate and leave skin drier than cream) I cant wait to see how it works through the winter. My hands were cracking, bleeding, and weeping last winter from the dry air. I am confident this stuff will help me prevent that continuing, and help my skin recover quicker when it does get too dry. Dreading the harsh New England weather a bit less now."
+            },
+            {
+                "id": "2",
+                "head": "Absolute love!",
+                "name": "mag54",
+                "age": "Female - 65 or over",
+                "rating": 5,
+                "review": "I have been using the moisturizing product for a year now and continued with it being of the remarkable results I have had with it. This cream has all but reduced itching from tight dry skin. I started the cream after I endured a terrible skin affliction. This was recommended by a nurse to help restore my skin and it sure worked. I now use the face hydration cleanser which I really like as well. I recommend this to everyone!"
+            },
+            {
+                "id": "3",
+                "head": "The Best Moisturizer I have ever used",
+                "name": "K Austin",
+                "age": "Female - 18 to 24",
+                "rating": 5,
+                "review": "I have psoriasis around my mouth area and struggle a lot with it during the fall/winter months when my skin becomes combo/dry. I apply this day and night on my face and it has worked absolute wonders. I will never try another moisturizer!"
+            },
+            {
+                "id": "4",
+                "head": "This is the best face/body lotion I've ever used.",
+                "name": "Andrew J",
+                "age": "Male - 45 to 54",
+                "rating": 5,
+                "review": "This lotion is the best at keeping both my face and body from getting overly dry in the winter or too oily on those warm, summer days. What I like most about Cerave is that it has no unnecessary colored dyes and is perfume free so that it does not fight with whatever cologne I put on that day. I use it when I am fresh out of the shower to lock in the water still on my face & skin and it always goes on smooth. I purchased several containers for a friend of mine as a casual gift and now she uses and swears by it, too."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream"
+        },
+        "ingredients": {
+            "head": "Ingredients",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+            "disclaimer": "Please be aware that ingredient lists for the products of our brand are updated regularly. Please refer to the ingredient list on your product package for the most up to date list of ingredients to ensure it is suitable to your personal use. (For refilled products in the store, the most up to date list of ingredients should be obtained locally after refill of the product on the point of sale). "
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "What are Ceramides?",
+                "description": "Ceramides are lipids that make up to ~50% of the skin composition to form the natural skin barrier."
+            },
+            {
+                "id": "2",
+                "title": "What Do Ceramides Do?",
+                "description": "Ceramides are essentially the glue that holds our skin cells together to keep our skin barrier intact and healthy. A healthy skin barrier helps seal in moisture and seal out impurities"
+            },
+            {
+                "id": "3",
+                "title": "CeraVe Contains 3 Essential Ceramides",
+                "description": "CeraVe has a unique blend of ceramides that are identical to those found naturally in your skin. They were carefully selected by dermatologists to help restore the natural skin barrier."
+            },
+            {
+                "id": "4",
+                "title": "Restore Your Skin's Natural Barrier",
+                "description": "By replenishing ceramides where they are most needed, CeraVe helps restore your skins natural barrier, helping to keep moisture in and harmful elements out."
+            }
+        ],
+        "efficacy": {
+            "head": "Efficacy",
+            "url": "/products/moisturizing-cream/12oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "How to Apply",
+            "url": "https://www.youtube.com/embed/Sjynjw6cJJI",
+            "steps": [
+                {
+                    "description": "Collect product from the tub"
+                },
+                {
+                    "description": "Apply Liberally to dry skin"
+                }
+            ],
+            "textureImage1URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+            "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "moisturizing-lotion-8oz-en",
+        "name": "moisturizing-lotion",
+        "size": "8oz",
+        "lang": "en",
+        "crmURL": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "variant": {
+            "name": "Moisturizing Lotion",
+            "size": "8 FL OZ / 236 ML",
+            "modelURL": "/products/moisturizing-lotion/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/moisturizing-lotion/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Lightweight and easy to wear",
+                "name": "Rachel",
+                "age": "Female - 25 to 34",
+                "rating": 5,
+                "review": "This lotion spreads easily and absorbs quickly, so it works well for both daytime and nighttime use. My skin feels soft without feeling greasy."
+            },
+            {
+                "id": "2",
+                "head": "Hydrating with a clean finish",
+                "name": "Owen",
+                "age": "Male - 35 to 44",
+                "rating": 4,
+                "review": "I like this because it gives enough moisture for everyday use and still feels light. It is especially good after cleansing or showering."
+            },
+            {
+                "id": "3",
+                "head": "Good staple moisturizer",
+                "name": "Priya",
+                "age": "Female - 18 to 24",
+                "rating": 5,
+                "review": "I keep coming back to this lotion because it is dependable and comfortable on my skin. It layers well and does not leave a heavy finish."
+            },
+            {
+                "id": "4",
+                "head": "Works well, just not rich enough for winter",
+                "name": "Steven",
+                "age": "Male - 45 to 54",
+                "rating": 4,
+                "review": "I like the texture and how quickly it sinks in. During very cold weather I sometimes want something richer, but for daily use it is a solid option."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion"
+        },
+        "ingredients": {
+            "head": "Ingredients",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETEARYL ALCOHOL, CETYL ALCOHOL, DIMETHICONE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, PHYTOSPHINGOSINE, XANTHAN GUM",
+            "disclaimer": "Please note that ingredient lists may be updated periodically. Refer to the ingredient list on your product packaging for the most current list before use."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "What are Ceramides?",
+                "description": "Ceramides are lipids that help reinforce the skin barrier and keep moisture in."
+            },
+            {
+                "id": "2",
+                "title": "Why use them daily?",
+                "description": "They help support the skin barrier each day so skin feels more comfortable and balanced."
+            },
+            {
+                "id": "3",
+                "title": "3 Essential Ceramides",
+                "description": "CeraVe combines 3 essential ceramides to help maintain and restore the skin barrier."
+            },
+            {
+                "id": "4",
+                "title": "Lightweight moisture",
+                "description": "The lotion format provides daily hydration with a lighter feel than a richer cream."
+            }
+        ],
+        "efficacy": {
+            "head": "Efficacy",
+            "url": "/products/moisturizing-lotion/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "How to Apply",
+            "url": "https://www.youtube.com/embed/JuRFnBlokuU",
+            "steps": [
+                {
+                    "description": "Dispense lotion into clean hands"
+                },
+                {
+                    "description": "Apply evenly to face or body as needed"
+                },
+                {
+                    "description": "Massage until absorbed"
+                }
+            ],
+            "textureImage1URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "hydrating-cleanser-8oz-ar",
+        "name": "hydrating-cleanser",
+        "size": "8oz",
+        "lang": "ar",
+        "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+        "variant": {
+            "name": "غسول مرطب",
+            "size": "8FL OZ/236 ML",
+            "modelURL": "/products/hydrating-cleanser/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/hydrating-cleanser/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "مريح جدا على البشرة",
+                "name": "ليان",
+                "age": "أنثى - 25 إلى 34",
+                "rating": 5,
+                "review": "أنظف بشرتي به صباحا ومساء، وأحب أنه لا يسبب الجفاف. بعد الغسل تبقى البشرة ناعمة ومريحة."
+            },
+            {
+                "id": "2",
+                "head": "غسول لطيف للاستخدام اليومي",
+                "name": "هبة",
+                "age": "أنثى - 18 إلى 24",
+                "rating": 4,
+                "review": "يعجبني لأنه لطيف وسهل الشطف، وخصوصا عندما تكون البشرة حساسة أو متعبة. أعتبره خيارا عمليا جدا."
+            },
+            {
+                "id": "3",
+                "head": "ترطيب جيد مع تنظيف خفيف",
+                "name": "ريم",
+                "age": "أنثى - 35 إلى 44",
+                "rating": 5,
+                "review": "القوام ناعم ولا يترك إحساسا مشدودا بعد الغسل. مناسب جدا عندما أحتاج تنظيفا مريحا بدون رغوة قوية."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser"
+        },
+        "ingredients": {
+            "head": "المكونات",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, PEG-40 STEARATE, STEARYL ALCOHOL, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, GLYCERYL STEARATE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, CETYL ALCOHOL, POLYSORBATE 20, ETHYLHEXYLGLYCERIN",
+            "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "ما هي السيراميدات؟",
+                "description": "السيراميدات دهون طبيعية تساعد على تكوين حاجز البشرة والحفاظ على الترطيب."
+            },
+            {
+                "id": "2",
+                "title": "لماذا هي مهمة؟",
+                "description": "تساعد على الحفاظ على راحة البشرة وتقليل فقدان الرطوبة ودعم الحاجز الواقي."
+            },
+            {
+                "id": "3",
+                "title": "3 سيراميدات أساسية",
+                "description": "تركيبة CeraVe تحتوي على 3 سيراميدات أساسية للمساعدة في دعم الحاجز الطبيعي للبشرة."
+            },
+            {
+                "id": "4",
+                "title": "تنظيف لطيف",
+                "description": "يساعد على إزالة الشوائب مع الحفاظ على ملمس ناعم ومريح للبشرة العادية إلى الجافة."
+            }
+        ],
+        "efficacy": {
+            "head": "الفعالية",
+            "url": "/products/hydrating-cleanser/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "طريقة الاستخدام",
+            "url": "https://www.youtube.com/embed/yptop_8_wqo",
+            "steps": [
+                {
+                    "description": "بللي البشرة بالماء الفاتر"
+                },
+                {
+                    "description": "دلكي الغسول بلطف بحركات دائرية"
+                },
+                {
+                    "description": "اشطفي جيدا ثم جففي البشرة برفق"
+                }
+            ],
+            "textureImage1URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/hydrating-cleanser/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/hydrating-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+            "product2url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "foaming-cleanser-8oz-ar",
+        "name": "foaming-cleanser",
+        "size": "8oz",
+        "lang": "ar",
+        "crmURL": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser",
+        "variant": {
+            "name": "غسول رغوي",
+            "size": "8FL OZ/236 ML",
+            "modelURL": "/products/foaming-cleanser/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/foaming-cleanser/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "يشعرك بالنظافة والانتعاش",
+                "name": "مريم",
+                "age": "أنثى - 25 إلى 34",
+                "rating": 5,
+                "review": "هذا الغسول ينظف الدهون والشوائب بشكل واضح ويترك البشرة منتعشة. أحب الرغوة الخفيفة وسهولة الشطف."
+            },
+            {
+                "id": "2",
+                "head": "جيد جدا للاستخدام اليومي",
+                "name": "خالد",
+                "age": "ذكر - 18 إلى 24",
+                "rating": 4,
+                "review": "أستخدمه بعد التمرين وفي الصباح. يعطي تنظيفا جيدا، لكنني أفضل أن أتبعه بمرطب مباشرة خصوصا في الطقس الجاف."
+            },
+            {
+                "id": "3",
+                "head": "غسول عملي ومتوازن",
+                "name": "دانا",
+                "age": "أنثى - 35 إلى 44",
+                "rating": 5,
+                "review": "القوام والرغوة مناسبين جدا، والمنتج سهل الاستخدام يوميا. النتيجة بشرة نظيفة بدون شعور مزعج."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/cleansers/foaming-facial-cleanser"
+        },
+        "ingredients": {
+            "head": "المكونات",
+            "list": "AQUA / WATER / EAU, COCAMIDOPROPYL HYDROXYSULTAINE, GLYCERIN, SODIUM LAUROYL SARCOSINATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, NIACINAMIDE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, CITRIC ACID",
+            "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "ما هي السيراميدات؟",
+                "description": "السيراميدات دهون تساعد على دعم حاجز البشرة والحفاظ على الرطوبة."
+            },
+            {
+                "id": "2",
+                "title": "لماذا هي مهمة؟",
+                "description": "تساعد على الحفاظ على راحة البشرة وتقليل فقدان الرطوبة بعد التنظيف."
+            },
+            {
+                "id": "3",
+                "title": "3 سيراميدات أساسية",
+                "description": "تستخدم CeraVe ثلاث سيراميدات أساسية لدعم الحاجز الطبيعي للبشرة."
+            },
+            {
+                "id": "4",
+                "title": "تنظيف متوازن",
+                "description": "تساعد التركيبة على إزالة الدهون والشوائب مع الحفاظ على إحساس مريح ومتوازن."
+            }
+        ],
+        "efficacy": {
+            "head": "الفعالية",
+            "url": "/products/foaming-cleanser/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "طريقة الاستخدام",
+            "url": "https://www.youtube.com/embed/ebl5LLtuQe4",
+            "steps": [
+                {
+                    "description": "بللي البشرة بالماء الفاتر"
+                },
+                {
+                    "description": "دلكي الغسول بحركات دائرية لطيفة"
+                },
+                {
+                    "description": "اشطفي جيدا ثم جففي البشرة"
+                }
+            ],
+            "textureImage1URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/foaming-cleanser/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/foaming-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+            "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "cream-to-foam-cleanser-8oz-ar",
+        "name": "cream-to-foam-cleanser",
+        "size": "8oz",
+        "lang": "ar",
+        "crmURL": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser",
+        "variant": {
+            "name": "غسول كريم إلى رغوة",
+            "size": "8FL OZ/236 ML",
+            "modelURL": "/products/cream-to-foam-cleanser/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/cream-to-foam-cleanser/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "لطيف وفعال",
+                "name": "نورا",
+                "age": "أنثى - 25 إلى 34",
+                "rating": 5,
+                "review": "أحب هذا الغسول لأنه يزيل المكياج الخفيف بدون أن يترك البشرة مشدودة. القوام كريمي في البداية ثم يتحول إلى رغوة ناعمة بسهولة."
+            },
+            {
+                "id": "2",
+                "head": "مناسب للبشرة الحساسة",
+                "name": "سارة",
+                "age": "أنثى - 18 إلى 24",
+                "rating": 5,
+                "review": "استخدمه صباحا ومساء. ينظف بشكل جيد جدا، ويترك البشرة مريحة وناعمة بدون أي إحساس بالجفاف."
+            },
+            {
+                "id": "3",
+                "head": "عملي للاستخدام اليومي",
+                "name": "مها",
+                "age": "أنثى - 35 إلى 44",
+                "rating": 4,
+                "review": "المنتج ممتاز للاستخدام اليومي، خصوصا إذا كنت أريد تنظيفا سريعا ولطيفا في نفس الوقت. أحب أنه لا يسبب تهيجا حول العينين."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/cleansers/hydrating-cream-to-foam-cleanser"
+        },
+        "ingredients": {
+            "head": "المكونات",
+            "list": "AQUA / WATER / EAU, GLYCERIN, COCAMIDOPROPYL HYDROXYSULTAINE, SODIUM METHYL COCOYL TAURATE, PEG-150 PENTAERYTHRITYL TETRASTEARATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, AMINO ACIDS, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA",
+            "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "ما هي السيراميدات؟",
+                "description": "السيراميدات هي دهون طبيعية تساعد على تكوين حاجز البشرة والحفاظ على الترطيب."
+            },
+            {
+                "id": "2",
+                "title": "ماذا تفعل السيراميدات؟",
+                "description": "تساعد على تقوية حاجز البشرة حتى يحتفظ بالرطوبة ويقاوم العوامل الخارجية."
+            },
+            {
+                "id": "3",
+                "title": "يحتوي على 3 سيراميدات أساسية",
+                "description": "تركيبة CeraVe تحتوي على 3 سيراميدات أساسية للمساعدة في دعم الحاجز الطبيعي للبشرة."
+            },
+            {
+                "id": "4",
+                "title": "تنظيف بدون جفاف",
+                "description": "ينظف البشرة ويزيل الشوائب مع الحفاظ على الإحساس بالراحة والنعومة."
+            }
+        ],
+        "efficacy": {
+            "head": "الفعالية",
+            "url": "/products/cream-to-foam-cleanser/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "طريقة الاستخدام",
+            "url": "https://www.youtube.com/embed/yptop_8_wqo",
+            "steps": [
+                {
+                    "description": "بللي البشرة بالماء الفاتر"
+                },
+                {
+                    "description": "دلكي الغسول بلطف حتى يتحول إلى رغوة"
+                },
+                {
+                    "description": "اشطفي جيدا ثم جففي البشرة برفق"
+                }
+            ],
+            "textureImage1URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/cream-to-foam-cleanser/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/cream-to-foam-cleanser/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product2url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "moisturizing-cream-12oz-ar",
+        "name": "moisturizing-cream",
+        "size": "12oz",
+        "lang": "ar",
+        "crmURL": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+        "variant": {
+            "name": "كريم مرطب",
+            "size": "12FL OZ/340 GM",
+            "modelURL": "/products/moisturizing-cream/12oz/en/3d-models/product.glb",
+            "productImageURL": "/products/moisturizing-cream/12oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "مرطب غني جدا",
+                "name": "يارا",
+                "age": "أنثى - 25 إلى 34",
+                "rating": 5,
+                "review": "أستخدمه للمناطق شديدة الجفاف وفي المساء. القوام غني ويعطي إحساسا واضحا بالراحة بعد الاستخدام."
+            },
+            {
+                "id": "2",
+                "head": "مناسب للأيام الجافة",
+                "name": "منى",
+                "age": "أنثى - 35 إلى 44",
+                "rating": 5,
+                "review": "عندما تكون البشرة جافة جدا يكون هذا الكريم خيارا ممتازا. كمية صغيرة تكفي ويستمر الإحساس بالترطيب لفترة جيدة."
+            },
+            {
+                "id": "3",
+                "head": "قوام غني لكن عملي",
+                "name": "فهد",
+                "age": "ذكر - 45 إلى 54",
+                "rating": 4,
+                "review": "المنتج فعال جدا للمناطق الخشنة والجافة. بالنسبة لي هو ممتاز خصوصا في الليل أو بعد الاستحمام."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream"
+        },
+        "ingredients": {
+            "head": "المكونات",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+            "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "ما هي السيراميدات؟",
+                "description": "السيراميدات دهون تساعد على تكوين الحاجز الطبيعي للبشرة والحفاظ على الرطوبة."
+            },
+            {
+                "id": "2",
+                "title": "لماذا هي مهمة؟",
+                "description": "تساعد على تقليل فقدان الرطوبة ودعم راحة البشرة خصوصا عندما تكون جافة."
+            },
+            {
+                "id": "3",
+                "title": "3 سيراميدات أساسية",
+                "description": "تستخدم CeraVe ثلاث سيراميدات أساسية للمساعدة في دعم الحاجز الواقي للبشرة."
+            },
+            {
+                "id": "4",
+                "title": "ترطيب غني",
+                "description": "القوام الكريمي الغني يساعد على تهدئة الجفاف وترك البشرة أكثر نعومة وراحة."
+            }
+        ],
+        "efficacy": {
+            "head": "الفعالية",
+            "url": "/products/moisturizing-cream/12oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "طريقة الاستخدام",
+            "url": "https://www.youtube.com/embed/Sjynjw6cJJI",
+            "steps": [
+                {
+                    "description": "خذي كمية مناسبة من العبوة"
+                },
+                {
+                    "description": "ضعيها على البشرة النظيفة والجافة"
+                },
+                {
+                    "description": "دلكي بلطف حتى يتم الامتصاص"
+                }
+            ],
+            "textureImage1URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/moisturizing-cream/12oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/moisturizing-cream/12oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+            "product2url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "moisturizing-lotion-8oz-ar",
+        "name": "moisturizing-lotion",
+        "size": "8oz",
+        "lang": "ar",
+        "crmURL": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion",
+        "variant": {
+            "name": "لوشن مرطب",
+            "size": "8FL OZ/236 ML",
+            "modelURL": "/products/moisturizing-lotion/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/moisturizing-lotion/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "خفيف ومريح",
+                "name": "آية",
+                "age": "أنثى - 25 إلى 34",
+                "rating": 5,
+                "review": "اللوشن خفيف ويمتص بسرعة، لذلك يناسب الاستخدام اليومي صباحا ومساء. يترك البشرة ناعمة بدون ملمس دهني."
+            },
+            {
+                "id": "2",
+                "head": "ترطيب جيد بشكل يومي",
+                "name": "طارق",
+                "age": "ذكر - 35 إلى 44",
+                "rating": 4,
+                "review": "أستخدمه بعد الغسل أو بعد الاستحمام. النتيجة مريحة ومرطبة، لكنه قد لا يكون كافيا وحده في الأجواء الباردة جدا."
+            },
+            {
+                "id": "3",
+                "head": "خيار أساسي ممتاز",
+                "name": "سلمى",
+                "age": "أنثى - 18 إلى 24",
+                "rating": 5,
+                "review": "أحب هذا اللوشن لأنه بسيط وعملي ويعطي ترطيبا جيدا مع إحساس خفيف على البشرة. أعود إليه دائما."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/skincare/moisturizers/daily-moisturizing-lotion"
+        },
+        "ingredients": {
+            "head": "المكونات",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETEARYL ALCOHOL, CETYL ALCOHOL, DIMETHICONE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, PHYTOSPHINGOSINE, XANTHAN GUM",
+            "disclaimer": "قد يتم تحديث قائمة المكونات من وقت لآخر. يرجى الرجوع إلى العبوة للتأكد من أحدث قائمة مكونات قبل الاستخدام."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "ما هي السيراميدات؟",
+                "description": "السيراميدات دهون تساعد على تقوية حاجز البشرة والحفاظ على الرطوبة."
+            },
+            {
+                "id": "2",
+                "title": "لماذا للاستخدام اليومي؟",
+                "description": "تساعد على دعم راحة البشرة يوميا والحفاظ على توازنها."
+            },
+            {
+                "id": "3",
+                "title": "3 سيراميدات أساسية",
+                "description": "تجمع CeraVe بين 3 سيراميدات أساسية للمساعدة في دعم الحاجز الطبيعي للبشرة."
+            },
+            {
+                "id": "4",
+                "title": "ترطيب خفيف",
+                "description": "صيغة اللوشن تعطي ترطيبا يوميا بملمس أخف من الكريم الغني."
+            }
+        ],
+        "efficacy": {
+            "head": "الفعالية",
+            "url": "/products/moisturizing-lotion/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "طريقة الاستخدام",
+            "url": "https://www.youtube.com/embed/JuRFnBlokuU",
+            "steps": [
+                {
+                    "description": "ضعي كمية مناسبة من اللوشن على اليدين"
+                },
+                {
+                    "description": "وزعيه بالتساوي على البشرة"
+                },
+                {
+                    "description": "دلكي بلطف حتى يتم الامتصاص"
+                }
+            ],
+            "textureImage1URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+            "product2url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "moisturizing-cream-16oz-es",
+        "name": "moisturizing-cream",
+        "size": "16oz",
+        "lang": "es",
+        "crmURL": "https://www.cerave.com/es/skincare/moisturizers/moisturizing-cream",
+        "variant": {
+            "name": "Crema Hidratante",
+            "size": "16FL OZ/453 GM",
+            "modelURL": "/products/moisturizing-cream/16oz/es/3d-models/product.glb",
+            "productImageURL": "/products/moisturizing-cream/16oz/es/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Muy buena para piel seca",
+                "name": "Laura",
+                "age": "Femenino - 25 a 34",
+                "rating": 5,
+                "review": "La uso en rostro y cuerpo. Tiene una textura rica pero se absorbe bien y deja la piel calmada durante muchas horas."
+            },
+            {
+                "id": "2",
+                "head": "Ideal para uso diario",
+                "name": "Marta",
+                "age": "Femenino - 35 a 44",
+                "rating": 5,
+                "review": "Me gusta porque hidrata bastante sin perfume fuerte. La aplico después de la ducha y noto la piel mucho más suave."
+            },
+            {
+                "id": "3",
+                "head": "Buena opción para todo el año",
+                "name": "Carlos",
+                "age": "Masculino - 45 a 54",
+                "rating": 4,
+                "review": "Funciona muy bien en codos, manos y zonas secas. El formato grande también es práctico para tenerlo siempre en casa."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/es/skincare/moisturizers/moisturizing-cream"
+        },
+        "ingredients": {
+            "head": "Ingredientes",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+            "disclaimer": "Las listas de ingredientes pueden cambiar. Consulta el envase del producto para obtener la información más actualizada antes de usarlo."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "¿Qué son las ceramidas?",
+                "description": "Las ceramidas son lípidos que ayudan a formar la barrera natural de la piel."
+            },
+            {
+                "id": "2",
+                "title": "¿Para qué sirven?",
+                "description": "Ayudan a retener la hidratación y a proteger la piel frente a agresores externos."
+            },
+            {
+                "id": "3",
+                "title": "3 ceramidas esenciales",
+                "description": "La fórmula de CeraVe combina 3 ceramidas esenciales para apoyar la barrera cutánea."
+            },
+            {
+                "id": "4",
+                "title": "Hidratación duradera",
+                "description": "Su textura rica ayuda a aliviar la sequedad y deja la piel con sensación confortable."
+            }
+        ],
+        "efficacy": {
+            "head": "Eficacia",
+            "url": "/products/moisturizing-cream/16oz/es/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "Pasos",
+            "url": "https://www.youtube.com/embed/Sjynjw6cJJI",
+            "steps": [
+                {
+                    "description": "Toma una cantidad adecuada del tarro"
+                },
+                {
+                    "description": "Aplícala sobre la piel limpia y seca"
+                },
+                {
+                    "description": "Masajea suavemente hasta su absorción"
+                }
+            ],
+            "textureImage1URL": "/products/moisturizing-cream/16oz/es/images/texture/texture-01.png",
+            "textureImage2URL": "/products/moisturizing-cream/16oz/es/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/moisturizing-cream/16oz/es/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/moisturizing-cream/16oz/es/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/moisturizing-cream/16oz/es/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/es/skincare/moisturizers/daily-moisturizing-lotion",
+            "product2url": "https://www.cerave.com/es/skincare/cleansers/hydrating-facial-cleanser",
+            "product3url": ""
+        }
+    },
+    {
+        "id": "moisturizing-lotion-8oz-es",
+        "name": "moisturizing-lotion",
+        "size": "8oz",
+        "lang": "es",
+        "crmURL": "https://www.cerave.com/es/skincare/moisturizers/daily-moisturizing-lotion",
+        "variant": {
+            "name": "Loción Hidratante",
+            "size": "8 FL OZ / 236 ML",
+            "modelURL": "/products/moisturizing-lotion/8oz/en/3d-models/product.glb",
+            "productImageURL": "/products/moisturizing-lotion/8oz/en/images/product-image.png"
+        },
+        "reviews": [
+            {
+                "id": "1",
+                "head": "Ligera y cómoda",
+                "name": "Elena",
+                "age": "Femenino - 25 a 34",
+                "rating": 5,
+                "review": "Se extiende muy bien y se absorbe rápido. La uso a diario y deja la piel suave sin sensación pesada."
+            },
+            {
+                "id": "2",
+                "head": "Buena hidratación diaria",
+                "name": "Pablo",
+                "age": "Masculino - 35 a 44",
+                "rating": 4,
+                "review": "Me gusta porque hidrata lo suficiente para el día a día y sigue sintiéndose ligera. Después de la ducha funciona muy bien."
+            },
+            {
+                "id": "3",
+                "head": "Una loción muy práctica",
+                "name": "Natalia",
+                "age": "Femenino - 18 a 24",
+                "rating": 5,
+                "review": "Es una buena opción cuando quiero hidratación sencilla y efectiva. La textura es cómoda y deja un acabado agradable."
+            }
+        ],
+        "moreReviews": {
+            "url": "https://www.cerave.com/es/skincare/moisturizers/daily-moisturizing-lotion"
+        },
+        "ingredients": {
+            "head": "Ingredientes",
+            "list": "AQUA / WATER / EAU, GLYCERIN, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETEARYL ALCOHOL, CETYL ALCOHOL, DIMETHICONE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, HYALURONIC ACID, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, PHYTOSPHINGOSINE, XANTHAN GUM",
+            "disclaimer": "Las listas de ingredientes pueden cambiar. Consulta el envase del producto para obtener la información más actualizada antes de usarlo."
+        },
+        "ceramides": [
+            {
+                "id": "1",
+                "title": "¿Qué son las ceramidas?",
+                "description": "Las ceramidas ayudan a reforzar la barrera cutánea y a mantener la hidratación."
+            },
+            {
+                "id": "2",
+                "title": "¿Por qué usarlas a diario?",
+                "description": "Ayudan a mantener la piel más cómoda y equilibrada a lo largo del día."
+            },
+            {
+                "id": "3",
+                "title": "3 ceramidas esenciales",
+                "description": "CeraVe combina 3 ceramidas esenciales para ayudar a mantener la barrera natural de la piel."
+            },
+            {
+                "id": "4",
+                "title": "Hidratación ligera",
+                "description": "La textura en loción ofrece hidratación diaria con una sensación más ligera que una crema rica."
+            }
+        ],
+        "efficacy": {
+            "head": "Eficacia",
+            "url": "/products/moisturizing-lotion/8oz/en/images/efficacy/efficacy.png"
+        },
+        "howToApply": {
+            "head": "Pasos",
+            "url": "https://www.youtube.com/embed/JuRFnBlokuU",
+            "steps": [
+                {
+                    "description": "Aplicar una cantidad generosa tantas veces como sea necesario o según las indicaciones del médico"
+                }
+            ],
+            "textureImage1URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-01.png",
+            "textureImage2URL": "/products/moisturizing-lotion/8oz/en/images/texture/texture-02.png"
+        },
+        "frequentlyBT": {
+            "url1": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p1.png",
+            "url2": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p2.png",
+            "url3": "/products/moisturizing-lotion/8oz/en/images/frequently-bt/frequently-bt-p3.png",
+            "product1url": "https://www.cerave.com/es/skincare/cleansers/hydrating-facial-cleanser",
+            "product2url": "https://www.cerave.com/es/skincare/moisturizers/moisturizing-cream",
+            "product3url": ""
+        }
+    }
+]
