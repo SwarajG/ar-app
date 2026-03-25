@@ -104,6 +104,13 @@ Notes:
 - `localhost` will not work directly on the phone
 - camera permission must be allowed for the ngrok domain
 
+## When I ask you to run the server
+- If the server is not running already on 8443 PORT
+- Run server on 8443
+- Enable on Mobile using the ngrok command
+- Show the generated link
+- If the server was running on 8443 restart the server
+
 ## Current Homepage Variants
 
 The homepage buttons are hardcoded in [`src/views/index.ejs`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/swaraj-ar-app/src/views/index.ejs).
